@@ -11,7 +11,10 @@ const Welcome = ({currentUser, logout}) => {
     )
 
     const logoutOption = () => (
-        <button onClick={logout}>Logout</button>
+        <hgroup>
+            <h2 className="header-name">Hi, {currentUser.username}!</h2>
+            <button className="header-button" onClick={logout}>Logout</button>
+        </hgroup>
     )
     return currentUser ? logoutOption() : sessionLinks(); 
 }

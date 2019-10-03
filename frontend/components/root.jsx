@@ -1,12 +1,14 @@
 import React from "react";
-import { Provider } from "react-redux";
+import { Provider } from 'react-redux';
 import { HashRouter } from "react-router-dom";
-import DiceApp from "./DiceboxApp";
+import DiceboxApp from "./DiceboxApp";
 
 const Root = ({ store }) => (
     <Provider store={store}>
         <HashRouter> 
-            <DiceApp/>
+            <DiceboxApp/>
         </HashRouter>
     </Provider>
 );
+
+export default Root;

@@ -6,6 +6,7 @@ class SessionForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            username:"",
             email: "",
             password: ""
         };
@@ -45,6 +46,14 @@ class SessionForm extends React.Component {
                     <br/>
                     Please {this.props.formType} or {this.props.navLink}
                     {this.renderErrors()}
+                    <br />
+                    <label>Username:
+                        <input type="text"
+                            value={this.state.username}
+                            onChange={this.update("username")}
+                            className="login-input"
+                        />
+                    </label>
                     <br/>
                     <label>Email:
                         <input type="text"
@@ -70,3 +79,13 @@ class SessionForm extends React.Component {
 }
 
 export default SessionForm; 
+
+
+// {/* <br />
+//     <label>Username:
+//                         <input type="text"
+//             value={this.state.username}
+//             onChange={this.update("username")}
+//             className="login-input"
+//         />
+//     </label> */}

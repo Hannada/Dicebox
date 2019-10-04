@@ -1,16 +1,37 @@
+/* 
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: sans-serif;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+  list-style: none;
+} */
+
 span {
   font-family: 'Open Sans', sans-serif;
   font-size: 40px;
   color: white;
 }
 
-.SessionForm {
+.login-form {
   display: flex; 
   flex-direction: column; 
-  background-color: red;  
-  width: 600px;
-  height: 150px;
+  background-color: white;  
+  width: 200px;
+  height: 50px;
   border: 7px solid black;
-  justify-content: center;
+  justify-content: right;
   padding: 10px;
 }
+

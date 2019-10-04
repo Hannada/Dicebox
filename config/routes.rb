@@ -5,5 +5,7 @@ Rails.application.routes.draw do
     resource :session, only: [:create, :destroy, :show]
   end 
 
+  get 'email_check', to: "session#email_check", defaults:  {format: :json}
+  
   root "static_pages#root"
 end

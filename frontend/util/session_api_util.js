@@ -14,6 +14,14 @@ export const login = user => (
     })
 )
 
+export const email_check = email => (
+    $.ajax({
+        method: "GET",
+        url: "email_check",
+        data: {email}
+    })
+)
+
 export const logout = () => (
     $.ajax({
         method: "DELETE",

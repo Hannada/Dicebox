@@ -3,6 +3,7 @@ import * as SessionAPIUtil from '../util/session_api_util';
 export const RECEIVE_CURRENT_USER = "RECEIVE_CURRENT_USER";
 export const LOGOUT_CURRENT_USER = "LOGOUT_CURRENT_USER";
 export const RECEIVE_SESSION_ERRORS = "RECEIVE_SESSION_ERRORS";
+export const CHECK_USER_EMAIL = "CHECK_USER_EMAIL";
 
 export const receiveCurrentUser = currentUser => ({
     type: RECEIVE_CURRENT_USER,
@@ -18,6 +19,13 @@ export const receiveSessionErrors = errors => ({
     errors 
 })
 
+export const checkUserEmail = email => ({
+    type: CHECK_USER_EMAIL,
+    email 
+})
+
+
+
 export const signup = user => dispatch => (
     SessionAPIUtil.signup(user).then(user => receiveCurrentUser(user))  //add error option 
 )
@@ -28,4 +36,8 @@ export const login = (user) => dispatch => (
 
 export const logout = () => dispatch => (
     SessionAPIUtil.logout().then(user => dispatch(logoutCurrentUser()))
+)
+
+export const checkEmail = email => dispatch => (
+    SessionAPIUtil.email_check(email).then(email => dispatch(checkUserEmail(email)))
 )

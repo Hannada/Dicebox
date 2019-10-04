@@ -1,0 +1,16 @@
+span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+.session_form {
+  display: flex; 
+  flex-direction: column; 
+  background-color: red;  
+  width: 600px;
+  height: 150px;
+  border: 7px solid black;
+  justify-content: center;
+  padding: 10px;
+}

@@ -7,7 +7,9 @@ import IdentifierForm from "./identifier_form";
 const msp = ({ errors }) => {
     return ({
         errors: errors.session,
-        // formType: "email_check"
+        formType: "Next",
+        navLink: <Link to="/signup">Create Account</Link>
+
     })
 }
 

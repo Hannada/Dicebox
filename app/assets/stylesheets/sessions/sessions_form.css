@@ -25,37 +25,48 @@ span {
 }
 
 .login-form {
-  display: flex; 
+    display: flex; 
   flex-direction: column; 
-  background-color: white;  
-  width: 200px;
+  /* position: absolute; */
+  background-color:white;  
+  width: auto;
   height: 50px;
-  border: 7px solid black;
-  justify-content: right;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-radius: 5px;
+  justify-content: space-between;
   padding: 10px;
+  margin: 0 auto;
 }
 
 
 .login-input {
-    display: flex; 
+      display: flex; 
   flex-direction: column; 
-  background-color: white;  
-  width: 200px;
+  /* position: absolute; */
+  background-color:white;  
+  width: auto;
   height: 50px;
-  border: 7px solid black;
-  justify-content: right;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-radius: 5px;
+  justify-content: space-between;
   padding: 10px;
+  margin: 0 auto;
 }
 
 .session-submit {
-  display: flex; 
-  justify-content: space-around;
-  /* flex-direction: column;  */
-  background-color: white;  
-  width: 200px;
+    display: flex; 
+  flex-direction: column; 
+  /* position: absolute; */
+  background-color:white;  
+  width: auto;
   height: 50px;
-  border: 7px solid black;
-  justify-content: right;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-radius: 5px;
+  justify-content: space-between;
   padding: 10px;
+  margin: 0 auto;
 
 }

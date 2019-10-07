@@ -1,0 +1,88 @@
+.email-form {
+  display: flex; 
+  flex-direction: column; 
+  /* position: absolute; */
+  /* font-size: 20px; */
+  background-color:white;  
+  width: auto;
+  height: 50px;
+  box-sizing: border-box;
+  /* border: 1px solid grey; */
+  border-radius: 5px;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0 auto;
+   position: relative;
+  /* left: 70px; */
+  bottom: -175px;
+  
+}
+
+.email-main {
+  display: flex;  
+  flex-direction: row;
+  align-content: center; 
+  background-color:white;  
+  width: 450px;
+  height: 500px;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-radius: 5px;  
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+    position: relative;
+  bottom: -100px;
+  
+}
+
+.email-input {
+      display: flex; 
+  flex-direction: column; 
+  /* position: absolute; */
+  background-color:white;  
+  width: 380px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-radius: 5px;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.create-account {
+  display: flex; 
+  flex-direction: column; 
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  width: 100px;
+  height: 10px;
+  position: relative;
+  left: -70px;
+  bottom: -100px;
+  border-radius: 5px;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.identifier-submit {
+  display: flex; 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  flex-direction: column; 
+  background-color:rgb(68, 103, 219);  
+  width: 80px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-radius: 5px;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0 auto;
+  position: relative;
+  left: 140px;
+  bottom: -75px;
+}
+ 

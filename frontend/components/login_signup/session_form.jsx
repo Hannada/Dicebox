@@ -41,9 +41,8 @@ class SessionForm extends React.Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit} className="login-form">
-                    Temp Header 
                     <br/>
-                    Please {this.props.formType} or {this.props.navLink}
+                    {this.props.navLink}
                     {this.renderErrors()}
                     <br />
                     <label>Username:

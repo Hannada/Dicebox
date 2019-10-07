@@ -24,7 +24,7 @@ class IdentifierForm extends React.Component {
 
     render() {
         return(
-            <div>
+            <div className="email-main">
                 <form onSubmit={this.handleSubmit} className="email-form">
                         Please enter an email or phone number
                     <br />
@@ -36,6 +36,8 @@ class IdentifierForm extends React.Component {
                         />
                     </label>
                     <br/>
+                   
+                    <label className="create-account">{this.props.navLink}</label>
                     <input className="identifier-submit" type="submit" value={this.props.formType} />
                 </form>
             </div>

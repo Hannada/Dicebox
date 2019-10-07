@@ -13,28 +13,26 @@ class IdentifierForm extends React.Component {
         return e => this.setState({
             [field]: e.currentTarget.value
         })
+        // Likely refactoring this to send the user to the password entry form
     }
 
     handleSubmit(e) {
         e.preventDefault();
-        const user = Object.assign({}, this.state)
-        this.props.regForm(user);
+        const user = Object.assign({}, this.state);
+        this.props.verifyForm(this.state);
     }
 
     render() {
         return(
             <div>
-                <form onSubmit={this.handleSubmit} className="login-form">
-                        Temp Header
-                    <br />
-                        Please {this.props.formType} or {this.props.navLink}
-                        {this.renderErrors()}
+                <form onSubmit={this.handleSubmit} className="email-form">
+                        Please enter an email or phone number
                     <br />
                     <label>Email:
                             <input type="text"
                             value={this.state.email}
                             onChange={this.update("email")}
-                            className="login-input"
+                            className="email-input"
                         />
                     </label>
                     <br/>

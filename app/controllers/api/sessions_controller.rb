@@ -12,6 +12,15 @@ class Api::SessionsController < ApplicationController
         end 
     end
 
+    def email_check 
+        @user = User.find_by(email: params[:email])
+        if @user 
+            render json: {verified: true}
+        else
+            render json: {verified: false}
+        end
+    end
+
     def destroy 
         @user = current_user 
         if @user 

@@ -19,7 +19,7 @@ span, article, footer, time, small {
 } */
 
 span {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Google Sans', sans-serif;
   font-size: 40px;
   color: white;
 }
@@ -35,3 +35,27 @@ span {
   padding: 10px;
 }
 
+
+.login-input {
+    display: flex; 
+  flex-direction: column; 
+  background-color: white;  
+  width: 200px;
+  height: 50px;
+  border: 7px solid black;
+  justify-content: right;
+  padding: 10px;
+}
+
+.session-submit {
+  display: flex; 
+  justify-content: space-around;
+  /* flex-direction: column;  */
+  background-color: white;  
+  width: 200px;
+  height: 50px;
+  border: 7px solid black;
+  justify-content: right;
+  padding: 10px;
+
+}

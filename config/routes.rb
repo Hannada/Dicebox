@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   namespace :api, defaults:  {format: :json} do 
     resources :users, only: [:create]
     resource :session, only: [:create, :destroy, :show]
+    get 'email_check', to: "sessions#email_check", defaults:  {format: :json}
   end 
 
-  get 'email_check', to: "session#email_check", defaults:  {format: :json}
   
   root "static_pages#root"
 end

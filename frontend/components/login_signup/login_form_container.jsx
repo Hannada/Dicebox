@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { login, checkEmail } from "../../actions/session_actions";
 import SessionForm from "./session_form";
+import LoginForm from "./login_form";
 
 const msp = ({errors}) => {
     return ({
@@ -21,4 +22,4 @@ const mdp = dispatch => {
 }
 
 
-export default connect(msp, mdp)(SessionForm);
+export default connect(msp, mdp)(LoginForm);

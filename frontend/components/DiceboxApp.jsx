@@ -15,6 +15,7 @@ const DiceboxApp = () => (
             <WelcomeContainer/>
         </header>
         <Switch>
+             <Route path="/password" component={LoginFormContainer}/>
              <Route path="/login" component={IdentifierFormContainer} />
              <Route path="/signup" component={SignupFormContainer} />
              <Route path="/" component={Homepage}/>

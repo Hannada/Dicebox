@@ -14,10 +14,10 @@ export const login = user => (
     })
 )
 
-export const email_check = email => (
+export const email_check = ({email}) => (
     $.ajax({
         method: "GET",
-        url: "email_check",
+        url: "api/email_check",
         data: {email}
     })
 )

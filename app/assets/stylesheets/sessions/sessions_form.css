@@ -1,34 +1,18 @@
-/* 
+
 html, body, header, nav, h1, a,
 ul, li, strong, main, button, i,
 section, img, div, h2, p, form,
 fieldset, label, input, textarea,
 span, article, footer, time, small {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: inherit;
-  text-align: inherit;
-  text-decoration: inherit;
-  vertical-align: inherit;
-  box-sizing: inherit;
-  background: transparent;
-  list-style: none;
-} */
-
-span {
-  font-family: 'Google Sans', sans-serif;
-  font-size: 40px;
-  color: white;
 }
 
-.login-form {
-    display: flex; 
+.signup-form {
+    /* display: flex; 
   flex-direction: column; 
   /* position: absolute; */
-  background-color:white;  
+  /* background-color:white;  
   width: auto;
   height: 50px;
   box-sizing: border-box;
@@ -36,11 +20,11 @@ span {
   border-radius: 5px;
   justify-content: space-between;
   padding: 10px;
-  margin: 0 auto;
+  margin: 0 auto; */ 
 }
 
 
-.login-input {
+.signup-input {
       display: flex; 
   flex-direction: column; 
   /* position: absolute; */
@@ -52,21 +36,48 @@ span {
   border-radius: 5px;
   justify-content: space-between;
   padding: 10px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  left: -200;
 }
 
 .session-submit {
     display: flex; 
   flex-direction: column; 
   /* position: absolute; */
-  background-color:white;  
-  width: auto;
+  background-color:rgb(68, 103, 219);  
+  border: 1px solid grey;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: white;
+  width: 80px;
   height: 50px;
   box-sizing: border-box;
-  border: 1px solid grey;
   border-radius: 5px;
   justify-content: space-between;
   padding: 10px;
   margin: 0 auto;
+    left: 140px;
+  bottom: -75px;
 
+}
+
+.signup-parent {
+  display: flex;  
+  flex-direction: row;
+  align-content: center; 
+  background-color:white;  
+  width: 450px;
+  height: 590px;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-radius: 5px;  
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  bottom: -75px;
+}
+
+.login-return {
+  
 }

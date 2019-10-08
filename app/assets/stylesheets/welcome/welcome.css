@@ -1,0 +1,11 @@
+.login-signup {
+      display: flex; 
+  flex-direction: column; 
+  background-color: maroon;  
+  width: auto;
+  height: 50px;
+  box-sizing: border-box;
+  /* border: 7px solid black; */
+  justify-content: right;
+  padding: 10px;
+}

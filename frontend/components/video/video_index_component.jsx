@@ -1,18 +1,19 @@
 import { connect } from "react-redux";
-import React from "react" ;
+import React from "react";
 import { Link } from "react-router-dom";
-import VideoShow from "./video_show";
+import VideoIndex from "./video_index";
 
 const msp = (state, ownProps) => {
-    return({
+    return ({
 
     })
 }
 
 const mdp = dispatch => {
-    return({
+    return ({
 
     })
 }
 
-export default connect(msp, mdp)(VideoShow);
+export default connect(msp, mdp)(VideoIndex);
+

@@ -2,15 +2,13 @@ import React from "react";
 
 class VideoShow extends React.Component {
     constructor(props){
-        super(props);
+        super(props);  
     }
 
     render(){
         return(
             <div className="video-show-main">
-                <label>
-                    
-                </label>
+                <label className="video-player" src={this.state.video.vid}></label>
             </div>
         )
     }

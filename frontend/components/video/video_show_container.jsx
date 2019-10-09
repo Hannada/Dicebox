@@ -6,13 +6,13 @@ import { fetchVideo, receiveCurrentVideo } from "../../actions/video_action";
 
 const msp = (state, ownProps) => {
     return({
-        video: state.videos[ownProps.match.params.id]
+        video: state.entities.videos[ownProps.match.params.videoId]
     })
 }
 
 const mdp = dispatch => {
     return({
-        // fetchVideo: video => dispatch(receiveCurrentVideo(video))
+        fetchVideo: id => dispatch(fetchVideo(id))
     })
 }
 

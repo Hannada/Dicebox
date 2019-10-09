@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import configureStore from "./store/store";
 import Root from "./components/root";
 import { signup, login, logout, email_check } from './util/session_api_util'; 
+import { fetchVideos, fetchVideo, postVideo } from './util/video_util';
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -27,6 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
     window.Signup = signup;
     window.Signin = login;
     window.Logout = logout; 
+    window.fetchVideo = fetchVideo;
+    window.fetchVideos = fetchVideos;
     window.email_check = email_check;
 
     ReactDOM.render(<Root store={store}/>, root)

@@ -5,7 +5,7 @@ import SignupFormContainer from "../components/login_signup/signup_form_containe
 import WelcomeContainer from "./welcome/welcome_container";
 import IdentifierFormContainer from "./identifier/identifier_form_container";
 import Homepage from "./homepage/homepage"
-import NavbarForm from "./navbar/navbar_form";
+import VideoShowContainer from "./video/video_show_container";
 // import AuthRoute from "../util/route_util";
 
 
@@ -19,8 +19,9 @@ const DiceboxApp = () => (
         </Switch>
         <Switch>
              <Route path="/password" component={LoginFormContainer}/>
-             <Route path="/login" component={IdentifierFormContainer} />
+             <Route path="/login" component={IdentifierFormContainer}/>
              <Route path="/signup" component={SignupFormContainer} />
+             <Route path="/videos/:videoId" component={VideoShowContainer} />
              <Route path="/" component={Homepage}/>
         </Switch>
     </div>

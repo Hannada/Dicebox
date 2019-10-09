@@ -5,7 +5,7 @@ import VideoIndex from "./video_index";
 
 const msp = (state, ownProps) => {
     return ({
-
+        
     })
 }
 

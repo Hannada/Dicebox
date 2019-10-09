@@ -2,7 +2,7 @@
       display: flex; 
   flex-direction: column; 
   background-color: maroon;  
-  width: auto;
+  width: 100px;
   height: 50px;
   box-sizing: border-box;
   /* border: 7px solid black; */

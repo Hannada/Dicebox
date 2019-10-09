@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react";
 import { Link } from "react-router-dom";
-import NavbarForm from "./navbar_form"
+import Navbar from "./navbar_form"
 // import { login, checkEmail } from "../../actions/session_actions";
 
 const msp = () => {
@@ -16,4 +16,4 @@ const mdp = dispatch => {
     })
 }
 
-export default connect(msp, mdp)(NavbarForm);
+export default connect(msp, mdp)(Navbar);

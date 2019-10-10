@@ -4,7 +4,7 @@
   background-color: maroon;  
   /* background-color: grey;   */
   width: auto;
-  height: 50px;
+  height: 100px;
   box-sizing: border-box;
   /* border: 7px solid black; */
   justify-content: space-between;
@@ -15,12 +15,12 @@
 .home {
   /* display: flex; 
   flex-direction: row; 
-  width: auto;
-  height: 50px;
   box-sizing: border-box;
   /* border: 7px solid black; */
   /* justify-content: right;
   padding: 10px;  */
+  /* width: 100px;
+  height: 50px; */
   text-decoration: none;
     background-color: black; 
   color: white;

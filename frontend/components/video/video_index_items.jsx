@@ -4,10 +4,14 @@ import { Link } from 'react-router-dom';
 
 const VideoIndexItem = ({ video }) => {
     return (
-        <li>
-            <Link to={`/posts/${video.id}`}> {video.title}</Link>
-            <Link to={`/posts/${video.id}/edit`}></Link>
-        </li>);
+        <div>
+            <Link to={`/videos/${video.id}`}> 
+                <video width="500" height="550" controls>
+                    <source src={video.vidUrl} type="video/mp4" />
+                </video>
+            {video.title}
+            </Link>
+        </div>);
 };
 
 export default VideoIndexItem;

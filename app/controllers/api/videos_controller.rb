@@ -5,6 +5,8 @@ class Api::VideosController < ApplicationController
     end
 
     def index
+        @videos = Video.all 
+        render :index 
     end
 
     def create

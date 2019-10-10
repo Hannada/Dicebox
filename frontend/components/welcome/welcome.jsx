@@ -6,9 +6,10 @@ const Welcome = ({currentUser, logout}) => {
 
     const sessionLinks = () => (
         <nav className="login-signup">
-            <Link to="/" className="home">Home</Link>
-            <Link to="/videos/4">Video Test</Link>
-            <Link to="/login" className="login-button">Login</Link>
+            <Link to="/" className="home"><img src={window.diceLogoUrl} width="60" height="60"/></Link>
+            {/* <Link to="/videos/4">Video Test</Link> */}
+            <p className="title"><img src={window.diceLoginUrl} width="20" height="20" />Dicebox</p>
+            <Link to="/login" className="login-button"><img src={window.diceLoginUrl} width="20" height="20" />Login</Link>
             {/* <Link to="/signup">Sign Up!</Link> */}
         </nav>
     )
@@ -16,10 +17,9 @@ const Welcome = ({currentUser, logout}) => {
 
     const logoutOption = () => (
         <hgroup className="login-signup">
-            <Link to="/" className="home">Home</Link>
-            {/* <h2 className="header-name">{currentUser.username}</h2> */}
-            <Link to="/videos/4">Video Test</Link>
-            <button className="header-button" onClick={logout}>{currentUser.username}</button>
+            <Link to="/" className="home"><img src={window.diceLogoUrl} width="60" height="60" /></Link>
+          
+            <button className="header-button" onClick={logout}><img src={window.diceLoginUrl} width="20" height="20" />{currentUser.username}</button>
 
         </hgroup>
     )

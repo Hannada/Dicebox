@@ -6,12 +6,10 @@ import { Link } from "react-router-dom"
 // import VideoIndex from "../video/video_index";
 
 const Homepage = () => (
-    <div>
+    <div className="absolute-home">
         <WelcomeContainer/>
-        <Link to="/videos/3"><img src={window.critUrl} /></Link>
-        {/* <Link to="/videos/4">
-            <Image src={'app/assets/images/crit.png'} />
-        </Link> */}
+        {/* <Link to="/videos/3"><img src={window.critUrl} /></Link> */}
+      
     </div>
 )
 

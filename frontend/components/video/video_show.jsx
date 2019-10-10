@@ -22,8 +22,7 @@ class VideoShow extends React.Component {
         return(
             <div className="video-show-main">
                 <WelcomeContainer/>
-                <h1>Hi Video</h1>
-                <video width="750" height="350" controls>
+                <video width="1000" height="550" controls>
                     <source src={video.vidUrl} type="video/mp4"/>
                 </video>
 

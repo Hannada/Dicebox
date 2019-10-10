@@ -5,15 +5,21 @@ class LoginForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            password: ""
+            password: "",
+            hidden: true
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.toggleShow = this.toggleShow.bind(this);
     }
 
     update(field) {
         return e => this.setState({
             [field]: e.currentTarget.value
         })
+    }
+
+    toggleShow(){
+        this.setState({hidden: !this.state.hidden})
     }
 
     handleSubmit(e) {
@@ -43,7 +49,8 @@ class LoginForm extends React.Component {
                     {this.renderErrors()}
                     <br />
                     <label>Password:
-                        <input type="text"
+                        <input type={this.state.hidden ? "password" : "text"}
+                        // type="text"
                             value={this.state.password}
                             onChange={this.update("password")}
                             className="login-input"
@@ -51,7 +58,7 @@ class LoginForm extends React.Component {
                     </label>
                     <br />
                     {/* <label className="signup-return">{this.props.navLink}</label> */}
-                    <input className="login-submit" type="submit" value={this.props.formType} />
+                    <input className="login-submit" onClick={this.toggleShow} type="submit" value={this.props.formType} />
                 </form>
             </div>
         )

@@ -16,10 +16,10 @@ const Welcome = ({currentUser, logout}) => {
 
     const logoutOption = () => (
         <hgroup className="login-signup">
-            <h2 className="header-name">{currentUser.username}</h2>
-            <button className="header-button" onClick={logout}>Logout</button>
+            <Link to="/" className="home">Home</Link>
+            {/* <h2 className="header-name">{currentUser.username}</h2> */}
             <Link to="/videos/4">Video Test</Link>
-            <Link to="/">Home</Link>
+            <button className="header-button" onClick={logout}>{currentUser.username}</button>
 
         </hgroup>
     )

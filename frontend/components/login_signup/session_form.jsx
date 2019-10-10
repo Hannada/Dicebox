@@ -22,6 +22,11 @@ class SessionForm extends React.Component {
         e.preventDefault();
         const user = Object.assign({}, this.state)
         this.props.regForm(user);
+        if (user) {
+            this.props.history.push("/")
+        } else {
+            this.props.history.push("/signup")
+        }
     }
 
     renderErrors(){ //Might need some work

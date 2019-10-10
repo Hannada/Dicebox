@@ -11,12 +11,10 @@ import VideoShowContainer from "./video/video_show_container";
 
 const DiceboxApp = () => (
     <div>
-        <header>
+        {/* <header>
             <WelcomeContainer/>
-        </header>
-        <Switch>
-
-        </Switch>
+        </header> */}
+      
         <Switch>
              <Route path="/password" component={LoginFormContainer}/>
              <Route path="/login" component={IdentifierFormContainer}/>

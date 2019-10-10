@@ -9,18 +9,22 @@ span, article, footer, time, small {
 }
 
 .signup-form {
-    /* display: flex; 
+   display: flex; 
   flex-direction: column; 
   /* position: absolute; */
-  /* background-color:white;  
+  /* font-size: 20px; */
+  background-color:white;  
   width: auto;
   height: 50px;
   box-sizing: border-box;
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
   border-radius: 5px;
   justify-content: space-between;
   padding: 10px;
-  margin: 0 auto; */ 
+  margin: 0 auto;
+   position: relative;
+  /* left: 70px; */
+  bottom: -50px;
 }
 
 

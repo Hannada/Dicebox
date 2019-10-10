@@ -1,9 +1,10 @@
 import React from "react"; 
 import Welcome from "../welcome/welcome"
+import WelcomeContainer from "../welcome/welcome_container"
 
 const Homepage = () => (
-    <div className="home">
-        {/* <Welcome/> */}
+    <div>
+        <WelcomeContainer/>
     </div>
 )
 

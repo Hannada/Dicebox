@@ -37,7 +37,7 @@ class IdentifierForm extends React.Component {
             <div className="email-main">
                 {/* <div className="login-logo"></div> */}
                 <form onSubmit={this.handleSubmit} className="email-form">
-                        Please enter an email or phone number
+                        Please enter an email 
                     <br />
                     <label>
                             <input type="text"

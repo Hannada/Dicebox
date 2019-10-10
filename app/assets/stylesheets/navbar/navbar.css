@@ -1,11 +1,49 @@
 .login-signup {
   display: flex; 
-  flex-direction: column; 
+  flex-direction: row; 
+  background-color: maroon;  
   /* background-color: grey;   */
   width: auto;
   height: 50px;
   box-sizing: border-box;
   /* border: 7px solid black; */
-  justify-content: right;
+  justify-content: space-around;
   padding: 10px;
+
+}
+
+.home {
+  /* display: flex; 
+  flex-direction: row; 
+  width: auto;
+  height: 50px;
+  box-sizing: border-box;
+  /* border: 7px solid black; */
+  /* justify-content: right;
+  padding: 10px;  */
+  text-decoration: none;
+    background-color: black; 
+  color: white;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+
+}
+
+.login-button {
+  /* display: flex; 
+  flex-direction: row; 
+  justify-content: end;
+  margin: 0 auto; */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: black; 
+  color: white;
+  box-sizing:  content-box;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
 }

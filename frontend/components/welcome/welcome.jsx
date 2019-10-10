@@ -6,16 +6,17 @@ const Welcome = ({currentUser, logout}) => {
 
     const sessionLinks = () => (
         <nav className="login-signup">
-            <Link to="/">Home</Link>
-            <Link to="/login">Login</Link>
-            <Link to="/signup">Sign Up!</Link>
+            <Link to="/" className="home">Home</Link>
             <Link to="/videos/1">Video Test</Link>
+            <Link to="/login" className="login-button">Login</Link>
+            {/* <Link to="/signup">Sign Up!</Link> */}
         </nav>
     )
+    
 
     const logoutOption = () => (
-        <hgroup>
-            <h2 className="header-name">Hi, {currentUser.username}!</h2>
+        <hgroup className="login-signup">
+            <h2 className="header-name">{currentUser.username}</h2>
             <button className="header-button" onClick={logout}>Logout</button>
             <Link to="/videos/1">Video Test</Link>
             <Link to="/">Home</Link>
@@ -23,20 +24,43 @@ const Welcome = ({currentUser, logout}) => {
         </hgroup>
     )
     
-    return currentUser ? logoutOption() : sessionLinks(); 
+    // return currentUser ? logoutOption() : sessionLinks(); 
+        if (currentUser) {
+            return  logoutOption()
+        } else {
+           return sessionLinks()
+        }
+
 }
 
 // class Welcome extends React.Component {
+//     constructor(props) {
+//         super(props);
+//     }
+
+//     sessionLinks() {
+//         <nav className="login-signup">
+//             <Link to="/">Home</Link>
+//             <Link to="/login">Login</Link>
+//             <Link to="/signup">Sign Up!</Link>
+//             <Link to="/videos/1">Video Test</Link>
+//         </nav>
+//     }
+//     debugger
+
+//     logoutOption(){
+//         <hgroup>
+//             <h2 className="header-name">{currentUser.username}</h2>
+//             <button className="header-button" onClick={logout}>Logout</button>
+//             <Link to="/videos/1">Video Test</Link>
+//             <Link to="/">Home</Link>
+
+//         </hgroup>
+//     }
+
 //     render() {
 //         return (
-//         <ul>
-//             <li>
-//                 <Link to="/">Home</Link>
-//             </li>
-//             <li>
-//              <Link to="/login">Login</Link>
-//             </li>
-//         </ul>
+//             currentUser ? logoutOption() : sessionLinks()
 //         )
 //     }
 // }

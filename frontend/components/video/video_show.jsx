@@ -1,5 +1,7 @@
 import React from "react";
 import { recieveCurrentUser } from "../../actions/session_actions";
+import Welcome  from "../welcome/welcome"
+import WelcomeContainer from "../welcome/welcome_container"
 
 class VideoShow extends React.Component {
     constructor(props){
@@ -19,6 +21,7 @@ class VideoShow extends React.Component {
 
         return(
             <div className="video-show-main">
+                <WelcomeContainer/>
                 <h1>Hi Video</h1>
                 <video width="750" height="350" controls>
                     <source src={video.vidUrl} type="video/mp4"/>

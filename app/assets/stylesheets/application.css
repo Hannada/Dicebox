@@ -14,9 +14,3 @@
  *= require_self
  */
  
- @import "home/homepage.css";
- @import "login/login.css";
- @import "identifier/identifier.css";
- @import "navbar/navbar.css";
- @import "sessions_form.css";
- @import "welcome/welcome.css";

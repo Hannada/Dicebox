@@ -7,7 +7,7 @@ const Welcome = ({currentUser, logout}) => {
     const sessionLinks = () => (
         <nav className="login-signup">
             <Link to="/" className="home">Home</Link>
-            <Link to="/videos/1">Video Test</Link>
+            <Link to="/videos/4">Video Test</Link>
             <Link to="/login" className="login-button">Login</Link>
             {/* <Link to="/signup">Sign Up!</Link> */}
         </nav>
@@ -18,7 +18,7 @@ const Welcome = ({currentUser, logout}) => {
         <hgroup className="login-signup">
             <h2 className="header-name">{currentUser.username}</h2>
             <button className="header-button" onClick={logout}>Logout</button>
-            <Link to="/videos/1">Video Test</Link>
+            <Link to="/videos/4">Video Test</Link>
             <Link to="/">Home</Link>
 
         </hgroup>

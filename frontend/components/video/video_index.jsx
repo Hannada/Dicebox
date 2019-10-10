@@ -25,13 +25,6 @@ class VideoIndex extends React.Component {
                 {/* </ul> */}
             </div>
         );
-        // videos.forEach(video => {
-        //     return (
-        //         <li>
-        //             {video}
-        //         </li>
-        //     )
-        // })
     }
 }
 

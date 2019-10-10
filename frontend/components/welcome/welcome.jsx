@@ -18,9 +18,8 @@ const Welcome = ({currentUser, logout}) => {
     const logoutOption = () => (
         <hgroup className="login-signup">
             <Link to="/" className="home"><img src={window.diceLogoUrl} width="60" height="60" /></Link>
-          
+            <p className="title"><img src={window.diceLoginUrl} width="20" height="20" />Dicebox</p>
             <button className="header-button" onClick={logout}><img src={window.diceLoginUrl} width="20" height="20" />{currentUser.username}</button>
-
         </hgroup>
     )
     

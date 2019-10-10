@@ -9,7 +9,7 @@ const VideoIndexItem = ({ video }) => {
                 <video width="500" height="550" controls>
                     <source src={video.vidUrl} type="video/mp4" />
                 </video>
-            {video.title}
+                <p className="index-title">{video.title}</p>
             </Link>
         </div>);
 };

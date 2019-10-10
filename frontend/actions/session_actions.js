@@ -41,3 +41,7 @@ export const logout = () => dispatch => (
 export const checkEmail = email => dispatch => (
     SessionAPIUtil.email_check(email).then(email => dispatch(checkUserEmail(email)))
 )
+
+// export const fetchUser = id => dispatch => (
+//     SessionAPIUtil.
+// )

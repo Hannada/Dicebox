@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 const Homepage = () => (
     <div>
         <WelcomeContainer/>
-        <Link to="/videos/4"><img src={'app/assets/images/crit.png'} /></Link>
+        <Link to="/videos/4"><img src={window.critUrl} /></Link>
         {/* <Link to="/videos/4">
             <Image src={'app/assets/images/crit.png'} />
         </Link> */}

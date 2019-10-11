@@ -23,7 +23,7 @@ class VideoIndex extends React.Component {
         });
 
         return (
-            <div>
+            <div className="index-all">
                 {/* <ul className="video-links"> */}
                     {videos}
                 {/* </ul> */}

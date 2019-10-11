@@ -1,3 +1,22 @@
-/* .absolute-home {
-    background-image: image("crit.png");
-} */
+.absolute-home {
+    background-image: image("crit.png")
+}
+
+.dupe-vids {
+  display: flex;  
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.index-items {
+  display: flex;  
+  flex-direction: row;
+  border-bottom: 7px;
+}
+
+.index-all {
+  display: flex;  
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* border-bottom: 7px; */
+}

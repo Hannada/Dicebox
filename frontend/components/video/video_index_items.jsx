@@ -7,9 +7,9 @@ import { fetchUser } from "../../actions/session_actions";
 const VideoIndexItem = ({ video }) => {
     // const user = fetchUser(video.user_id);
     return (
-        <div>
+        <div className="index-items">
             <Link to={`/videos/${video.id}`} className="index-item"> 
-                <video width="500" height="550">
+                <video width="600" height="650">
                     <source src={video.vidUrl} type="video/mp4" />
                 </video>
                 <p className="index-title">{video.title}</p>

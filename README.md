@@ -8,7 +8,9 @@ https://dicebox.herokuapp.com/#/
 # Auth
 The user can currently navigate the website in its entirety without requiring an account. An account will still be required for interacting with any content outside of viewing (i.e. likes, comments, uploads).
 
-The account creation prompts the user for a username, email and password. On login, the user is required to input a verfied email. With a verified email, the user will be brought to a second screen to input their password
+The account creation prompts the user for a username, email and password. On login, the user is required to input a verfied email. With a verified email, the user will be brought to a second screen to input their password.
+
+![Alt text](app/assets/images/codesnip1.png)
 
 
 # Videos

@@ -12,6 +12,17 @@
 
 }
 
+.title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  
+}
+
+.vid-description{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
 .home {
   /* display: flex; 
   flex-direction: row; 
@@ -22,7 +33,7 @@
   /* width: 100px;
   height: 50px; */
   text-decoration: none;
-    background-color: black; 
+  background-color: black; 
   color: white;
   box-sizing: border-box;
   border: 1px solid grey;

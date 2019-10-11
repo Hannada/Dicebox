@@ -25,8 +25,9 @@ class VideoShow extends React.Component {
                 <video width="1000" height="550" controls>
                     <source src={video.vidUrl} type="video/mp4"/>
                 </video>
+                {/* <label><img src={window.prestUrl} width="20" height="20" /></label> */}
 
-                <div className="vid-title">{video.title}</div>
+                <div className="vid-title"><img src={window.diceLoginUrl} width="20" height="20" />{video.title}</div>
                 {/* <div>{recieveCurrentUser(video.user_id)}</div> */}
                 <div className="vid-description">{video.description}</div>
             </div>

@@ -42,6 +42,6 @@ export const checkEmail = email => dispatch => (
     SessionAPIUtil.email_check(email).then(email => dispatch(checkUserEmail(email)))
 )
 
-// export const fetchUser = id => dispatch => (
-//     SessionAPIUtil.
-// )
+export const fetchUser = id => dispatch => (
+    SessionAPIUtil.fetchUser(id).then(user => dispatch(receiveCurrentUser(user)))
+)

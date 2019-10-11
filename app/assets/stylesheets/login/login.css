@@ -6,19 +6,19 @@
   width: 450px;
   height: 500px;
   box-sizing: border-box;
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
   border-radius: 5px;  
   padding: 10px;
   text-align: center;
   margin: 0 auto;
     position: relative;
-  bottom: -100px;
+  /* bottom: -100px; */
   
 }
 
-/* .login-form {
+.login-form {
   display: flex;  
-  flex-direction: row;
+  flex-direction: column;
   align-content: center; 
   background-color:white;  
   width: 450px;
@@ -32,7 +32,7 @@
     position: relative;
   bottom: -100px;
   
-} */
+}
 
 .login-input {
       display: flex; 

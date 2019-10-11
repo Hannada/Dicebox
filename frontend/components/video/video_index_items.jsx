@@ -9,7 +9,7 @@ const VideoIndexItem = ({ video }) => {
     return (
         <div>
             <Link to={`/videos/${video.id}`} className="index-item"> 
-                <video width="500" height="550" controls>
+                <video width="500" height="550">
                     <source src={video.vidUrl} type="video/mp4" />
                 </video>
                 <p className="index-title">{video.title}</p>

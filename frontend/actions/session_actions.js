@@ -27,16 +27,19 @@ export const checkUserEmail = email => ({
 
 
 export const signup = user => dispatch => (
-    SessionAPIUtil.signup(user).then(user => dispatch(receiveCurrentUser(user)))  //add error option 
-)
+    SessionAPIUtil.signup(user).then(user => dispatch(receiveCurrentUser(user))),
+    errors => (
+        dispatch(receiveSessionErrors(errors.responseJSON))
+    )  //add error option 
+);
 
 export const login = (user) => dispatch => (
     SessionAPIUtil.login(user).then(user => dispatch(receiveCurrentUser(user)))
-)
+);
 
 export const logout = () => dispatch => (
     SessionAPIUtil.logout().then(user => dispatch(logoutCurrentUser()))
-)
+);
 
 export const checkEmail = email => dispatch => (
     SessionAPIUtil.email_check(email).then(email => dispatch(checkUserEmail(email)))

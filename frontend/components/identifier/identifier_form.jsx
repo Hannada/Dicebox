@@ -32,7 +32,10 @@ class IdentifierForm extends React.Component {
                 state: this.state
             }))
         } else {
-            this.renderErrors
+            this.props.renderErrors(this.state).then(this.props.history.push({
+                pathname: "/login",
+                state: this.state 
+            }))
         }
     }
 

@@ -34,7 +34,10 @@ export const signup = user => dispatch => (
 );
 
 export const login = (user) => dispatch => (
-    SessionAPIUtil.login(user).then(user => dispatch(receiveCurrentUser(user)))
+    SessionAPIUtil.login(user).then(user => dispatch(receiveCurrentUser(user))),
+    errors => (
+        dispatch(receiveSessionErrors(errors.responseJSON))
+    )
 );
 
 export const logout = () => dispatch => (
@@ -42,7 +45,10 @@ export const logout = () => dispatch => (
 );
 
 export const checkEmail = email => dispatch => (
-    SessionAPIUtil.email_check(email).then(email => dispatch(checkUserEmail(email)))
+    SessionAPIUtil.email_check(email).then(email => dispatch(checkUserEmail(email))),
+    errors => (
+        dispatch(receiveSessionErrors(errors.responseJSON))
+    )
 )
 
 export const fetchUser = id => dispatch => (

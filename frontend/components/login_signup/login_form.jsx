@@ -25,7 +25,11 @@ class LoginForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state, this.props.location.state)
-        this.props.regForm(user).then(this.props.history.push("/"))
+        if (user) {
+            this.props.regForm(user).then(this.props.history.push("/"))
+        } else {
+            this.props.regForm(user).then(this.props.history.push("/login"))
+        }
     }
 
     renderErrors() { //Might need some work

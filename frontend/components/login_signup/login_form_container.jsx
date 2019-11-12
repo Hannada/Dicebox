@@ -16,7 +16,8 @@ const msp = ({errors}) => {
 const mdp = dispatch => {
     return ({
         regForm: user => dispatch(login(user)),
-        verifyForm: email => dispatch(checkEmail(email))
+        verifyForm: email => dispatch(checkEmail(email)),
+        renderErrors: errors => dispatch(receiveSessionErrors(errors.responseJSON))
 
     })
 }

@@ -25,10 +25,12 @@ class LoginForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state, this.props.location.state)
-        if (user) {
+        if (user.password) {
             this.props.regForm(user).then(this.props.history.push("/"))
+            // this.props.verifyForm(user).then(this.props.history.push("/"))
         } else {
             this.props.regForm(user).then(this.props.history.push("/login"))
+            // this.props.verifyForm(user).then(this.props.history.push("/login"))
         }
     }
 

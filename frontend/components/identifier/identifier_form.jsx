@@ -6,7 +6,9 @@ class IdentifierForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            email: ""
+            email: "",
+            password: "",
+            validEmail: false 
         };
         // this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);

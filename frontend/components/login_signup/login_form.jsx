@@ -18,20 +18,14 @@ class LoginForm extends React.Component {
         })
     }
 
-    toggleShow(){
-        this.setState({hidden: !this.state.hidden})
+    toggleShow() {
+        this.setState({ hidden: !this.state.hidden })
     }
 
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state, this.props.location.state)
-        if (user.password) {
-            this.props.regForm(user).then(this.props.history.push("/"))
-            // this.props.verifyForm(user).then(this.props.history.push("/"))
-        } else {
-            this.props.regForm(user).then(this.props.history.push("/login"))
-            // this.props.verifyForm(user).then(this.props.history.push("/login"))
-        }
+        this.props.regForm(user).then(this.props.history.push("/"))
     }
 
     renderErrors() { //Might need some work
@@ -56,7 +50,7 @@ class LoginForm extends React.Component {
                     <br />
                     <label>Password:
                         <input type={this.state.hidden ? "password" : "text"}
-                        // type="text"
+                            // type="text"
                             value={this.state.password}
                             onChange={this.update("password")}
                             className="login-input"

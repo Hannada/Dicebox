@@ -1,4 +1,4 @@
-import React from "react"; 
+import React from "react";
 import { Link } from "react-router-dom";
 // import DiceLogo from 
 
@@ -6,9 +6,7 @@ class IdentifierForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            email: "",
-            password: "",
-            validEmail: false 
+            email: ""
         };
         // this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -28,49 +26,28 @@ class IdentifierForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
-        if (user) {
-            this.props.verifyForm(this.state).then(this.props.history.push({
-                pathname:"/password",
-                state: this.state
-            }))
-        } else {
-            this.props.renderErrors(this.state).then(this.props.history.push({
-                pathname: "/login",
-                state: this.state 
-            }))
-        }
-    }
-
-    //test
-
-    renderErrors() { //Might need some work
-        return (
-            <ul>
-                {this.props.errors.map(error => {
-                    return <li>
-                        {error}
-                    </li>
-                })}
-            </ul>
-        )
+        this.props.verifyForm(this.state).then(this.props.history.push({
+            pathname: "/password",
+            state: this.state
+        }))
     }
 
     render() {
-        return(
+        return (
             <div className="email-main">
                 {/* <div className="login-logo"></div> */}
                 <form onSubmit={this.handleSubmit} className="email-form">
-                        Please enter an email 
+                    Please enter an email
                     <br />
                     <label>
-                            <input type="text"
+                        <input type="text"
                             value={this.state.email}
                             onChange={this.update("email")}
                             className="email-input"
                         />
                     </label>
-                    <br/>
-                   
+                    <br />
+
                     {/* <label className="create-account" value={this.props.navLink}>Create Account</label> */}
                     <Link to="signup" className="create-account">Create Account</Link>
                     {/* <li className="identifier-submit"></li> */}
@@ -78,7 +55,7 @@ class IdentifierForm extends React.Component {
                 </form>
             </div>
         )
-        
+
     }
 }
 

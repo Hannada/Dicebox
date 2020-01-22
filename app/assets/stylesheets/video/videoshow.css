@@ -2,3 +2,22 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 40px;
 }
+
+.sidebar-index{
+  display: flex;  
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.sidebar-index > .index-all {
+  display: flex;  
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-end;
+}
+
+.main-vid {
+  display: flex; 
+  justify-content: flex-start;
+  align-content: flex-start;
+}

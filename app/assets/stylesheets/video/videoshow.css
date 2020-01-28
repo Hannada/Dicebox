@@ -16,8 +16,13 @@
   align-content: flex-end;
 }
 
-.main-vid {
+
+.show {
   display: flex; 
-  justify-content: flex-start;
-  align-content: flex-start;
+  align-content: space-around;
+}
+
+.vid-info {
+  display: flex;
+  flex-direction: column;
 }

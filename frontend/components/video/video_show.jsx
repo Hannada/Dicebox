@@ -24,15 +24,21 @@ class VideoShow extends React.Component {
         return(
             <div className="video-show-main">
                 <WelcomeContainer/>
-                <video className="main-vid" width="1000" height="550" controls>
-                    <source src={video.vidUrl} type="video/mp4"/>
-                </video>
-                <div className="vid-title"><img src={window.diceLoginUrl} width="20" height="20" />{video.title}</div>
-                {/* <div>{recieveCurrentUser(video.user_id)}</div> */}
-                <div> {video.user_id}</div>
-                <div className="vid-description">{video.description}</div>
+                <div className="show">
+                    <div className="vid-info">
+                        <video className="main-vid" width="1000" height="550" controls>
+                            <source src={video.vidUrl} type="video/mp4"/>
+                        </video>
+                    
+                        <div className="vid-title"><img src={window.diceLoginUrl} width="20" height="20" />{video.title}</div>
+                        {/* <div>{recieveCurrentUser(video.user_id)}</div> */}
+                        <div> {video.user_id}</div>
+                  
+                        <div className="vid-description">{video.description}</div>  
+                    </div>
 
-                <div className="sidebar-index"><VideoIndexContainer/></div>
+                    <div className="sidebar-index"><VideoIndexContainer/></div>
+                </div>
             </div>
         )
     }

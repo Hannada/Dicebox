@@ -29,7 +29,7 @@ class VideoShow extends React.Component {
                         <video className="main-vid" width="1000" height="550" controls>
                             <source src={video.vidUrl} type="video/mp4"/>
                         </video>
-                    
+                        <div className="linebreak"></div>
                         <div className="vid-title"><img src={window.diceLoginUrl} width="20" height="20" />{video.title}</div>
                         {/* <div>{recieveCurrentUser(video.user_id)}</div> */}
                         <div> {video.user_id}</div>
@@ -37,7 +37,10 @@ class VideoShow extends React.Component {
                         <div className="vid-description">{video.description}</div>  
                     </div>
 
-                    <div className="sidebar-index"><VideoIndexContainer/></div>
+                    <div className="sidebar-index">
+                        <div className="upnext">Up next</div>
+                        <VideoIndexContainer/>
+                    </div>
                 </div>
             </div>
         )

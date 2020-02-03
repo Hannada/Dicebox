@@ -32,8 +32,7 @@ class VideoShow extends React.Component {
                         </video>
                         <div className="linebreak"></div>
                         <div className="vid-title"><img src={window.diceLoginUrl} width="20" height="20" />{video.title}</div>
-                        {/* <div>{recieveCurrentUser(video.user_id)}</div> */}
-                        <div> {video.user_id}</div>
+                        <div> {video.user_name}</div>
                   
                         <div className="vid-description">{video.description}</div>  
                     </div>

@@ -16,6 +16,14 @@ class VideoShow extends React.Component {
     }
     // Add a component did update 
 
+
+    // componentDidUpdate(prevProps) {
+    //     if ((this.prevProps.match.params.videoId) !== (this.props.match.params.videoId)){
+    //         this.props.fetchVideo(this.props.match.params.videoId)
+    //     }
+
+    // }
+
     render(){
         const { video } = this.props;
         if (!video) {
@@ -33,7 +41,6 @@ class VideoShow extends React.Component {
                         <div className="linebreak"></div>
                         <div className="vid-title"><img src={window.diceLoginUrl} width="20" height="20" />{video.title}</div>
                         <div> {video.user_name}</div>
-                  
                         <div className="vid-description">{video.description}</div>  
                     </div>
 

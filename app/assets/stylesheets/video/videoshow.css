@@ -35,9 +35,14 @@
 }
 
 .linebreak {
-    display: flex;
-    flex-direction: row;
-    border-bottom: 1px solid var(--yt-spec-10-percent-layer);
-    margin-bottom: 24px;
-    padding-bottom: 16px;
+ 
+
+  display: flex; 
+  flex-direction: row; 
+  background-color: grey;  
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 10px;
 }

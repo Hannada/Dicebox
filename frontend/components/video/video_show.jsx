@@ -14,7 +14,6 @@ class VideoShow extends React.Component {
     componentDidMount(){
         this.props.fetchVideo(this.props.match.params.videoId)
     }
-    // Add a component did update 
 
 
     // componentDidUpdate(prevProps) {
@@ -29,7 +28,6 @@ class VideoShow extends React.Component {
         if (!video) {
             return null 
         }
-
         return(
             <div className="video-show-main">
                 <WelcomeContainer/>

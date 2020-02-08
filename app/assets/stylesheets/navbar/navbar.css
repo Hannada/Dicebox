@@ -1,7 +1,7 @@
 .login-signup {
   display: flex; 
   flex-direction: row; 
-  background-color: maroon;  
+  background-color: rgba(28, 28, 28, 0.8);  
   /* width: auto; */
   height: 56px;
   /* box-sizing: border-box; */

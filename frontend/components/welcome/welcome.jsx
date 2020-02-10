@@ -6,7 +6,7 @@ const Welcome = ({currentUser, logout}) => {
 
     const sessionLinks = () => (
         <nav className="login-signup">
-            <Link to="/" className="home"><img src={window.diceLogoUrl} width="60" height="60"/></Link>
+            <Link to="/" className="home"><img src={window.d20Url} width="40" height="30"/></Link>
             <p className="title"><img src={window.diceLoginUrl} width="20" height="20" />Dicebox</p>
             <Link to="/login" className="login-button"><img src={window.diceLoginUrl} width="20" height="20" />Login</Link>
         </nav>
@@ -15,7 +15,7 @@ const Welcome = ({currentUser, logout}) => {
 
     const logoutOption = () => (
         <hgroup className="login-signup">
-            <Link to="/" className="home"><img src={window.diceLogoUrl} width="60" height="60" /></Link>
+            <Link to="/" className="home"><img src={window.d20Url} width="40" height="30" /></Link>
             <p className="title"><img src={window.diceLoginUrl} width="20" height="20" />Dicebox</p>
             <button className="header-button" onClick={logout}><img src={window.diceLoginUrl} width="20" height="20" />{currentUser.username}</button>
         </hgroup>

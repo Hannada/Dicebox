@@ -2,11 +2,11 @@
     background-image: image("crit.png")
 }
 
-.dupe-vids {
+/* .dupe-vids {
   display: flex;  
   flex-direction: row;
   justify-content: space-around;
-}
+} */
 
 .index-items {
   display: flex;  

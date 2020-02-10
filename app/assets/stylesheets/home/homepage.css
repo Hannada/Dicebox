@@ -20,3 +20,14 @@
   justify-content: space-evenly;
   /* border-bottom: 7px; */
 }
+
+.index-vid-text {
+  display: flex;  
+  flex-direction: column;
+  position: relative;
+  margin: 0 12px;
+}
+
+.root-back {
+  background-color: black;
+}

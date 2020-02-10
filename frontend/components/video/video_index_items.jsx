@@ -12,8 +12,11 @@ const VideoIndexItem = ({ video }) => {
                 <video width="270.66" height="151.86">
                     <source src={video.vidUrl} type="video/mp4" />
                 </video>
-                <p className="index-title">{video.title}</p>
-                {/* <p>{user.username}</p> */}
+                <div className="index-vid-text">
+                    <p className="index-title">{video.title}</p>
+                    {/* <p>{video.user_name}</p> */}
+                    <p>views</p>
+                </div>
             </Link>
         </div>);
 };

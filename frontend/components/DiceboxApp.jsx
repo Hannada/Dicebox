@@ -16,6 +16,7 @@ const DiceboxApp = () => (
         {/* <header>
             <WelcomeContainer/>
         </header> */}
+        <style>{'body { background-color: #3e3e3e;; }'}</style>
       
         <Switch>
              <Route path="/password" component={LoginFormContainer}/>

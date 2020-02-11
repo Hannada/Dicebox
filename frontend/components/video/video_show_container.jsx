@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import React from "react" ;
 import { Link } from "react-router-dom";
 import VideoShow from "./video_show";
-import { fetchVideo, receiveCurrentVideo } from "../../actions/video_action";
+import { fetchVideo, fetchVideos, receiveCurrentVideo } from "../../actions/video_action";
 
 const msp = (state, ownProps) => {
     return({
@@ -12,6 +12,7 @@ const msp = (state, ownProps) => {
 
 const mdp = dispatch => {
     return({
+        fetchVideos: () => dispatch(fetchVideos()),
         fetchVideo: id => dispatch(fetchVideo(id))
     })
 }

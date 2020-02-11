@@ -12,19 +12,24 @@ class VideoShow extends React.Component {
     }
 
     componentDidMount(){
+        this.props.fetchVideos();
         this.props.fetchVideo(this.props.match.params.videoId)
     }
 
 
-    // componentDidUpdate(prevProps) {
-    //     if (this.props.videoId !== this.prevProps.videoId){
-    //         this.fetchVideo(this.videoId)
-    //     }
+    componentDidUpdate(prevProps) {
 
-    // }
+        if (prevProps.match.params.videoId !== this.props.match.params.videoId){
+            this.props.fetchVideo(this.props.match.params.videoId)
+        }
+
+    }
 
 //     if(this.props.userID !== prevProps.userID) {
 //     this.fetchData(this.props.userID);
+// }
+// else{
+//     <Redirect to="/login" />
 // }
 
     render(){

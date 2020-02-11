@@ -17,11 +17,15 @@ class VideoShow extends React.Component {
 
 
     // componentDidUpdate(prevProps) {
-    //     if ((this.prevProps.match.params.videoId) !== (this.props.match.params.videoId)){
-    //         this.props.fetchVideo(this.props.match.params.videoId)
+    //     if (this.props.videoId !== this.prevProps.videoId){
+    //         this.fetchVideo(this.videoId)
     //     }
 
     // }
+
+//     if(this.props.userID !== prevProps.userID) {
+//     this.fetchData(this.props.userID);
+// }
 
     render(){
         const { video } = this.props;

@@ -2,9 +2,9 @@ import React from "react";
 import VideoIndexItem from "./video_index_items"
 
 class VideoIndex extends React.Component {
-    // constructor(props){
-    //     super(props)
-    // }
+    constructor(props){
+        super(props)
+    }
 
     componentDidMount() {
         this.props.fetchVideos();
@@ -18,6 +18,7 @@ class VideoIndex extends React.Component {
                 <VideoIndexItem
                     key={video.id}
                     video={video}
+                    // user={video.user_id}
                     />
             );
         });

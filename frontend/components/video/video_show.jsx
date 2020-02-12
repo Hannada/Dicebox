@@ -25,9 +25,14 @@ class VideoShow extends React.Component {
 
     }
 
+    update(field) {
+        return e => this.setState({ [field]: e.target.value })
+    }
+
 //     if(this.props.userID !== prevProps.userID) {
 //     this.fetchData(this.props.userID);
 // }
+// Note to attempt using redirect for certain pages later
 // else{
 //     <Redirect to="/login" />
 // }

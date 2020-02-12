@@ -21,6 +21,7 @@ class VideoShow extends React.Component {
 
         if (prevProps.match.params.videoId !== this.props.match.params.videoId){
             this.props.fetchVideo(this.props.match.params.videoId);
+            this.update();
         }
 
     }
@@ -48,7 +49,7 @@ class VideoShow extends React.Component {
                 <WelcomeContainer/>
                 <div className="show">
                     <div className="vid-info">
-                        <video className="main-vid" width="1000" height="550" controls autoplay>
+                        <video className="main-vid" width="1000" height="550" controls autoPlay>
                             <source src={this.props.video.vidUrl} type="video/mp4"/>
                         </video>
                         <div className="linebreak"></div>

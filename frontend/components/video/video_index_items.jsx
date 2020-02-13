@@ -21,7 +21,7 @@ const VideoIndexItem = ({ video }) => {
         </div>);
 };
 
-// const VideoIndexItem = (props, {video} )=> {
+// const VideoIndexItem = ()=> {
 
 
 

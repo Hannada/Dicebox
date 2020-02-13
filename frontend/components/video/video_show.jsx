@@ -3,6 +3,7 @@ import { recieveCurrentUser } from "../../actions/session_actions";
 import Welcome  from "../welcome/welcome"
 import WelcomeContainer from "../welcome/welcome_container"
 import VideoIndexContainer from "../video/video_index_container";
+import VideoIndexItem from "../video/video_index_items";
 
 
 class VideoShow extends React.Component {
@@ -12,7 +13,7 @@ class VideoShow extends React.Component {
     }
 
     componentDidMount(){
-        // this.props.fetchVideos();                
+        this.props.fetchVideos();                
         this.props.fetchVideo(this.props.match.params.videoId);
     }
 
@@ -39,10 +40,22 @@ class VideoShow extends React.Component {
 // }
 
     render(){
-        const { video } = this.props;
+        const { video, videos } = this.props;
         if (!video) {
             return null 
         }
+
+        // const videosRec = videos.map(vid => {
+
+        //     return (
+        //         <VideoIndexItem
+        //             key={vid.id}
+        //             video={vid}
+        //         // user={video.user_id}
+        //         />
+        //     );
+        // });
+
         return(
             <div className="video-show-main">
                 <WelcomeContainer/>

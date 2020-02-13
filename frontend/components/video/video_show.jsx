@@ -12,7 +12,7 @@ class VideoShow extends React.Component {
     }
 
     componentDidMount(){
-        // this.props.fetchVideos();
+        // this.props.fetchVideos();                //Currently calling the index again kills the altered state for some reason?
         this.props.fetchVideo(this.props.match.params.videoId)
     }
 

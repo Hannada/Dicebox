@@ -12,7 +12,7 @@ class VideoShow extends React.Component {
     }
 
     componentDidMount(){
-        this.props.fetchVideos();
+        // this.props.fetchVideos();
         this.props.fetchVideo(this.props.match.params.videoId)
     }
 
@@ -60,7 +60,7 @@ class VideoShow extends React.Component {
 
                     <div className="sidebar-index">
                         <div className="upnext">Up next</div>
-                        <VideoIndexContainer/>
+                        {/* <VideoIndexContainer/> */}
                     </div>
                 </div>
             </div>

@@ -18,11 +18,11 @@ class VideoShow extends React.Component {
 
 
     componentDidUpdate(prevProps) {
-
+        // debugger 
         if (prevProps.match.params.videoId !== this.props.match.params.videoId){
             this.props.fetchVideo(this.props.match.params.videoId);
         }
-
+        // debugger   
     }
 
 

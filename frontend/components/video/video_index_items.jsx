@@ -12,11 +12,14 @@ const VideoIndexItem = ({ video }) => {
                 </video>
                 <div className="index-vid-text">
                     <p className="index-title">{video.title}</p>
-                    {/* <p>{video.user_name}</p> */}
+                    <p>{video.user_name}</p>
                     {/* <p>views</p> */}
                 </div>
             </Link>
         </div>);
 };
+
+
+// Preparing to alter index item. Item currently doesnt have access to user_id 
 
 export default VideoIndexItem;

@@ -12,8 +12,8 @@ class VideoShow extends React.Component {
     }
 
     componentDidMount(){
-        // this.props.fetchVideos();                //Currently calling the index again kills the altered state for some reason?
-        this.props.fetchVideo(this.props.match.params.videoId)
+        // this.props.fetchVideos();                
+        this.props.fetchVideo(this.props.match.params.videoId);
     }
 
 
@@ -21,7 +21,6 @@ class VideoShow extends React.Component {
 
         if (prevProps.match.params.videoId !== this.props.match.params.videoId){
             this.props.fetchVideo(this.props.match.params.videoId);
-            this.update();
         }
 
     }
@@ -60,7 +59,7 @@ class VideoShow extends React.Component {
 
                     <div className="sidebar-index">
                         <div className="upnext">Up next</div>
-                        {/* <VideoIndexContainer/> */}
+                        <VideoIndexContainer/>
                     </div>
                 </div>
             </div>

@@ -9,7 +9,7 @@ import VideoIndexItem from "../video/video_index_items";
 class VideoShow extends React.Component {
     constructor(props){
         super(props);  
-      
+        this.handleChange = this.handleChange.bind(this); // attempting handlechange 
     }
 
     componentDidMount(){
@@ -22,6 +22,7 @@ class VideoShow extends React.Component {
         // debugger 
         if (prevProps.match.params.videoId !== this.props.match.params.videoId){
             this.props.fetchVideo(this.props.match.params.videoId);
+            this.forceUpdate();
         }
         // debugger   
     }

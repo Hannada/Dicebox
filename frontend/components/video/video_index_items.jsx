@@ -15,7 +15,6 @@ const VideoIndexItem = ({ video }) => {
                 <div className="index-vid-text">
                     <p className="index-title">{video.title}</p>
                     <p>{video.user_name}</p>
-                    {/* <p>views</p> */}
                 </div>
             </Link>
         </div>);

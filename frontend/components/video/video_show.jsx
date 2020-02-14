@@ -9,7 +9,7 @@ import VideoIndexItem from "../video/video_index_items";
 class VideoShow extends React.Component {
     constructor(props){
         super(props);  
-        this.handleChange = this.handleChange.bind(this); // attempting handlechange 
+        // this.handleChange = this.handleChange.bind(this); // attempting handlechange 
     }
 
     componentDidMount(){
@@ -26,6 +26,10 @@ class VideoShow extends React.Component {
         }
         // debugger   
     }
+
+    // handleChange(event) {
+    //     this.setState({ value: event.target.value });
+    // }
 
 
     update(field) {

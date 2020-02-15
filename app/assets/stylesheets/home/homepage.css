@@ -17,7 +17,7 @@
 .index-all {
   display: flex;  
   flex-direction: row;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   /* border-bottom: 7px; */
 }
 
@@ -26,6 +26,7 @@
   flex-direction: column;
   position: relative;
   margin: 0 12px;
+  justify-content: flex-end;
 }
 
 .root-back {

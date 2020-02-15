@@ -1,6 +1,4 @@
-.absolute-home {
-    background-image: image("crit.png")
-}
+
 
 /* .dupe-vids {
   display: flex;  
@@ -12,6 +10,8 @@
   display: flex;  
   flex-direction: row;
   border-bottom: 7px;
+    flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 .index-all {
@@ -25,11 +25,11 @@
 .index-vid-text {
   display: flex;  
   flex-direction: column;
-  position: relative;
-  margin: 0 12px;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  /* position: relative; */
+  /* margin: 0 12px; */
+  /* justify-content: flex-end; */
+  /* flex-wrap: wrap; */
+  /* align-content: flex-start; */
 }
 
 .root-back {

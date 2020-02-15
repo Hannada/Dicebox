@@ -25,7 +25,9 @@
 .vid-info {
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
+
 
 .upnext {
       color: var(--yt-spec-text-primary);

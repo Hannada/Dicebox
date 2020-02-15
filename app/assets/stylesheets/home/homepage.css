@@ -26,10 +26,18 @@
   display: flex;  
   flex-direction: column;
   /* position: relative; */
-  /* margin: 0 12px; */
+  margin: 0 auto;
   /* justify-content: flex-end; */
   /* flex-wrap: wrap; */
   /* align-content: flex-start; */
+}
+
+.index-title {
+  margin: 0 0 0 0; 
+}
+
+.index-user {
+  margin: 0 0 0 0; 
 }
 
 .root-back {

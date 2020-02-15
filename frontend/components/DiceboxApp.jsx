@@ -13,9 +13,6 @@ import VideoIndexContainer from "./video/video_index_container";
 
 const DiceboxApp = () => (
     <div>
-        {/* <header>
-            <WelcomeContainer/>
-        </header> */}
         <style>{'body { background-color: #3e3e3e;; }'}</style>
       
         <Switch>

@@ -43,7 +43,7 @@ const Welcome = ({currentUser, logout}) => {
 //             <Link to="/videos/1">Video Test</Link>
 //         </nav>
 //     }
-//     debugger
+//     
 
 //     logoutOption(){
 //         <hgroup>

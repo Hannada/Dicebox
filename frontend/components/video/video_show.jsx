@@ -68,8 +68,8 @@ class VideoShow extends React.Component {
                         <video className="main-vid" width="1000" height="550" controls autoPlay>
                             <source src={video.vidUrl} type="video/mp4"/>
                         </video>
-                        <div className="linebreak"></div>
                         <div className="vid-title"><img src={window.diceLoginUrl} width="20" height="20" />{video.title}</div>
+                        <div className="linebreak"></div>
                         <div> {video.user_name}</div>
                         <div className="vid-description">{video.description}</div>  
                     </div>

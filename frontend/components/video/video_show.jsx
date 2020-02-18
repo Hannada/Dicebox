@@ -47,12 +47,12 @@ class VideoShow extends React.Component {
             return null 
         }
 
-        // const videosRec = videos.map(video => {
+        // const videos = videos.map(vid => {
 
         //     return (
         //         <VideoIndexItem
-        //             key={video.id}
-        //             video={video}
+        //             key={vid.id}
+        //             video={vid}
         //         // user={video.user_id}
         //         />
         //     );

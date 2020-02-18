@@ -18,7 +18,6 @@ class VideoIndex extends React.Component {
                 <VideoIndexItem
                     key={video.id}
                     video={video}
-                    // user={video.user_id}
                     />
             );
         });

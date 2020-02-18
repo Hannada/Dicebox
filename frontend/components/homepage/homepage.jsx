@@ -9,6 +9,7 @@ import VideoIndexContainer from "../video/video_index_container";
 const Homepage = () => (
     <div className="absolute-home">
         <WelcomeContainer/>
+        {/* <div>Reccomended</div> */}
         <label className="dupe-vids"><VideoIndexContainer/></label>
         {/* <Link to="/videos/3"><img src={window.critUrl} /></Link> */}
       

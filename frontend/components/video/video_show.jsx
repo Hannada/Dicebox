@@ -24,14 +24,14 @@ class VideoShow extends React.Component {
         }
     }
 
-    handleChange(event) {
-        this.setState({ value: event.target.value });
-    }
-
-
-    // update(field) {
-    //     return e => this.setState({ [field]: e.target.value })
+    // handleChange(event) {
+    //     this.setState({ value: event.target.value });
     // }
+
+
+    update(field) {
+        return e => this.setState({ [field]: e.target.value })
+    }
 
 //     if(this.props.userID !== prevProps.userID) {
 //     this.fetchData(this.props.userID);

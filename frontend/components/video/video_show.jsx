@@ -72,6 +72,7 @@ class VideoShow extends React.Component {
                         <div className="linebreak"></div>
                         <div> {video.user_name}</div>
                         <div className="vid-description">{video.description}</div>  
+                        <div className="linebreak"></div>
                     </div>
 
                     <div className="sidebar-index">

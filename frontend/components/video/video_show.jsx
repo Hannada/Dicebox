@@ -10,9 +10,9 @@ import VideoRecs from "../video/video_recs";
 class VideoShow extends React.Component {
     constructor(props){
         super(props); 
-        // this.state  = {
-        //     currentVideo = this.props.video
-        // } 
+        this.state  = {
+            currentVideo: this.props.video  
+        } 
         // this.handleChange = this.handleChange.bind(this); // attempting handlechange 
         // this.updateCurrentVideo = this.updateCurrentVideo.bind(this); 
 
@@ -27,27 +27,30 @@ class VideoShow extends React.Component {
     componentDidUpdate(prevProps) {
         if (prevProps.match.params.videoId !== this.props.match.params.videoId){
             this.props.fetchVideo(this.props.match.params.videoId)
-                .then(this.renderCurrentVideo(this.props.video))
+                // .then(this.props.history.push(`/videos/${this.props.match.params.videoId}`))
         }
     }
 
     renderCurrentVideo(video){
         return(
-            <video className="main-vid" width="1000" height="550" controls autoPlay>
+            <video key={video.vidUrl} className="main-vid" width="1000" height="550" controls autoPlay>
                 <source src={video.vidUrl} type="video/mp4" />
             </video>
         )
     }
 
-    // updateCurrentVideo(e){
-    //     debugger
-    //     this.props.fetchVideo(e.id)
+    // updateCurrentVideo(currentVideo){
+    //     this.props.fetchVideo(currentVideo.id)
     //         .then(this.setState({value: e.target.value}))
     // }
 
     // handleChange(event) {
     //     this.setState({ value: event.target.value });
     // }
+
+    changeVid(event) {
+        this.setState({ video: event.target.video });
+    }
 
 
     update(field) {
@@ -80,7 +83,6 @@ class VideoShow extends React.Component {
                     <VideoRecs
                         key={vid.id}
                         video={vid}
-                        // onClick = {this.updateCurrentVideo()}
                     />
                 );
             }
@@ -106,6 +108,7 @@ class VideoShow extends React.Component {
                     <div className="sidebar-index">
                         <div className="upnext">Up next</div>
                         {/* <VideoIndexContainer/> */}
+                        {/* <div onClick={this.updateCurrentVideo(currentVideo)}>{videosRec}</div> */}
                         {videosRec}
                     </div>
                 </div>

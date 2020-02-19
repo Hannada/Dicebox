@@ -52,15 +52,15 @@ class VideoShow extends React.Component {
         // Having the same video on the page might be confusing it.
 
 
-        // const videos = this.props.videos.map(vid => {
+        const videosRec = this.props.videos.map(vid => {
 
-        //     return (
-        //         <VideoIndexItem
-        //             key={vid.id}
-        //             video={vid}
-        //         />
-        //     );
-        // });
+            return (
+                <VideoIndexItem
+                    key={vid.id}
+                    video={vid}
+                />
+            );
+        });
 
         // onChange={this.update()} Might be used to invoke?
         return(
@@ -80,7 +80,8 @@ class VideoShow extends React.Component {
 
                     <div className="sidebar-index">
                         <div className="upnext">Up next</div>
-                        <VideoIndexContainer/>
+                        {/* <VideoIndexContainer/> */}
+                        {videosRec}
                     </div>
                 </div>
             </div>

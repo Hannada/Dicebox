@@ -39,18 +39,13 @@ class VideoShow extends React.Component {
         )
     }
 
-    // updateCurrentVideo(currentVideo){
-    //     this.props.fetchVideo(currentVideo.id)
-    //         .then(this.setState({value: e.target.value}))
-    // }
+ 
 
     // handleChange(event) {
     //     this.setState({ value: event.target.value });
     // }
 
-    changeVid(event) {
-        this.setState({ video: event.target.video });
-    }
+
 
 
     update(field) {
@@ -94,9 +89,6 @@ class VideoShow extends React.Component {
                 <WelcomeContainer/>
                 <div className="show">
                     <div className="vid-info">
-                        {/* <video className="main-vid" width="1000" height="550" controls autoPlay>
-                            <source src={video.vidUrl} type="video/mp4"/>
-                        </video> */}
                         {this.renderCurrentVideo(video)}
                         <div className="vid-title"><img src={window.diceLoginUrl} width="20" height="20" />{video.title}</div>
                         <div className="linebreak"></div>

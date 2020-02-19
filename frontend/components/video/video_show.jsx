@@ -40,20 +40,24 @@ class VideoShow extends React.Component {
 // else{
 //     <Redirect to="/login" />
 // }
+    
 
     render(){
         const { video, videos } = this.props;
         if (!video) {
             return null 
         }
+        // debugger 
 
-        // const videos = videos.map(vid => {
+        // Having the same video on the page might be confusing it.
+
+
+        // const videos = this.props.videos.map(vid => {
 
         //     return (
         //         <VideoIndexItem
         //             key={vid.id}
         //             video={vid}
-        //         // user={video.user_id}
         //         />
         //     );
         // });

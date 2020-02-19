@@ -8,6 +8,7 @@ import { fetchVideo, fetchVideos, receiveCurrentVideo } from "../../actions/vide
 const msp = (state, ownProps) => {
     return({
         video: state.entities.videos[ownProps.match.params.videoId],
+        videos: Object.keys(state.entities.videos).map(id => state.entities.videos[id])
         // user: state.entities.users[video.user_id]
     })
 }

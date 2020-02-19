@@ -11,7 +11,6 @@ const Homepage = () => (
         <WelcomeContainer/>
         {/* <div>Reccomended</div> */}
         <label className="dupe-vids"><VideoIndexContainer/></label>
-        {/* <Link to="/videos/3"><img src={window.critUrl} /></Link> */}
       
     </div>
 )

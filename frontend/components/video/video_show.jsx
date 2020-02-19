@@ -59,7 +59,7 @@ class VideoShow extends React.Component {
         // });
 
         // onChange={this.update()} Might be used to invoke?
-
+        debugger
         return(
             <div className="video-show-main">
                 <WelcomeContainer/>

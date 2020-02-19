@@ -47,7 +47,6 @@ class VideoShow extends React.Component {
         if (!video) {
             return null 
         }
-        // debugger 
 
         // Having the same video on the page might be confusing it.
 

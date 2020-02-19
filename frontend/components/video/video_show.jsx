@@ -4,12 +4,18 @@ import Welcome  from "../welcome/welcome"
 import WelcomeContainer from "../welcome/welcome_container"
 import VideoIndexContainer from "../video/video_index_container";
 import VideoIndexItem from "../video/video_index_items";
+import VideoRecs from "../video/video_recs";
 
 
 class VideoShow extends React.Component {
     constructor(props){
-        super(props);  
+        super(props); 
+        // this.state  = {
+        //     currentVideo = this.props.video
+        // } 
         // this.handleChange = this.handleChange.bind(this); // attempting handlechange 
+        // this.updateCurrentVideo = this.updateCurrentVideo.bind(this); 
+
     }
 
     componentDidMount(){
@@ -20,9 +26,24 @@ class VideoShow extends React.Component {
 
     componentDidUpdate(prevProps) {
         if (prevProps.match.params.videoId !== this.props.match.params.videoId){
-            this.props.fetchVideo(this.props.match.params.videoId);
+            this.props.fetchVideo(this.props.match.params.videoId)
+                .then(this.renderCurrentVideo(this.props.video))
         }
     }
+
+    renderCurrentVideo(video){
+        return(
+            <video className="main-vid" width="1000" height="550" controls autoPlay>
+                <source src={video.vidUrl} type="video/mp4" />
+            </video>
+        )
+    }
+
+    // updateCurrentVideo(e){
+    //     debugger
+    //     this.props.fetchVideo(e.id)
+    //         .then(this.setState({value: e.target.value}))
+    // }
 
     // handleChange(event) {
     //     this.setState({ value: event.target.value });
@@ -56,9 +77,10 @@ class VideoShow extends React.Component {
 
 
                 return (
-                    <VideoIndexItem
+                    <VideoRecs
                         key={vid.id}
                         video={vid}
+                        // onClick = {this.updateCurrentVideo()}
                     />
                 );
             }
@@ -70,9 +92,10 @@ class VideoShow extends React.Component {
                 <WelcomeContainer/>
                 <div className="show">
                     <div className="vid-info">
-                        <video className="main-vid" width="1000" height="550" controls autoPlay>
+                        {/* <video className="main-vid" width="1000" height="550" controls autoPlay>
                             <source src={video.vidUrl} type="video/mp4"/>
-                        </video>
+                        </video> */}
+                        {this.renderCurrentVideo(video)}
                         <div className="vid-title"><img src={window.diceLoginUrl} width="20" height="20" />{video.title}</div>
                         <div className="linebreak"></div>
                         <div> {video.user_name}</div>

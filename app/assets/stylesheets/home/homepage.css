@@ -42,12 +42,25 @@
   color: #a3a3a3
 }
 
+
+
+
+
+
+
 .rec-items {
-    display: flex;  
+  display: flex;  
   flex-direction: row;
   border-bottom: 7px;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
   align-content: flex-start;
+  /* text-decoration: none; */
+}
+
+.rec-item {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
 }
 
 .rec-vid-text {

@@ -6,7 +6,7 @@
 .sidebar-index{
   display: flex;  
   flex-direction: column;
-  /* justify-content: flex-end; */ 
+  /* justify-content: space-between; */
   /* commenting this out fixed the issue somehow? */
 }
 

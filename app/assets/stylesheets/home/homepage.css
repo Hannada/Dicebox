@@ -10,7 +10,7 @@
   display: flex;  
   flex-direction: row;
   border-bottom: 7px;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
   align-content: flex-start;
 }
 
@@ -38,6 +38,30 @@
 }
 
 .index-user {
+  margin: 0 0 0 0; 
+  color: #a3a3a3
+}
+
+.rec-items {
+    display: flex;  
+  flex-direction: row;
+  border-bottom: 7px;
+    flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.rec-vid-text {
+  display: flex;  
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.rec-title {
+  margin: 0 0 0 0; 
+  color: white;
+}
+
+.rec-user {
   margin: 0 0 0 0; 
   color: #a3a3a3
 }

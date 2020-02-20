@@ -99,8 +99,6 @@ class VideoShow extends React.Component {
 
                     <div className="sidebar-index">
                         <div className="upnext">Up next</div>
-                        {/* <VideoIndexContainer/> */}
-                        {/* <div onClick={this.updateCurrentVideo(currentVideo)}>{videosRec}</div> */}
                         {videosRec}
                     </div>
                 </div>

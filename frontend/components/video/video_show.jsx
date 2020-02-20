@@ -98,7 +98,7 @@ class VideoShow extends React.Component {
                     </div>
 
                     <div className="sidebar-index">
-                        <div className="upnext">Up next</div>
+                        <div className="up-next">Up next</div>
                         {videosRec}
                     </div>
                 </div>

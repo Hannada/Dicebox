@@ -6,7 +6,8 @@ class LoginForm extends React.Component {
         super(props);
         this.state = {
             password: "",
-            hidden: true
+            hidden: true,
+            verfied: false //Trying to add verfied to the state
         };
         this.handleSubmit = this.handleSubmit.bind(this);
         this.toggleShow = this.toggleShow.bind(this);

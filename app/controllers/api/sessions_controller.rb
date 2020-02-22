@@ -19,6 +19,8 @@ class Api::SessionsController < ApplicationController
         else
             render json: {verified: false}
         end
+
+        # Might need to refactor the check to make up for props push
     end
 
     def destroy 

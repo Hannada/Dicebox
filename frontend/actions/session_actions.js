@@ -50,13 +50,19 @@ export const logout = () => dispatch => (
     SessionAPIUtil.logout().then(user => dispatch(logoutCurrentUser()))
 );
 
+// export const checkEmail = email => dispatch => (
+//     SessionAPIUtil.email_check(email).then(email => dispatch(checkUserEmail(email))),
+//     errors => (
+//         dispatch(receiveSessionErrors(errors.responseJSON))
+//     )
+// );
+
+//Currently Errors is causing verify form to explode
+
 export const checkEmail = email => dispatch => (
-    SessionAPIUtil.email_check(email).then(email => dispatch(checkUserEmail(email))),
-    errors => (
-        dispatch(receiveSessionErrors(errors.responseJSON))
-    )
-)
+    SessionAPIUtil.email_check(email).then(email => dispatch(checkUserEmail(email)))
+);
 
 export const fetchUser = id => dispatch => (
     SessionAPIUtil.fetchUser(id).then(user => dispatch(receiveCurrentUser(user)))
-)
+);

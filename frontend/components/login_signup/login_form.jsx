@@ -24,7 +24,6 @@ class LoginForm extends React.Component {
     }
 
     handleSubmit(e) {
-        debugger 
         e.preventDefault();
         const user = Object.assign({}, this.state, this.props.location.state)
         this.props.regForm(user).then(this.props.history.push("/"))

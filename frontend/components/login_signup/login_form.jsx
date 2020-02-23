@@ -23,10 +23,15 @@ class LoginForm extends React.Component {
         this.setState({ hidden: !this.state.hidden })
     }
 
+    // handleSubmit(e) {
+    //     e.preventDefault();
+    //     const user = Object.assign({}, this.state, this.props.location.state)
+    //     this.props.regForm(user).then(this.props.history.push("/"))
+    // }
+
     handleSubmit(e) {
-        e.preventDefault();
-        const user = Object.assign({}, this.state, this.props.location.state)
-        this.props.regForm(user).then(this.props.history.push("/"))
+        e.preventDefault(); 
+        
     }
 
     renderErrors() { //Might need some work

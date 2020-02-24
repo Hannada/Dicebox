@@ -7,7 +7,8 @@ import LoginForm from "./login_form";
 
 const msp = ({errors}) => {
     return ({
-        errors: errors.session,
+        session_errors: errors.session,
+        user_errors: errors.user, //trying to split up the errors
         formType: "login",
         navLink: <Link to="/signup">Create Account</Link>
     })

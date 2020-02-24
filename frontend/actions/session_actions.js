@@ -57,7 +57,7 @@ export const logout = () => dispatch => (
 //     )
 // );
 
-//Currently Errors is causing verify form to explode
+//Currently Errors is causing verify form to explode. Looking into methods of testing.
 
 export const checkEmail = email => dispatch => (
     SessionAPIUtil.email_check(email).then(email => dispatch(checkUserEmail(email)))

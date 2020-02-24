@@ -17,10 +17,10 @@ class Api::SessionsController < ApplicationController
         if @user 
             render json: {verified: true}
         else
-            render json: {verified: false}
+            render json: {verified: false}, status: 401 
         end
 
-        # Might need to refactor the check to make up for props push
+        # Might need to refactor the check to make up for props push, added error status
     end
 
     def destroy 

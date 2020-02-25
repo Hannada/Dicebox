@@ -34,8 +34,17 @@ class IdentifierForm extends React.Component {
 
     // handleSubmit(e) {
     //     e.preventDefault();
-    //     this.verifyForm(this.state)
+    //     const user = Object.assign({}, this.state);
+
+    //     if (this.verifyForm(this.state)) {
+    //         this.props.history.push({
+    //             pathname:"/password",
+    //             state: this.state
+    //         })
+    //     }
     // }
+
+    //Above version thinks verify form isnt a function?
 
     render() {
         return (

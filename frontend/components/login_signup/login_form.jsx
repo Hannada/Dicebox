@@ -60,9 +60,9 @@ class LoginForm extends React.Component {
         return (
             <div className="login-parent">
                 <form onSubmit={this.handleSubmit} className="login-form">
-                    <br />
+                    {/* <br />
                     {this.renderErrors()}
-                    <br />
+                    <br /> */}
                     <label>Password:
                         <input type={this.state.hidden ? "password" : "text"}
                             // type="text"
@@ -71,6 +71,7 @@ class LoginForm extends React.Component {
                             className="login-input"
                         />
                     </label>
+                    <h2>{this.renderErrors()}</h2>
                     <br />
                     {/* <label className="signup-return">{this.props.navLink}</label> */}
                     <input className="login-submit" onClick={this.toggleShow} type="submit" value={this.props.formType} />

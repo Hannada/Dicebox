@@ -37,7 +37,7 @@ class LoginForm extends React.Component {
     renderErrors() { //Might need some work
         return (
             <ul>
-                {this.props.errors.map(error => {
+                {this.props.session_errors.map(error => {
                     return <li>
                         {error}
                     </li>

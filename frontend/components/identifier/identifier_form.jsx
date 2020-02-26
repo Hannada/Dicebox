@@ -74,6 +74,8 @@ class IdentifierForm extends React.Component {
     }
 
     render() {
+        const errorPrint = this.renderErrors();
+
         return (
             <div className="email-main">
                 {/* <div className="login-logo"></div> */}
@@ -85,7 +87,7 @@ class IdentifierForm extends React.Component {
                             value={this.state.email}
                             onChange={this.update("email")}
                             className="email-input"
-                            // errorLoad=
+                            errorload={errorPrint} // loading it in the type hasnt affect much
                         />
                     </label>
                     <br />

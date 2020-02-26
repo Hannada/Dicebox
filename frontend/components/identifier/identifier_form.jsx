@@ -71,7 +71,7 @@ class IdentifierForm extends React.Component {
                             value={this.state.email}
                             onChange={this.update("email")}
                             className="email-input"
-                            errorLoad={}
+                            // errorLoad=
                         />
                     </label>
                     <br />

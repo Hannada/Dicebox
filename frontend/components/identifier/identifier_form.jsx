@@ -59,6 +59,20 @@ class IdentifierForm extends React.Component {
 
     //Above version thinks verify form isnt a function?
 
+
+
+    renderErrors() { //Might need some work
+        return (
+            <ul>
+                {this.props.errors.map(error => {
+                    return <li>
+                        {error}
+                    </li>
+                })}
+            </ul>
+        )
+    }
+
     render() {
         return (
             <div className="email-main">

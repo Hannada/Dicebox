@@ -10,7 +10,7 @@ class IdentifierForm extends React.Component {
         };
         // this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.verifyEmail = this.verifyEmail.bind(this); //trying to bind the check?
+        // this.verifyEmail = this.verifyEmail.bind(this); //trying to bind the check?
     }
 
     update(field) {
@@ -39,7 +39,7 @@ class IdentifierForm extends React.Component {
     }
 
     // handleSubmit(e) {
-    //     this.verifyEmail().then(this.props.history.push({
+    //     this.verifyEmail(e).then(this.props.history.push({
     //         pathname: "/password",
     //         state: this.state
     //     }))
@@ -71,6 +71,7 @@ class IdentifierForm extends React.Component {
                             value={this.state.email}
                             onChange={this.update("email")}
                             className="email-input"
+                            errorLoad={}
                         />
                     </label>
                     <br />

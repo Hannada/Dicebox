@@ -10,6 +10,7 @@ class IdentifierForm extends React.Component {
         };
         // this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.verifyEmail = this.verifyEmail.bind(this); //trying to bind the check?
     }
 
     update(field) {
@@ -23,6 +24,11 @@ class IdentifierForm extends React.Component {
 
     // }
 
+    verifyEmail(e) {
+        e.preventDefault(); 
+        this.props.verifyForm(this.state.email);
+    }
+
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
@@ -31,6 +37,13 @@ class IdentifierForm extends React.Component {
             state: this.state
         }))
     }
+
+    // handleSubmit(e) {
+    //     this.verifyEmail().then(this.props.history.push({
+    //         pathname: "/password",
+    //         state: this.state
+    //     }))
+    // }
 
     // handleSubmit(e) {
     //     e.preventDefault();

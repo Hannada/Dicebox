@@ -8,7 +8,8 @@ class IdentifierForm extends React.Component {
 
         // Going to try altering the accepted state?
         this.state = {
-            email: ""
+            email: "", 
+            verified: false,  
         };
         // this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -31,33 +32,34 @@ class IdentifierForm extends React.Component {
         this.props.verifyForm(this.state.email);
     }
 
-    handleSubmit(e) {
-        e.preventDefault();
-        const user = Object.assign({}, this.state);
-        this.props.verifyForm(this.state).then(this.props.history.push({
-            pathname: "/password",
-            state: this.state
-        }))
-    }
-
     // handleSubmit(e) {
-    //     this.verifyEmail(e).then(this.props.history.push({
+    //     e.preventDefault();
+    //     const user = Object.assign({}, this.state);
+    //     this.props.verifyForm(this.state).then(this.props.history.push({
     //         pathname: "/password",
     //         state: this.state
     //     }))
     // }
 
-    // handleSubmit(e) {
-    //     e.preventDefault();
-    //     const user = Object.assign({}, this.state);
 
-    //     if (this.verifyForm(this.state)) {
-    //         this.props.history.push({
-    //             pathname:"/password",
-    //             state: this.state
-    //         })
-    //     }
-    // }
+
+    handleSubmit(e) {
+        e.preventDefault();
+        const user = Object.assign({}, this.state);
+        // debugger 
+        this.props.verifyForm(this.state)
+            .then( (res) => {
+                if (res.type === "RECEIEVE_SESSION_ERRORS"){
+                    this.props.history.push({
+                        pathname:"/password",
+                        state: this.state
+                    })
+                }else {
+                    this.renderErrors();
+                }
+            }
+        )
+    }
 
     //Above version thinks verify form isnt a function?
 

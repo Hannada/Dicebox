@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 class IdentifierForm extends React.Component {
     constructor(props) {
         super(props);
+
+        // Going to try altering the accepted state?
         this.state = {
             email: ""
         };

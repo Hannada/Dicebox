@@ -32,6 +32,7 @@ class IdentifierForm extends React.Component {
         this.props.verifyForm(this.state.email);
     }
 
+    // user works instead of state
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);

@@ -50,18 +50,20 @@ export const logout = () => dispatch => (
     SessionAPIUtil.logout().then(user => dispatch(logoutCurrentUser()))
 );
 
-export const checkEmail = email => dispatch => (
-    SessionAPIUtil.email_check(email).then(email => dispatch(checkUserEmail(email))),
-    errors => (
-        dispatch(receiveSessionErrors(errors.responseJSON))
-    )
-);
+// export const checkEmail = email => dispatch => {
+//     return (
+//         SessionAPIUtil.email_check(email).then(email => dispatch(checkUserEmail(email))),
+//         errors => (
+//             dispatch(receiveSessionErrors(errors.responseJSON))
+//         )
+//     )
+// };
 
 //Currently Errors is causing verify form to explode. Looking into methods of testing.
 
-// export const checkEmail = email => dispatch => (
-//     SessionAPIUtil.email_check(email).then(email => dispatch(checkUserEmail(email)))
-// );
+export const checkEmail = email => dispatch => (
+    SessionAPIUtil.email_check(email).then(email => dispatch(checkUserEmail(email)))
+);
 
 export const fetchUser = id => dispatch => (
     SessionAPIUtil.fetchUser(id).then(user => dispatch(receiveCurrentUser(user)))

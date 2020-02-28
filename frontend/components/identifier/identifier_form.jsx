@@ -32,35 +32,34 @@ class IdentifierForm extends React.Component {
         this.props.verifyForm(this.state.email);
     }
 
-    // handleSubmit(e) {
-    //     e.preventDefault();
-    //     const user = Object.assign({}, this.state);
-    //     this.props.verifyForm(this.state).then(this.props.history.push({
-    //         pathname: "/password",
-    //         state: this.state
-    //     }))
-    // }
-
-
-
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
-        // debugger 
-        this.props.verifyForm(this.state)
-            .then( (res) => {
-                if (res.type === "RECEIEVE_SESSION_ERRORS"){
-                    this.renderErrors();
-
-                }else {
-                    this.props.history.push({
-                        pathname: "/password",
-                        state: this.state
-                    })
-                }
-            }
-        )
+        this.props.verifyForm(this.state).then(this.props.history.push({
+            pathname: "/password",
+            state: this.state
+        }))
     }
+
+
+
+    // handleSubmit(e) {
+    //     e.preventDefault();
+    //     const user = Object.assign({}, this.state);
+    //     this.props.verifyForm(this.state)
+    //         .then( (res) => {
+    //             if (res.type === "RECEIEVE_SESSION_ERRORS"){
+    //                 this.renderErrors();
+
+    //             }else {
+    //                 this.props.history.push({
+    //                     pathname: "/password",
+    //                     state: this.state
+    //                 })
+    //             }
+    //         }
+    //     )
+    // }
 
     //Above version thinks verify form isnt a function?
 

@@ -47,15 +47,16 @@ class IdentifierForm extends React.Component {
         e.preventDefault();
         const user = Object.assign({}, this.state);
         // debugger 
-        this.props.verifyForm(this.state.email)
+        this.props.verifyForm(this.state)
             .then( (res) => {
                 if (res.type === "RECEIEVE_SESSION_ERRORS"){
+                    this.renderErrors();
+
+                }else {
                     this.props.history.push({
-                        pathname:"/password",
+                        pathname: "/password",
                         state: this.state
                     })
-                }else {
-                    this.renderErrors();
                 }
             }
         )

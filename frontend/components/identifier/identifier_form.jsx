@@ -23,9 +23,7 @@ class IdentifierForm extends React.Component {
         // Likely refactoring this to send the user to the password entry form
     }
 
-    // handleChange(e) {
-
-    // }
+ 
 
     verifyEmail(e) {
         e.preventDefault(); 

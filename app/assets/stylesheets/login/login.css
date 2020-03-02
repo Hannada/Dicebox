@@ -1,4 +1,4 @@
-.login-parent {
+/* .login-parent {
    display: flex;  
   flex-direction: row;
   align-content: center; 
@@ -6,15 +6,13 @@
   width: 450px;
   height: 500px;
   box-sizing: border-box;
-  /* border: 1px solid grey; */
   border-radius: 5px;  
   padding: 10px;
   text-align: center;
   margin: 0 auto;
     position: relative;
-  /* bottom: -100px; */
   
-}
+} */
 
 .login-form {
   display: flex;  

@@ -12,7 +12,7 @@ class IdentifierForm extends React.Component {
             verified: false,  
         };
         // this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+        // this.handleSubmit = this.handleSubmit.bind(this);
         // this.verifyEmail = this.verifyEmail.bind(this); //trying to bind the check?
     }
 
@@ -31,13 +31,24 @@ class IdentifierForm extends React.Component {
     }
 
     // user works instead of state
+    // handleSubmit(e) {
+    //     e.preventDefault();
+    //     const user = Object.assign({}, this.state);
+    //     this.props.verifyForm(this.state).then(this.props.history.push({
+    //         pathname: "/password",
+    //         state: this.state
+    //     }))
+    // }
+
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
+        debugger 
         this.props.verifyForm(this.state).then(this.props.history.push({
             pathname: "/password",
             state: this.state
         }))
+        debugger 
     }
 
 

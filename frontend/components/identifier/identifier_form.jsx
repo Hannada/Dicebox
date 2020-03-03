@@ -43,12 +43,12 @@ class IdentifierForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
-        // debugger 
+        debugger 
         this.props.verifyForm(this.state).then(this.props.history.push({
             pathname: "/password",
             state: this.state
         }))
-        // debugger 
+        debugger 
     }
 
 

@@ -16,7 +16,9 @@ const msp = ({ errors }) => {
 const mdp = dispatch => {
     return ({
         verifyForm: email => dispatch(checkEmail(email)),
-        renderErrors: errors => dispatch(receiveSessionErrors(errors.responseJSON))
+        // renderErrors: errors => dispatch(receiveSessionErrors(errors.responseJSON))
+        renderErrors: errors => dispatch(receiveSessionErrors(errors))
+
 
     })
 }

@@ -40,15 +40,30 @@ class IdentifierForm extends React.Component {
     //     }))
     // }
 
+    // handleSubmit(e) {
+    //     e.preventDefault();
+    //     const user = Object.assign({}, this.state);
+    //     debugger 
+    //     this.props.verifyForm(this.state).then(this.props.history.push({
+    //         pathname: "/password",
+    //         state: this.state
+    //     }))
+    // }
+
+
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
-        debugger 
-        this.props.verifyForm(this.state).then(this.props.history.push({
+        this.props.verifyForm(this.state).then( ({test}) => {
+           if(test) { 
+            this.props.history.push({
             pathname: "/password",
             state: this.state
-        }))
-        debugger 
+            })
+          }else {
+            this.props.renderErrors(); 
+            }
+        })
     }
 
 

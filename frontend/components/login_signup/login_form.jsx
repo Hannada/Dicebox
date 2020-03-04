@@ -7,7 +7,7 @@ class LoginForm extends React.Component {
         this.state = {
             password: "",
             hidden: true,
-            verfied: false //Trying to add verfied to the state
+            // verfied: false //Trying to add verfied to the state
         };
         this.handleSubmit = this.handleSubmit.bind(this);
         this.toggleShow = this.toggleShow.bind(this);
@@ -32,6 +32,7 @@ class LoginForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state, this.props.location.state)
+        debugger 
         if (this.props.regForm(user)){
             (this.props.history.push("/"))
         } else {
@@ -45,7 +46,8 @@ class LoginForm extends React.Component {
 
     //     this.props.regForm(user).then(({ password }) => {
     //         if (password) {
-    //             this.props.history.push("/")
+    //             this.props.history.push({
+        //              pathname: "/"})
     //         } else {
     //             this.props.renderErrors();
     //         }

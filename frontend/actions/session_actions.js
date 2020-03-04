@@ -16,9 +16,9 @@ export const logoutCurrentUser = () => ({
     type: LOGOUT_CURRENT_USER
 })
 
-export const receiveSessionErrors = error => ({
+export const receiveSessionErrors = errors => ({
     type: RECEIVE_SESSION_ERRORS,
-    error
+    errors
 })
 
 export const checkUserEmail = email => ({
@@ -45,6 +45,10 @@ export const login = (user) => dispatch => (
         dispatch(receiveSessionErrors(errors.responseJSON))
     )
 );
+
+// export const login = (user) => dispatch => (
+//     SessionAPIUtil.login(user).then(user => dispatch(receiveCurrentUser(user)))
+// );
 
 export const logout = () => dispatch => (
     SessionAPIUtil.logout().then(user => dispatch(logoutCurrentUser()))

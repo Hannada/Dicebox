@@ -39,6 +39,20 @@ class LoginForm extends React.Component {
         }
     }
 
+    // handleSubmit(e) {
+    //     e.preventDefault();
+    //     const user = Object.assign({}, this.state, this.props.location.state)
+
+    //     this.props.regForm(user).then(({ password }) => {
+    //         if (password) {
+    //             this.props.history.push("/")
+    //         } else {
+    //             this.props.renderErrors();
+    //         }
+    //     })
+    // }
+
+
     // Above version still logs in the user, fulfilling the same use as  the promise but doesnt stop push
 
 
@@ -46,7 +60,7 @@ class LoginForm extends React.Component {
     renderErrors() { //Might need some work
         return (
             <ul>
-                {this.props.session_errors.map(error => {
+                {this.props.errors.map(error => {
                     return <li>
                         {error}
                     </li>

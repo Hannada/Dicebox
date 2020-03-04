@@ -7,8 +7,7 @@ import LoginForm from "./login_form";
 
 const msp = ({errors}) => {
     return ({
-        session_errors: errors.session,
-        user_errors: errors.user, //trying to split up the errors
+        errors: errors.session, 
         formType: "login",
         navLink: <Link to="/signup">Create Account</Link>
     })
@@ -18,7 +17,7 @@ const mdp = dispatch => {
     return ({
         regForm: user => dispatch(login(user)),
         verifyForm: email => dispatch(checkEmail(email)),
-        renderErrors: errors => dispatch(receiveSessionErrors(errors.responseJSON))
+        renderErrors: errors => dispatch(receiveSessionErrors(errors))
 
     })
 }

@@ -36,6 +36,7 @@
   /* width: 100px;
   height: 50px; */
   
+  display: flex;
   text-decoration: none;
   background-color: black; 
   color: white;

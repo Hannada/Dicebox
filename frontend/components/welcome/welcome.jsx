@@ -7,7 +7,7 @@ const Welcome = ({currentUser, logout}) => {
     const sessionLinks = () => (
         <nav className="login-signup">
             <div>
-                <button>Test Drop</button>
+                <p><img src={window.barsLogoUrl} width="20" height="20"/></p>
                 <Link to="/" className="home"><img src={window.d20Url} width="40" height="30"/></Link>
             </div>
             <p className="title"><img src={window.d20Url} width="30" height="30" />Dicebox</p>

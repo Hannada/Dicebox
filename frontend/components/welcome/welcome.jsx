@@ -1,5 +1,6 @@
 import React from "react"; 
 import { Link } from "react-router-dom";
+import SidebarContainer from "../sidebar/sidebar_container"
 
 const Welcome = ({currentUser, logout}) => {
 
@@ -7,7 +8,10 @@ const Welcome = ({currentUser, logout}) => {
     const sessionLinks = () => (
         <nav className="login-signup">
             <div>
-                <p><img src={window.barsLogoUrl} width="20" height="20"/></p>
+                <div>
+                    <p><img src={window.barsLogoUrl} width="20" height="20"/></p>
+                    {/* <SidebarContainer/> */}
+                </div>
                 <Link to="/" className="home"><img src={window.d20Url} width="40" height="30"/></Link>
             </div>
             <p className="title"><img src={window.d20Url} width="30" height="30" />Dicebox</p>

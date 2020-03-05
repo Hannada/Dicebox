@@ -1,5 +1,4 @@
 import React from "react";
-import SidebarItem from "./video_index_items"
 
 class Sidebar extends React.Component {
     // constructor(props){
@@ -14,7 +13,8 @@ class Sidebar extends React.Component {
 
         return (
             <div className="sidbar">
-                
+                <div>Git</div>
+                <div>Angelist</div>
             </div>
         );
     }

@@ -10,7 +10,7 @@ import SidebarContainer from "../sidebar/sidebar_container";
 const Homepage = () => (
     <div className="absolute-home">
         <WelcomeContainer/>
-        {/* <SidebarContainer/> */}
+        <SidebarContainer/>
         {/* <div>Reccomended</div> */}
         <label className="dupe-vids"><VideoIndexContainer/></label>
       

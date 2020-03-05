@@ -80,4 +80,5 @@
 
 .home-sidebar-logo {
   display: flex;
+  flex-direction: row;
 }

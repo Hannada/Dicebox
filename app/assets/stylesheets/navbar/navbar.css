@@ -77,3 +77,7 @@
   justify-content: space-between;
   padding: 10px;
 }
+
+.home-sidebar-logo {
+  display: flex;
+}

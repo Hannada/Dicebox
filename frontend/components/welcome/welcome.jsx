@@ -8,7 +8,7 @@ const Welcome = ({currentUser, logout}) => {
     const sessionLinks = () => (
         <nav className="login-signup">
             <div>
-                <div>
+                <div className="home-sidebar-logos">
                     <p><img src={window.barsLogoUrl} width="20" height="20"/></p>
                     {/* <SidebarContainer/> */}
                 </div>

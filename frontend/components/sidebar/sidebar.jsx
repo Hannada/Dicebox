@@ -18,8 +18,8 @@ class Sidebar extends React.Component {
                 <div>Angelist</div>
 
                 <div>
-                    <img src={window.personalLogoUrl} width="40" height="30"></img>
-                    <p href="https://hannada.github.io/">test</p>
+                   
+                    <a href="https://hannada.github.io/"> <img src={window.personalLogoUrl} width="40" height="30"></img></a>
                 </div>
 
             </div>

@@ -9,7 +9,7 @@ class IdentifierForm extends React.Component {
         // Going to try altering the accepted state?
         this.state = {
             email: "", 
-            verified: false,  
+            // verified: false,  
         };
         // this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);

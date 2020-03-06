@@ -39,16 +39,16 @@ export const signup = user => dispatch => (
     )  //add error option 
 );
 
-export const login = (user) => dispatch => (
-    SessionAPIUtil.login(user).then(user => dispatch(receiveCurrentUser(user))),
-    errors => (
-        dispatch(receiveSessionErrors(errors.responseJSON))
-    )
-);
-
 // export const login = (user) => dispatch => (
-//     SessionAPIUtil.login(user).then(user => dispatch(receiveCurrentUser(user)))
+//     SessionAPIUtil.login(user).then(user => dispatch(receiveCurrentUser(user))),
+//     errors => (
+//         dispatch(receiveSessionErrors(errors.responseJSON))
+//     )
 // );
+
+export const login = (user) => dispatch => (
+    SessionAPIUtil.login(user).then(user => dispatch(receiveCurrentUser(user)))
+);
 
 export const logout = () => dispatch => (
     SessionAPIUtil.logout().then(user => dispatch(logoutCurrentUser()))

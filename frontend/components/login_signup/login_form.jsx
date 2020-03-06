@@ -32,7 +32,6 @@ class LoginForm extends React.Component {
     // handleSubmit(e) {
     //     e.preventDefault();
     //     const user = Object.assign({}, this.state, this.props.location.state)
-    //     debugger 
     //     if (this.props.regForm(user)){
     //         (this.props.history.push("/"))
     //     } else {
@@ -50,7 +49,7 @@ class LoginForm extends React.Component {
                 this.props.history.push({
                      pathname: "/"})
             } else {
-                this.props.renderErrors();
+                this.renderErrors();
             }
         })
     }
@@ -60,7 +59,7 @@ class LoginForm extends React.Component {
 
 
 
-    renderErrors() { //Might need some work
+    renderErrors() { //Might need some work, has the same name as the dispatched action right now
         return (
             <ul>
                 {this.props.errors.map(error => {

@@ -1,0 +1,26 @@
+.absolute-home {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-index-cluster {
+    display: flex;
+
+}
+
+.sidebar-home {
+    display: flex;
+    align-content: flex-start;
+}
+
+.index-home {
+    /* display: flex;
+    flex-direction: row;
+    align-content: flex-end; */
+}
+
+.dupe-vids {
+  display: flex;  
+  flex-direction: row;
+  justify-content: space-around;
+}

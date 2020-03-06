@@ -22,7 +22,7 @@ const DiceboxApp = () => (
              <Route path="/videos/:videoId" component={VideoShowContainer} />
              <Route path="/" component={Homepage}/>
         </Switch>
-        <Route exact path="/" component={VideoIndexContainer} />
+        {/* <Route exact path="/" component={VideoIndexContainer} /> */}
     </div>
 )
 

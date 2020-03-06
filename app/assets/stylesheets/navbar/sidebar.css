@@ -1,0 +1,12 @@
+.sidebar {
+    display: flex;
+      flex-direction: column; 
+  background-color: rgba(28, 28, 28, 0.8);  
+  width: 56px;
+  height: auto;
+  box-sizing: border-box;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  padding: 0 16px;
+  z-index: 0;
+}

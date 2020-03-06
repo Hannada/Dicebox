@@ -12,7 +12,7 @@ class Sidebar extends React.Component {
    
 
         return (
-            <div className="sidbar">
+            <div className="sidebar">
                 <div>
                     <a href="https://github.com/Hannada"> <img src={window.gitLogoUrl} width="40" height="30"></img></a>
                 </div>

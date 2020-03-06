@@ -9,6 +9,7 @@ class Api::SessionsController < ApplicationController
             render "show"
         else 
             render json: ["Invalid email/password combination"], status: 401
+            # email check currently working as intedned but not pusing after login.
         end 
     end
 

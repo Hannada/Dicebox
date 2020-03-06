@@ -44,6 +44,7 @@ class LoginForm extends React.Component {
         e.preventDefault();
         const user = Object.assign({}, this.state, this.props.location.state)
 
+        debugger 
         this.props.regForm(user).then(({ password }) => {
             if (password) {
                 this.props.history.push({

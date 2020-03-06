@@ -29,30 +29,30 @@ class LoginForm extends React.Component {
     //     this.props.regForm(user).then(this.props.history.push("/"))
     // }
 
-    handleSubmit(e) {
-        e.preventDefault();
-        const user = Object.assign({}, this.state, this.props.location.state)
-        debugger 
-        if (this.props.regForm(user)){
-            (this.props.history.push("/"))
-        } else {
-            this.renderErrors(); 
-        }
-    }
-
     // handleSubmit(e) {
     //     e.preventDefault();
     //     const user = Object.assign({}, this.state, this.props.location.state)
-
-    //     this.props.regForm(user).then(({ password }) => {
-    //         if (password) {
-    //             this.props.history.push({
-        //              pathname: "/"})
-    //         } else {
-    //             this.props.renderErrors();
-    //         }
-    //     })
+    //     debugger 
+    //     if (this.props.regForm(user)){
+    //         (this.props.history.push("/"))
+    //     } else {
+    //         this.renderErrors(); 
+    //     }
     // }
+
+    handleSubmit(e) {
+        e.preventDefault();
+        const user = Object.assign({}, this.state, this.props.location.state)
+
+        this.props.regForm(user).then(({ password }) => {
+            if (password) {
+                this.props.history.push({
+                     pathname: "/"})
+            } else {
+                this.props.renderErrors();
+            }
+        })
+    }
 
 
     // Above version still logs in the user, fulfilling the same use as  the promise but doesnt stop push

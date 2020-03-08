@@ -73,6 +73,9 @@ class LoginForm extends React.Component {
     }
 
     //Removing the if conidtional lets erorrs run properly but not sure how the render is affected. must explore. 
+
+    // If statement not required becausde reg form is already checking the login credentials in the back end, unlike the email segment
+    // which was only checking for email. 
     
 
 

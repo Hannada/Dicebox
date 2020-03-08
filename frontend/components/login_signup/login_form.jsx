@@ -47,17 +47,28 @@ class LoginForm extends React.Component {
     // }
 
 
+    // handleSubmit(e) {
+    //     e.preventDefault();
+    //     const user = Object.assign({}, this.state, this.props.location.state)
+
+    //     this.props.regForm(user).then(({ password }) => {
+    //         if (password === user.password) {
+    //             debugger
+    //             this.props.history.push({
+    //                 pathname: "/"
+    //             })
+    //         }
+    //     })
+    // }
+
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state, this.props.location.state)
 
         this.props.regForm(user).then(({ password }) => {
-            if (password === user.password) {
-                debugger
                 this.props.history.push({
                     pathname: "/"
                 })
-            }
         })
     }
     

@@ -71,6 +71,8 @@ class LoginForm extends React.Component {
                 })
         })
     }
+
+    //Removing the if conidtional lets erorrs run properly but not sure how the render is affected. must explore. 
     
 
 

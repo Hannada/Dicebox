@@ -9,7 +9,8 @@ const Welcome = ({currentUser, logout}) => {
         <nav className="login-signup">
             <div className="home-sidebar-logo">
                 <div>
-                    <p><img src={window.barsLogoUrl} width="20" height="20"/></p>
+                    <p><img src={window.barsLogoUrl} width="20" height="20"/></p> 
+                    {/* adding an onclick to this is probably the way to go with this structure */}
                 </div>
                 <Link to="/" className="home"><img src={window.d20Url} width="40" height="30"/></Link>
             </div>

@@ -16,10 +16,10 @@ const Homepage = () => (
             </div>
                 <div>Reccomended</div>
                 <div>
-                    <label className="dupe-vids-one"><VideoIndexContainer/></label>
+                    <VideoIndexContainer/>
                 </div>
                 <div>
-                    <label className="dupe-vids-two"><VideoIndexContainer /></label>
+                    <VideoIndexContainer />
                 </div>
 
         </div>

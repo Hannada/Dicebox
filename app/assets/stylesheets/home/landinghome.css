@@ -16,11 +16,11 @@
 .index-home {
     /* display: flex;
     flex-direction: row;
-    align-content: flex-end; */
-    /* justify-content: space-between; */
+    align-content: flex-end; 
+    justify-content: space-between; */
 }
 
-.dupe-vids {
+.dupe-vids-one {
   display: flex;  
   flex-direction: row;
   justify-content: space-between;

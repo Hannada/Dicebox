@@ -14,12 +14,14 @@ const Homepage = () => (
             <div className="sidebar-home">
                 <SidebarContainer/>
             </div>
-            <div className="index-home">
-                {/* <div>Reccomended</div> */}
-                <label className="dupe-vids"><VideoIndexContainer/></label>
-                <label className="dupe-vids"><VideoIndexContainer /></label>
+                <div>Reccomended</div>
+                <div>
+                    <label className="dupe-vids-one"><VideoIndexContainer/></label>
+                </div>
+                <div>
+                    <label className="dupe-vids-two"><VideoIndexContainer /></label>
+                </div>
 
-            </div>
         </div>
       
     </div>

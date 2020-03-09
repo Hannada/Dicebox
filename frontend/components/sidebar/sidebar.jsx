@@ -14,6 +14,10 @@ class Sidebar extends React.Component {
         return (
             <div className="sidebar">
                 <div>
+                    <a href="https://www.linkedin.com/in/dave-hanna/"> <img src={window.linkedUrl} width="40" height="30"></img></a>
+                </div>
+
+                <div>
                     <a href="https://github.com/Hannada"> <img src={window.gitLogoUrl} width="40" height="30"></img></a>
                 </div>
 

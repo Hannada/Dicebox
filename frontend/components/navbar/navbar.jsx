@@ -7,6 +7,13 @@ class Navbar extends React.Component {
         super(props)
     }
 
+    userStatus() {
+        if (this.props.currentUser) {
+            return logoutOption()
+        } else {
+            return loginOption()
+        }
+    } 
 
 
     render() {

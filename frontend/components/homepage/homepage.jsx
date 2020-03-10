@@ -15,18 +15,18 @@ const Homepage = () => (
                 <NavbarContainer/>
             </div>
         <div className="navbar-index-vids">
-            <div className="sidebar-index-cluster">
-        {/* <div className="sidebar-home">
-            <SidebarContainer/>
-        </div> */}
-                    <div>
-                        <VideoIndexContainer/>
-                    </div>
-                    <div>
-                        <VideoIndexContainer />
-                    </div>
-
+            <div className="sidebar-home">
+                <SidebarContainer/>
             </div>
+            <div>
+                <div className="dupe-vids">
+                    <VideoIndexContainer/>
+                </div>
+                <div className="dupe-vids"> 
+                    <VideoIndexContainer />
+                </div>
+            </div>
+
         </div>
       
     </div>

@@ -1,9 +1,9 @@
 import React from "react";
 
 class Sidebar extends React.Component {
-    // constructor(props){
-    //     super(props)
-    // }
+    constructor(props){
+        super(props)
+    }
 
     // sidebarSwap {
 
@@ -12,7 +12,7 @@ class Sidebar extends React.Component {
 
     render() {
    
-        // const sidebarClass = this.props.isOpen ? 'sidebar open' : 'sidebar';
+        // const sidebarClass = this.props.isOpen ? 'sidebar-open' : 'sidebar';
 
         //this should be the general structure of the if, now looking for a way to trigger opening in navbar
 

@@ -12,7 +12,7 @@ class Sidebar extends React.Component {
 
     render() {
    
-        // const sidebarClass = this.props.isOpen ? 'sidebar-open' : 'sidebar';
+        const sidebarClass = this.props.isOpen ? 'sidebar-open' : 'sidebar';
 
         //this should be the general structure of the if, now looking for a way to trigger opening in navbar
 
@@ -23,11 +23,8 @@ class Sidebar extends React.Component {
             // </div>
 
 
-            <div className="sidebar">
-                <div>
-                    <p><img src={window.barsLogoUrl} width="20" height="20" /></p>  
-                </div>
-
+            <div className={sidebarClass}>
+           
                 <div>
                     <a href="https://www.linkedin.com/in/dave-hanna/"> <img src={window.linkedUrl} width="40" height="30"></img></a>
                 </div>

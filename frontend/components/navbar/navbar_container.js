@@ -4,7 +4,8 @@ import Navbar from "./navbar"
 
 const msp = ({ session, entities: { users } }) => {
     return ({
-        currentUser: users[session.id]
+        currentUser: users[session.id], 
+        // isOpen: false 
     })
 }
 

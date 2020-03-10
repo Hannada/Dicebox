@@ -1,10 +1,14 @@
 import React from "react"; 
 import { Link } from "react-router-dom";
+import SidebarContainer from "../sidebar/sidebar_container"
 
 
 class Navbar extends React.Component {
     constructor(props){
-        super(props)
+        super(props);
+        this.state = {
+            isOpen: false
+        }; 
     }
 
     userStatus() {
@@ -14,6 +18,27 @@ class Navbar extends React.Component {
             return this.loginOption()
         }
     } 
+
+    // sidebarSwap() {
+    //     if (this.state.isOpen === false) {
+    //         this.state.isOpen = true 
+    //         return this.bigSidebar(); 
+    //     } else {
+    //         return this.standardSidebar(); 
+    //     }
+    // }
+
+    // standardSidebar() {
+    //     return (
+
+    //     )
+    // }
+
+    // bigSidebar() {
+    //     return (
+
+    //     )
+    // }
 
     logoutOption() {
         return (
@@ -42,16 +67,7 @@ class Navbar extends React.Component {
 
     render() {
         return (
-        // <nav className="login-signup">
-        //     <div className="home-sidebar-logo">
-        //         <div>
-        //             <p><img src={window.barsLogoUrl} width="20" height="20" onClick={this.sidebarSwap}/></p> 
-        //         </div>
-        //         <Link to="/" className="home"><img src={window.d20Url} width="40" height="30" /></Link>
-        //     </div>
-        //     <p className="title"><img src={window.d20Url} width="30" height="30" />Dicebox</p>
-        //     <Link to="/login" className="login-button"><img src={window.diceLoginUrl} width="20" height="20" />Login</Link>
-        // </nav>
+
             <div>
                 {this.userStatus()}
             </div>

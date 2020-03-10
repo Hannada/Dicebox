@@ -10,7 +10,13 @@
 
 .sidebar-home {
     display: flex;
+    position: absolute ;
     align-content: flex-start;
+}
+
+.navbar {
+    /* display: flex; */
+    align-content: flex-end;
 }
 
 .index-home {
@@ -25,4 +31,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-content: space-between;
+}
+
+.navbar-index-vids {
+    /* display: flex; */
+    /* position: absolute; */
+    /* align-content: flex-end; */
+
 }

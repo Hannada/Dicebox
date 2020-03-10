@@ -5,14 +5,26 @@ class Sidebar extends React.Component {
     //     super(props)
     // }
 
- 
+    // sidebarSwap {
+
+    // }
 
 
     render() {
    
 
         return (
+            //  <p><img src={window.barsLogoUrl} width="20" height="20" onClick={this.sidebarSwap}/></p>  
+            // <div>
+            //      <p><img src={window.barsLogoUrl} width="20" height="20" /></p>  
+            // </div>
+
+
             <div className="sidebar">
+                <div>
+                    <p><img src={window.barsLogoUrl} width="20" height="20" /></p>  
+                </div>
+
                 <div>
                     <a href="https://www.linkedin.com/in/dave-hanna/"> <img src={window.linkedUrl} width="40" height="30"></img></a>
                 </div>

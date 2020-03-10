@@ -9,19 +9,23 @@ import SidebarContainer from "../sidebar/sidebar_container";
 
 const Homepage = () => (
     <div className="absolute-home">
-        <WelcomeContainer/>
-        <div className="sidebar-index-cluster">
-            <div className="sidebar-home">
-                <SidebarContainer/>
+        <div className="sidebar-home">
+            <SidebarContainer/>
+        </div>
+        <div className="navbar-index-vids">
+            <div className="navbar">
+                <WelcomeContainer/>
             </div>
-                <div>Reccomended</div>
-                <div>
-                    <VideoIndexContainer/>
-                </div>
-                <div>
-                    <VideoIndexContainer />
-                </div>
+            <div className="sidebar-index-cluster">
+                    {/* <div>Reccomended</div> */}
+                    <div>
+                        <VideoIndexContainer/>
+                    </div>
+                    <div>
+                        <VideoIndexContainer />
+                    </div>
 
+            </div>
         </div>
       
     </div>

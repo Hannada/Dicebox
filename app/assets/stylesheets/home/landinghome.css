@@ -34,8 +34,9 @@
 }
 
 .navbar-index-vids {
-    /* display: flex; */
-    /* position: absolute; */
-    /* align-content: flex-end; */
+    display: flex; 
+      flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
 
 }

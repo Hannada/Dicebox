@@ -11,11 +11,7 @@ class Navbar extends React.Component {
 
 
     render() {
-        if (user) {
-            return sessionLinks
-        } else {
-            return logoutLinks
-        }
+ 
     }
 
 }

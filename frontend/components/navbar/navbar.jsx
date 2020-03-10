@@ -30,8 +30,9 @@ class Navbar extends React.Component {
 
     // standardSidebar() {
     //     return (
-
-    //     )
+     
+           
+    //     );
     // }
 
     // bigSidebar() {
@@ -69,8 +70,12 @@ class Navbar extends React.Component {
         return (
 
             <div>
+              {/* <div>
+                    <p><img src={window.barsLogoUrl} width="20" height="20" onClick={this.sidebarSwap} /></p>
+              </div> */}
                 {this.userStatus()}
             </div>
+      
         )
     }
 

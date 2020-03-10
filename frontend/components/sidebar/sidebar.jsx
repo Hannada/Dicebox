@@ -12,6 +12,9 @@ class Sidebar extends React.Component {
 
     render() {
    
+        // const sidebarClass = this.props.isOpen ? 'sidebar open' : 'sidebar';
+
+        //this should be the general structure of the if, now looking for a way to trigger opening in navbar
 
         return (
             //  <p><img src={window.barsLogoUrl} width="20" height="20" onClick={this.sidebarSwap}/></p>  

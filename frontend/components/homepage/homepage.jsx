@@ -11,11 +11,11 @@ import NavbarContainer from "../navbar/navbar_container";
 const Homepage = () => (
     <div className="absolute-home">
             <div className="navbar">
-                {/* <NavbarContainer/> */}
+                <NavbarContainer/>
             </div>
         <div className="navbar-index-vids">
             <div className="sidebar-home">
-                {/* <SidebarContainer/> */}
+                <SidebarContainer/>
             </div>
             <div>
                 <div className="dupe-vids">

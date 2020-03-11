@@ -7,6 +7,8 @@ import IdentifierFormContainer from "./identifier/identifier_form_container";
 import Homepage from "./homepage/homepage"
 import VideoShowContainer from "./video/video_show_container";
 import VideoIndexContainer from "./video/video_index_container";
+import Navbar from "./navbar/navbar_container";
+import Sidebar from "./sidebar/sidebar_container";
 // import SidebarContainer from "./sidebar/sidebar_container";
 // import AuthRoute from "../util/route_util";
 
@@ -14,6 +16,10 @@ import VideoIndexContainer from "./video/video_index_container";
 const DiceboxApp = () => (
     <div>
         <style>{'body { background-color: #3e3e3e;; }'}</style>
+        {/* <Navbar/> */}
+        {/* <Sidebar/> */}
+        {/* Will likely need to refactor these here */}
+
       
         <Switch>
              <Route path="/password" component={LoginFormContainer}/>

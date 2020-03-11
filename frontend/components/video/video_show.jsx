@@ -5,6 +5,8 @@ import WelcomeContainer from "../welcome/welcome_container"
 import VideoIndexContainer from "../video/video_index_container";
 import VideoIndexItem from "../video/video_index_items";
 import VideoRecs from "../video/video_recs";
+import Navbar from "../navbar/navbar_container";
+import Sidebar from "../sidebar/sidebar_container";
 
 
 class VideoShow extends React.Component {
@@ -86,8 +88,10 @@ class VideoShow extends React.Component {
         // onChange={this.update()} Might be used to invoke?
         return(
             <div className="video-show-main">
-                <WelcomeContainer/>
+                {/* <WelcomeContainer/> */}
+                <Navbar/>
                 <div className="show">
+                <Sidebar/>
                     <div className="vid-info">
                         {this.renderCurrentVideo(video)}
                         <div className="vid-title"><img src={window.diceLoginUrl} width="20" height="20" />{video.title}</div>

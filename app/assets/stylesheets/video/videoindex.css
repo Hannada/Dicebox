@@ -9,3 +9,45 @@
   font-size: 30px;
   text-decoration: none; 
 }
+
+
+
+
+.index-items {
+  display: flex;  
+  flex-direction: row;
+  border-bottom: 7px;
+  flex-wrap: wrap;
+  /* align-content: flex-start; */
+  justify-content: space-between;
+  /* ISSUE HERE MAYBE */
+}
+
+.index-all {
+  display: flex;  
+  flex-direction: row;
+  
+  justify-content: space-evenly;
+  /* border-bottom: 7px; */
+}
+
+.index-vid-text {
+  display: flex;  
+  flex-direction: column;
+  /* position: relative; */
+  margin: 0 auto;
+  /* justify-content: flex-end; */
+  /* flex-wrap: wrap; */
+  /* align-content: flex-start; */
+}
+
+.index-title {
+  margin: 0 0 0 0; 
+  color: white;
+}
+
+.index-user {
+  margin: 0 0 0 0; 
+  color: #a3a3a3
+}
+

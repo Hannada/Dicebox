@@ -4,7 +4,6 @@ import {revertSidebar, expandSidebar} from "../../actions/navbar_sidebar_action"
 import Navbar from "./navbar"
 
 // const msp = ({ session, entities: { users } }) => {
-//     debugger 
 //     return ({
 //         currentUser: users[session.id], 
 //         isOpen: false 
@@ -14,7 +13,6 @@ import Navbar from "./navbar"
 // refactor seems to be workings without issues
 
 const msp = (state, ownProps) => {
-    // debugger 
     return({
         
         currentUser: state.entities.users[state.session.id],

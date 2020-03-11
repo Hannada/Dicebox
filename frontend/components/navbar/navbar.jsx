@@ -7,8 +7,10 @@ class Navbar extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            isOpen: false
+            // isOpen: false
         }; 
+
+        this.sidebarSwap = this.sidebarSwap.bind(this);
     }
 
     userStatus() {
@@ -20,27 +22,15 @@ class Navbar extends React.Component {
         }
     } 
 
-    // sidebarSwap() {
-    //     if (this.state.isOpen === false) {
-    //         this.state.isOpen = true 
-    //         return this.bigSidebar(); 
-    //     } else {
-    //         return this.standardSidebar(); 
-    //     }
-    // }
+    sidebarSwap() {
+        if (this.props.isOpen === false) {
+            this.props.expand();
+        } else {
+            this.props.revert(); 
+        }
+    }
 
-    // standardSidebar() {
-    //     return (
-     
-           
-    //     );
-    // }
 
-    // bigSidebar() {
-    //     return (
-
-    //     )
-    // }
 
     logoutOption() {
         return (

@@ -1,5 +1,6 @@
 import { connect } from "react-redux";
 import { logout } from "../../actions/session_actions";
+import {revertSidebar, expandSidebar} from "../../actions/navbar_sidebar_action"
 import Navbar from "./navbar"
 
 // const msp = ({ session, entities: { users } }) => {
@@ -23,7 +24,9 @@ const msp = (state, ownProps) => {
 
 const mdp = dispatch => {
     return ({
-        logout: () => dispatch(logout())
+        logout: () => dispatch(logout()),
+        revert: () => dispatch(revertSidebar()),
+        expand: () => dispatch(expandSidebar()),
     })
 }
 

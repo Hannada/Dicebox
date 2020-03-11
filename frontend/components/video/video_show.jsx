@@ -85,7 +85,7 @@ class VideoShow extends React.Component {
             }
         });
 
-        // onChange={this.update()} Might be used to invoke?
+        // Might need to add some padding to fix home button css
         return(
             <div className="video-show-main">
                 {/* <WelcomeContainer/> */}

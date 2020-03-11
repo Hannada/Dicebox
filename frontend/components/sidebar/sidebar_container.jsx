@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 import Sidebar from "./sidebar";
 
 
-const msp = (state) => {
+const msp = (state, ownProps) => {
     return ({
+        isOpen: state.entities.navbarSidebar.isOpen
     })
 }
 

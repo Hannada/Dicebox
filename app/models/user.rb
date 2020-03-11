@@ -6,6 +6,7 @@ class User < ApplicationRecord
     attr_reader :password
 
     has_many :videos 
+    has_many :comments 
 
     # has_one_attached :vid 
 

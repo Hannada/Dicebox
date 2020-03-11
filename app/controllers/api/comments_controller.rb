@@ -5,9 +5,19 @@ class Api::CommentsController < ApplicationController
     end
 
     def index
+        video = Video.find(params[:video_id])
+        @comments = video.comments 
+        render :index 
     end
 
     def create
+        @comment = Comment.new(comment_params)
+        @comment.user_id = current_user.id #unsure if this is gonna register properly
+        @comment.video_id = params[:video_id]
+
+        if @comment.save
+        else
+        end
     end
 
     def update

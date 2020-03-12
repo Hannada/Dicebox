@@ -23,7 +23,7 @@ export const deleteComment = (videoId, commentId) => {
 export const editComment = (comment, videoId) => {
     $.ajax({
         method: "PATCH",
-        url: `api/videos/${videoId}/comments/${comment.id}`
+        url: `api/videos/${videoId}/comments/${comment.id}`,
         data: {comment}
     })
 }

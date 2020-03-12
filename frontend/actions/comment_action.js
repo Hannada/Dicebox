@@ -31,3 +31,8 @@ export const postComment = (comment, videoId) => dispatch => (
     CommentUtil.postComment(comment, videoId)
         .then(comment => dispatch(receiveComment(comment))) 
 )
+
+export const deleteComment = (commentId, videoId) => dispatch => (
+    CommentUtil.deleteComment(commentId, videoId)
+        .then(() => dispatch(removeComment(commentId)))
+)

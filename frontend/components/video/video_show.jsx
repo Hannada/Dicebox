@@ -7,6 +7,7 @@ import VideoIndexItem from "../video/video_index_items";
 import VideoRecs from "../video/video_recs";
 import Navbar from "../navbar/navbar_container";
 import Sidebar from "../sidebar/sidebar_container";
+import CommentFormContainer from "../comments/comment_container";
 
 
 class VideoShow extends React.Component {
@@ -85,6 +86,7 @@ class VideoShow extends React.Component {
             }
         });
 
+
         // Might need to add some padding to fix home button css
         return(
             <div className="video-show-main">
@@ -99,6 +101,9 @@ class VideoShow extends React.Component {
                         <div> {video.user_name}</div>
                         <div className="vid-description">{video.description}</div>  
                         <div className="linebreak"></div>
+                        <div>
+                            <CommentFormContainer/>
+                        </div>
                     </div>
 
                     <div className="sidebar-index">

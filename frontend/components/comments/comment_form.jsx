@@ -10,13 +10,15 @@ class CommentForm extends React.Component{
     }
 
     handleComment(e) {
-        e.prevenDefault();
+        e.preventDefault();
+        // debugger
         if (this.props.currentUser) {
             this.setState({body: ""})
-            this.props.postComment(this.state, this.props.videoId)
-        }else {
-            this.props.history.push("/")
+            this.props.postComment(this.state, this.props.currentVidId)
         }
+        // }else {
+        //     this.props.history.push("/")
+        // }
 
     }
 
@@ -28,8 +30,8 @@ class CommentForm extends React.Component{
     render() {
         return (
             <div>
-                <form>
-                    <input type="text" 
+                <form onSubmit={this.handleComment}>
+                    <input className="comment-form" type="text" 
                             fillintext="Add a public comment"
                             onChange={this.update("body")}
                             value={this.state.body}

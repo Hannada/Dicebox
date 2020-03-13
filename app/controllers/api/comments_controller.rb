@@ -32,6 +32,7 @@ class Api::CommentsController < ApplicationController
             else
                 render json: ["You didn't post that."], status: 422
             end
+        end
     end
 
     def destroy
@@ -50,4 +51,5 @@ class Api::CommentsController < ApplicationController
     def comment_params 
         params.require(:comment).permit(:id, :body, :user_id, :video_id)
     end 
+    # Issue seems to be in the params. Claiming either permit is undefined? 
 end

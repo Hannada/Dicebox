@@ -86,7 +86,6 @@ class VideoShow extends React.Component {
             }
         });
 
-
         // Might need to add some padding to fix home button css
         return(
             <div className="video-show-main">

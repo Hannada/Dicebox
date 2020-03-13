@@ -1,8 +1,9 @@
-import { connect } from 'react-redux'
+import { connect } from "react-redux";
 import React from "react";
 import { Link } from "react-router-dom";
-import {postComment} from "../../actions/comment_action";
+import { withRouter } from 'react-router-dom'
 import CommentForm from "./comment_form";
+import { postComment } from "../../actions/comment_action";
 
 
 const msp = (state, ownProps) => {
@@ -10,8 +11,10 @@ const msp = (state, ownProps) => {
     return ({
         currentUser: state.entities.users[state.session.id],
         // currentVid: state.entities.videos[ownProps.match.params.videoId],
+        // videos: Object.keys(state.entities.videos).map(id => state.entities.videos[id])
 
-    })
+
+    });
 }
 
 const mdp = dispatch => {
@@ -21,4 +24,6 @@ const mdp = dispatch => {
     })
 }
 
-export default connect(msp, mdp)(CommentForm); 
+// export default connect(msp, mdp)(CommentForm); 
+const CommentFormContainer = connect(msp, mdp)(CommentForm); 
+export default withRouter(CommentFormContainer);

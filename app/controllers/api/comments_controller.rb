@@ -48,7 +48,8 @@ class Api::CommentsController < ApplicationController
 
     private 
 
-    def comment_params 
+    def comment_params
+        # params.require(:comment).permit(:id, :body, :user_id, :video_id)
         params.require(:comment).permit(:id, :body, :user_id, :video_id)
     end 
     # Issue seems to be in the params. Claiming either permit is undefined? 

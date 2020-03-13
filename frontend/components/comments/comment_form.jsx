@@ -13,13 +13,13 @@ class CommentForm extends React.Component{
 
     handleComment(e) {
         e.preventDefault();
+        debugger 
         if (this.props.currentUser) {
             this.setState({body: ""})
-            this.props.postComment(this.state, this.props.vidId)
+            this.props.postComment(this.state.body, this.state.vidId)
+        }else {
+            this.props.history.push("/")
         }
-        // }else {
-        //     this.props.history.push("/")
-        // }
 
     }
 

@@ -17,6 +17,7 @@ class Api::CommentsController < ApplicationController
 
         if @comment.save
             @video = Video.find(@comment.video_id)
+            # render :show 
         else
             render json: @comment.errors.full_messages, status: 422 
         end

@@ -7,8 +7,7 @@ import { postComment } from "../../actions/comment_action";
 
 
 const msp = (state, ownProps) => {
-    // debugger
-    return ({
+   return ({
         currentUser: state.entities.users[state.session.id],
         // currentVid: state.entities.videos[ownProps.match.params.videoId],
         // videos: Object.keys(state.entities.videos).map(id => state.entities.videos[id])

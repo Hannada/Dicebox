@@ -22,11 +22,13 @@ export const postVideo = video => (
     })
 )
 
-export const searchVids = searchResults => (
-    $.ajax({
-        method: "GET",
-        url: "api/videos/search",
-        data: {searchResults}
-    })
-)
+// export const searchVids = searchResults => (
+//     $.ajax({
+//         method: "GET",
+//         url: "api/videos/search",
+//         data: {searchResults}
+//     })
+// )
+
+//Might not need this? trying out something else first
 

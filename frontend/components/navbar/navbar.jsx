@@ -8,6 +8,7 @@ class Navbar extends React.Component {
         super(props);
         this.state = {
             // isOpen: false
+            // filteredSearch: []
         }; 
 
         this.sidebarSwap = this.sidebarSwap.bind(this);

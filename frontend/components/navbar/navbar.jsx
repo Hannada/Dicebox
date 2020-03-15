@@ -39,7 +39,7 @@ class Navbar extends React.Component {
             {/* <Link to="/" className="home"><img src={window.d20Url} width="40" height="30" /></Link> */}
             <div className="home-sidebar-logo">
                 <div>
-                    <p><img src={window.barsLogoUrl} width="20" height="20" onClick={this.sidebarSwap} /></p>ç
+                    <p><img src={window.barsLogoUrl} width="20" height="20" onClick={this.sidebarSwap} /></p>
             </div>
                 <Link to="/" className="home"><img src={window.d20Url} width="40" height="30" /></Link>
             </div>
@@ -54,7 +54,7 @@ class Navbar extends React.Component {
         <nav className="login-signup">
             <div className="home-sidebar-logo">
                 <div>
-                    <p><img src={window.barsLogoUrl} width="20" height="20" onClick={this.sidebarSwap} /></p>ç
+                    <p><img src={window.barsLogoUrl} width="20" height="20" onClick={this.sidebarSwap} /></p>
                 </div>
                 <Link to="/" className="home"><img src={window.d20Url} width="40" height="30" /></Link>
             </div>

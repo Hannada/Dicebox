@@ -37,5 +37,5 @@ export const postVideo = video => dispatch => (
 )
 
 export const searchVideos = searchResults => dispatch => (
-    VideoUtil.searchVideos(searchResults).then(searchResults => dispatch(searchVids(searchResults))
+    VideoUtil.searchVideos(searchResults).then(searchResults => dispatch(searchVids(searchResults)))
 )

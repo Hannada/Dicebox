@@ -16,7 +16,7 @@ export const receiveCurrentVideo = video => ({
     video 
 })
 
-export const searchVids =  searchResults => ({
+export const search =  searchResults => ({
     type: SEARCH_VIDS,
     searchResults
 })
@@ -36,6 +36,6 @@ export const postVideo = video => dispatch => (
     VideoUtil.postVideo(video).then(video => dispatch(receiveCurrentVideo(video)))
 )
 
-export const searchVideos = searchResults => dispatch => (
-    VideoUtil.searchVideos(searchResults).then(searchResults => dispatch(searchVids(searchResults)))
+export const searchVids = searchResults => dispatch => (
+    VideoUtil.searchVids(searchResults).then(searchResults => dispatch(search(searchResults)))
 )

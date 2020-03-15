@@ -17,7 +17,7 @@ import Navbar from "./navbar"
 // May need to creat separate line of actions for search function.
 
 const msp = (state, ownProps) => {
-    debugger 
+    // debugger 
     return({
         currentUser: state.entities.users[state.session.id],
         isOpen: state.entities.navbarSidebar.isOpen,

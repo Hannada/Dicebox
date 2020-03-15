@@ -10,5 +10,10 @@ class Api::VideosController < ApplicationController
     end
 
     def create
+        return false unless logged_in? 
+        
+    end
+
+    def delete 
     end
 end

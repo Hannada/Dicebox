@@ -6,6 +6,9 @@ export const REMOVE_CURRENT_VIDEO = "REMOVE_CURRENT_VIDEO";
 export const SEARCH_VIDS = "SEARCH_VIDS";
 export const CLEAR_SEARCH = "CLEAR_SEARCH";
 export const POST_VIDEO = "POST_VIDEO";
+export const RECEIVE_VIDEO_ERRORS = "RECEIVE_VIDEO_ERRORS";
+export const CLEAR_VIDEO_ERRORS = "CLEAR_ERRORS"; //Trying something else out
+
 
 export const receiveAllVideos = videos => ({
     type: RECEIVE_ALL_VIDEOS,
@@ -17,9 +20,13 @@ export const receiveCurrentVideo = video => ({
     video 
 })
 
-const removeCurrentVideo = videoId => ({
+export const removeCurrentVideo = videoId => ({
     type: REMOVE_CURRENT_VIDEO,
     videoId
+})
+
+export const clearVideoErrors = () => ({
+    type: CLEAR_VIDEP_ERRORS
 })
 
 export const search =  searchResults => ({

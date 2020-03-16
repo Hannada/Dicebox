@@ -1,6 +1,6 @@
 import {RECEIVE_USER_ERRORS, CLEAR_ERRORS} from "../../actions/session_actions";
 
-const userErrorsReducer = (state = {}, action) => {
+export default(state = {}, action) => {
     switch (action.type) {
         case RECEIVE_USER_ERRORS:
             return action.errors;
@@ -11,4 +11,3 @@ const userErrorsReducer = (state = {}, action) => {
     }
 }
 
-export default userErrorsReducer;

@@ -45,8 +45,10 @@ class Navbar extends React.Component {
                 {/* <Link to="/" className="home"><img src={window.d20Url} width="40" height="30" /></Link> */}
 
             </div>
-           
-            <button className="header-button" onClick={this.props.logout}><img src={window.diceLoginUrl} width="20" height="20" />{this.props.currentUser.username}</button>
+            <div className="login-upload">
+                <p><img src={window.uploadLogoUrl} width="20" height="20"/></p>
+                <button className="header-button" onClick={this.props.logout}><img src={window.diceLoginUrl} width="20" height="20" />{this.props.currentUser.username}</button>
+            </div>
         </hgroup>
         )
     }

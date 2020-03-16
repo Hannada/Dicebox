@@ -19,7 +19,7 @@ class CommentForm extends React.Component{
         }else {
             this.props.history.push("/")
         }
-
+        // Potentially only passing the string to the backend?
     }
 
 

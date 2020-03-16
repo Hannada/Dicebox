@@ -30,10 +30,16 @@ export const fetchComments = videoId => dispatch => (
         .then(comments => dispatch(receiveAllComments(comments)))
 )
 
-export const postComment = (comment, videoId) => dispatch => (
-    CommentUtil.postComment(comment, videoId)
-        .then(comment => dispatch(receiveComment(comment))) 
-)
+// export const postComment = (comment, videoId) => dispatch => (
+//     CommentUtil.postComment(comment, videoId)
+//         .then(comment => dispatch(receiveComment(comment))) 
+// )
+
+export const postComment = (comment, videoId) => dispatch => {
+   return CommentUtil.postComment(comment, videoId)
+        .then(comment => {
+            return dispatch(receiveComment(comment))}) 
+}
 
 export const deleteComment = (commentId, videoId) => dispatch => (
     CommentUtil.deleteComment(commentId, videoId)

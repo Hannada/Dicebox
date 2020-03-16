@@ -27,12 +27,12 @@ class Api::VideosController < ApplicationController
     # def edit
     # end
 
-    def delete 
+    def destroy 
         @video = Video.find_by(id: params[:id])
         @user = @video.user_id
 
         if (@video && (current_user.id == @user.id))
-            @video.delete
+            @video.destroy
             render :show 
         else
             render json: ["You cannot delete videos you haven't posted"], status: 422
@@ -44,4 +44,5 @@ class Api::VideosController < ApplicationController
     def video_params
         params.require(:video).permit(:id, :title, :description, :url, :user_id)
     end
+    
 end

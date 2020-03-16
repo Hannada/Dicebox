@@ -22,6 +22,13 @@ export const postVideo = video => (
     })
 )
 
+export const deleteVideo = videoId => (
+    $.ajax({
+        method: "DELETE",
+        url: `api/video/${videoId}`
+    })
+)
+
 export const searchVids = searchResults => (
     $.ajax({
         method: "GET",

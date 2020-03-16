@@ -4,7 +4,7 @@ export const RECEIVE_ALL_VIDEOS = "RECEIVE_ALL_VIDEOS";
 export const RECEIVE_CURRENT_VIDEO = "RECEIVE_CURRENT_VIDEO";
 export const SEARCH_VIDS = "SEARCH_VIDS";
 export const CLEAR_SEARCH = "CLEAR_SEARCH";
-// export const POST_VIDEO = "POST_VIDEO";
+export const POST_VIDEO = "POST_VIDEO";
 
 export const receiveAllVideos = videos => ({
     type: RECEIVE_ALL_VIDEOS,

@@ -2,6 +2,7 @@ import * as VideoUtil from "../util/video_util";
 
 export const RECEIVE_ALL_VIDEOS = "RECEIVE_ALL_VIDEOS";
 export const RECEIVE_CURRENT_VIDEO = "RECEIVE_CURRENT_VIDEO";
+export const REMOVE_CURRENT_VIDEO = "REMOVE_CURRENT_VIDEO";
 export const SEARCH_VIDS = "SEARCH_VIDS";
 export const CLEAR_SEARCH = "CLEAR_SEARCH";
 export const POST_VIDEO = "POST_VIDEO";
@@ -14,6 +15,11 @@ export const receiveAllVideos = videos => ({
 export const receiveCurrentVideo = video => ({
     type: RECEIVE_CURRENT_VIDEO,
     video 
+})
+
+const removeCurrentVideo = videoId => ({
+    type: REMOVE_CURRENT_VIDEO,
+    videoId
 })
 
 export const search =  searchResults => ({

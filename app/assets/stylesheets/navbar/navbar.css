@@ -38,10 +38,12 @@
   
   display: flex;
   text-decoration: none;
-  background-color: black; 
+  /* background-color: black;  */
   color: white;
-  box-sizing: border-box;
-  border: 1px solid grey;
+  /* box-sizing: border-box; */
+  /* border: 1px solid grey; */
+  font-size: 40px;
+
   border-radius: 5px;
   padding: 10px;
   text-align: center;

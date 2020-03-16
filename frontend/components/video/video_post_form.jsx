@@ -3,22 +3,33 @@ import React from "react";
 class VideoPostForm extends React.Component {
     constructor(props){
         super(props)
-        this.state = this.props.video 
+        this.state = {
+            // this.props.video 
+            title: "",
+            body: "",
+            url: null 
+        }
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleInput = this.handleInput.bind(this);
     }
 
     handleFile(e){
-
+        this.setState({videoFile: e.currentTarget.files[0]})
     }
-
-    handleSubmit(){
-
-    }
-
+    
     handleInput(){
+        this.setState({title: e.currentTarget.value})
+    }
+
+    handleSubmit(e){
+        e.preventDefault();
+        const formData = new FormData();
+        formData.append("video[title]", this.state.title);
+        formData.append("video[url]", this.state.url)
+
 
     }
+
 
     render() {
         return(

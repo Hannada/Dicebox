@@ -46,7 +46,7 @@ class Navbar extends React.Component {
 
             </div>
             <div className="login-upload">
-                <p><img src={window.uploadLogoUrl} width="20" height="20"/></p>
+                <Link to="/upload"><img src={window.uploadLogoUrl} width="20" height="20"/></Link>
                 <button className="header-button" onClick={this.props.logout}><img src={window.diceLoginUrl} width="20" height="20" />{this.props.currentUser.username}</button>
             </div>
         </hgroup>

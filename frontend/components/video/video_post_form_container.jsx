@@ -5,8 +5,7 @@ import {clearVideoErrors, uploadVideo} from "../../actions/video_action";
 const msp = state => {
     return ({
         errors: state.errors.videos,
-
-
+        currentUser: state.entities.users[state.session.id],
     })
 }
 

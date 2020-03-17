@@ -10,7 +10,7 @@ import VideoIndexContainer from "./video/video_index_container";
 import Navbar from "./navbar/navbar_container";
 import Sidebar from "./sidebar/sidebar_container";
 import VideoPostContainer from "./video/video_post_form_container";
-import SearchContainer from "./search/search_container";
+// import SearchContainer from "./search/search_container";
 // import SidebarContainer from "./sidebar/sidebar_container";
 // import AuthRoute from "../util/route_util";
 

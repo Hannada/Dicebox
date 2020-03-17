@@ -7,7 +7,8 @@ class VideoPostForm extends React.Component {
             id: this.props.currentUser.id, 
             title: "",
             body: "",
-            url: null 
+            url: null,
+            videoId: null 
         }
         // this.props.currentUser = this.props.currentUser.bind(this);
         // const currentId = this.props.currentUser.id 
@@ -17,14 +18,17 @@ class VideoPostForm extends React.Component {
         this.handleFile = this.handleFile.bind(this);
     }
 
-    // handleFile(e){
-    //     this.setState({url: e.currentTarget.files[0]})
-    // }
-
-    handleFile(e) {
-        const file = e.currentTarget.files[0]
-        this.setState({ url: e.currentTarget.files[0] })
+    handleFile(e){
+        this.setState({url: e.currentTarget.files[0]})
     }
+
+    // handleFile(e) {
+    //     const file = e.currentTarget.files[0];
+
+    //     const fileReader = new FileReader();
+
+    //     this.setState({ url: e.currentTarget.files[0] })
+    // }
     
     handleInput(e){
         this.setState({title: e.currentTarget.value})
@@ -41,6 +45,10 @@ class VideoPostForm extends React.Component {
         formData.append("video[title]", this.state.title);
         formData.append("video[body]", this.state.body);
         formData.append("video[url]", this.state.url)
+
+        // Need to add upload callback
+
+        this.props.createVideo(formData);
 
     }
 

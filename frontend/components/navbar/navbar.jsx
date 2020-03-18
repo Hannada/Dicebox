@@ -40,10 +40,16 @@ class Navbar extends React.Component {
             <div className="home-sidebar-logo">
                 <div>
                     <p><img src={window.barsLogoUrl} width="20" height="20" onClick={this.sidebarSwap} /></p>
-            </div>
+                </div>
                 <Link to="/"> <p className="home"><img src={window.d20Url} width="30" height="30" />Dicebox</p></Link>
                 {/* <Link to="/" className="home"><img src={window.d20Url} width="40" height="30" /></Link> */}
 
+            </div>
+            <div className="searchbar">
+                <input type="text" className="input" placeholder="Search..." />
+                {/* <ul>
+                    ...
+                </ul> */}
             </div>
             <div className="login-upload">
                 <Link to="/upload"><img src={window.uploadLogoUrl} width="20" height="20"/></Link>
@@ -61,6 +67,9 @@ class Navbar extends React.Component {
                     <p><img src={window.barsLogoUrl} width="20" height="20" onClick={this.sidebarSwap} /></p>
                 </div>
                 <Link to="/" className="home"><img src={window.d20Url} width="40" height="30" /></Link>
+            </div>
+            <div className="searchbar">
+                <input type="text" className="input" placeholder="Search..." />
             </div>
             <p className="title"><img src={window.d20Url} width="30" height="30" />Dicebox</p>
             <Link to="/login" className="login-button"><img src={window.diceLoginUrl} width="20" height="20" />Login</Link>

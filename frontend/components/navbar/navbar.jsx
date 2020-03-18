@@ -45,8 +45,8 @@ class Navbar extends React.Component {
                 {/* <Link to="/" className="home"><img src={window.d20Url} width="40" height="30" /></Link> */}
 
             </div>
-            <div className="searchbar">
-                <input type="text" className="input" placeholder="Search..." />
+            <div >
+                    <input className="searchbar" type="text" className="input" placeholder="Search..." />
                 {/* <ul>
                     ...
                 </ul> */}

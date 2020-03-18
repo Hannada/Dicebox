@@ -17,6 +17,12 @@ class Search extends React.Component {
     componentWillUnmount(){
         
     }
+
+    render(){
+        return (
+            
+        )
+    }
 }
 
 export default Search;

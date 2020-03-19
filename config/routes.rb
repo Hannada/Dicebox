@@ -5,6 +5,9 @@ Rails.application.routes.draw do
     resource :session, only: [:create, :destroy, :show]
     resources :videos, only: [:index, :show, :create, :destroy] do 
       resources :comments, only: [:index, :create, :update, :destroy]
+      collection do 
+        get "/search" => "videos#search"
+      end
     end
     get 'email_check', to: "sessions#email_check", defaults:  {format: :json}
   end 
@@ -15,3 +18,5 @@ end
 
 
 # Need to add comment routes
+
+# Trying a search route

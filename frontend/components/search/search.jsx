@@ -15,13 +15,13 @@ class Search extends React.Component {
 
     }
 
-    componentDidUpdate(prevProps){
+    // componentDidUpdate(prevProps){
 
-    }
+    // }
 
-    componentWillUnmount(){
+    // componentWillUnmount(){
         
-    }
+    // }
 
     render(){
         const searchedVideos = this.props.videos.map(video => {
@@ -33,15 +33,24 @@ class Search extends React.Component {
             )
         })
 
-        let filteredSearch = this.props.videos.filter(
+        let filteredSearch = searchedVideos.filter(
             (video) => {
                 return video.title.indexOf(this.state.currentSearch !== -1)
             }
         )
-        return (
-            <div>
 
-            </div>
+
+        return (
+            // <div>
+            //     <input className="searchbar" 
+            //     type="text" 
+            //     className="input" 
+            //     placeholder="Search..." 
+            //     />
+
+            // </div>
+            // This is currently being handled in navbar. Looking to push the props from navbar?
+            <div></div>
         )
     }
 }

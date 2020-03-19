@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 
 const VideoIndexItem = ({ video }) => {
   
-
     return (
         <div className="index-items">
             <Link to={`/videos/${video.id}`} className="index-item"> 

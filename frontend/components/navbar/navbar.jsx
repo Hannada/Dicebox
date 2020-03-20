@@ -56,6 +56,8 @@ class Navbar extends React.Component {
                     <input className="searchbar" 
                     type="text" 
                     placeholder="Search..." />
+                    {/* value=
+                    onChange */}
                
             </div>
             <div className="login-upload">

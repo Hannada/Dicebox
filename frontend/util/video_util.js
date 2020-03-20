@@ -22,13 +22,27 @@ export const fetchVideo = id => (
 //     })
 // )
 
-export const postVideo = video => (
-    $.ajax({
-        method: "POST",
-        url: "api/videos",
-        data: { video }
-    })
-)
+export const postVideo = video => {
+    if (project instanceof FormData) {
+        return(
+            $.ajax({
+                method: "POST",
+                url: "api/videos",
+                data: { video }, 
+                processData: false,
+                contentType: false,
+            })
+        )
+    } else {
+        return(
+            $.ajax({
+                method: "POST",
+                url: "api/videos",
+                data: {video}
+            })
+        )
+    }
+}
 
 // note
 

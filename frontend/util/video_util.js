@@ -23,12 +23,12 @@ export const fetchVideo = id => (
 // )
 
 export const postVideo = video => {
-    if (project instanceof FormData) {
+    if (video instanceof FormData) {
         return(
             $.ajax({
                 method: "POST",
                 url: "api/videos",
-                data: { video }, 
+                data:  video, 
                 processData: false,
                 contentType: false,
             })
@@ -42,6 +42,7 @@ export const postVideo = video => {
             })
         )
     }
+        
 }
 
 // note

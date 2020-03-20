@@ -55,9 +55,10 @@ class Navbar extends React.Component {
             <div >
                     <input className="searchbar" 
                     type="text" 
-                    placeholder="Search..." />
-                    {/* value=
-                    onChange */}
+                    placeholder="Search..." 
+                    // {/* value=
+                    // onChange */}
+                    />
                
             </div>
             <div className="login-upload">
@@ -75,13 +76,20 @@ class Navbar extends React.Component {
                 <div>
                     <p><img src={window.barsLogoUrl} width="20" height="20" onClick={this.sidebarSwap} /></p>
                 </div>
-                <Link to="/" className="home"><img src={window.d20Url} width="40" height="30" /></Link>
+                <Link to="/"> <p className="home"><img src={window.d20Url} width="30" height="30" />Dicebox</p></Link>
             </div>
-            <div className="searchbar">
-                <input type="text" className="input" placeholder="Search..." />
+            <div>
+                <input className="searchbar"
+                    type="text"
+                    placeholder="Search..." />
+                {/* value=
+                onChange */}
+
             </div>
-            <p className="title"><img src={window.d20Url} width="30" height="30" />Dicebox</p>
-            <Link to="/login" className="login-button"><img src={window.diceLoginUrl} width="20" height="20" />Login</Link>
+            <div className="login-upload">
+                <Link to="/login" className="login-button"><img src={window.diceLoginUrl} width="20" height="20" />Login</Link>
+            </div>
+
         </nav>
         )
     }

@@ -14,13 +14,45 @@ export const fetchVideo = id => (
 ) 
 
 
+// export const postVideo = video => (
+//     $.ajax({
+//         method: "POST",
+//         url: "api/videos",
+//         data: {video}
+//     })
+// )
+
 export const postVideo = video => (
     $.ajax({
         method: "POST",
         url: "api/videos",
-        data: {video}
+        data: { video }
     })
 )
+
+// note
+
+// export const updateProject = (project, id) => {
+//     if (project instanceof FormData) {
+//         return (
+//             $.ajax({
+//                 method: 'PATCH',
+//                 url: `/api/projects/${id}`,
+//                 data: project,
+//                 processData: false,
+//                 contentType: false,
+//             })
+//         );
+//     } else {
+//         return (
+//             $.ajax({
+//                 method: 'PATCH',
+//                 url: `/api/projects/${id}`,
+//                 data: { project },
+//             })
+//         );
+//     }
+// };
 
 export const deleteVideo = videoId => (
     $.ajax({

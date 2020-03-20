@@ -35,6 +35,9 @@ class Navbar extends React.Component {
         return e => this.setState({[field]: e.target.value})
     }
 
+    handleSearch(e) {
+        e.preventDefault();
+    }
 
 
     logoutOption() {
@@ -50,10 +53,10 @@ class Navbar extends React.Component {
 
             </div>
             <div >
-                    <input className="searchbar" type="text" className="input" placeholder="Search..." />
-                {/* <ul>
-                    ...
-                </ul> */}
+                    <input className="searchbar" 
+                    type="text" 
+                    placeholder="Search..." />
+               
             </div>
             <div className="login-upload">
                 <Link to="/upload"><img src={window.uploadLogoUrl} width="20" height="20"/></Link>

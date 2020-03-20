@@ -96,7 +96,8 @@
 
 .searchbar {
   display: flex;
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-color: black;
     border: none;
     box-shadow: none;
     color: white;
@@ -112,4 +113,6 @@
     width: 100%;
     flex: 1;
     flex-basis: .000000001px;
+
+    /* #111111 */
 }

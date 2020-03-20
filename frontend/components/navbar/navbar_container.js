@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import { logout } from "../../actions/session_actions";
 import {revertSidebar, expandSidebar} from "../../actions/navbar_sidebar_action";
-import { fetchVideos } from "../../actions/video_action";
+import { searchVids } from "../../actions/video_action";
 import Navbar from "./navbar"
 
 // const msp = ({ session, entities: { users } }) => {
@@ -17,7 +17,6 @@ import Navbar from "./navbar"
 // May need to creat separate line of actions for search function.
 
 const msp = (state, ownProps) => {
-    // debugger 
     return({
         currentUser: state.entities.users[state.session.id],
         isOpen: state.entities.navbarSidebar.isOpen,
@@ -31,6 +30,7 @@ const mdp = dispatch => {
         logout: () => dispatch(logout()),
         revert: () => dispatch(revertSidebar()),
         expand: () => dispatch(expandSidebar()),
+        searchFilter: searchResults => dispatch(search(searchResults))
         // fetchVideos: () => dispatch(fetchVideos()),
     })
 }

@@ -104,7 +104,7 @@ class VideoPostForm extends React.Component {
 
     render() {
         return(
-            <form classname= "video-submit" onSubmit={this.handleSubmit}>
+            <form className="video-submit" onSubmit={this.handleSubmit}>
                 <label className="video-post-title" htmlFor="video-title">Title of Video</label>
                 <input type="text"
                     id="video-title"

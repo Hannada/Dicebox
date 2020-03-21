@@ -70,7 +70,13 @@ class VideoPostForm extends React.Component {
 
         // Need to add upload callback
 
-        this.props.createVideo(formData);
+        // this.props.createVideo(formData)
+        //     .then ( (action) => {
+        //         if (this.props.formType === "")
+        //     })
+        this.props.createVideo(formData)
+            .then( (response) => console.log("looks good"))
+        
 
     }
 
@@ -98,7 +104,7 @@ class VideoPostForm extends React.Component {
 
     render() {
         return(
-            <form onSubmit={this.handleSubmit}>
+            <form classname= "video-submit" onSubmit={this.handleSubmit}>
                 <label htmlFor="video-title">Title of Video</label>
                 <input type="text"
                     id="video-title"

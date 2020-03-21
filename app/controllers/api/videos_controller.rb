@@ -10,6 +10,7 @@ class Api::VideosController < ApplicationController
     end
 
     def create
+        
         return false unless logged_in? 
         @video = Video.new(video_params)
         @user = @current_user # Still unsure if current_user by itself is enough

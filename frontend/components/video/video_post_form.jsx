@@ -6,7 +6,7 @@ class VideoPostForm extends React.Component {
         this.state = {
             id: this.props.currentUser.id, 
             title: "",
-            body: "",
+            description: "",
             url: null,
             videoId: null,
             videoFile: null  
@@ -15,7 +15,7 @@ class VideoPostForm extends React.Component {
         // const currentId = this.props.currentUser.id 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleInput = this.handleInput.bind(this);
-        this.handleBody = this.handleBody.bind(this);
+        this.handleDescription = this.handleDescription.bind(this);
         this.handleFile = this.handleFile.bind(this);
     }
 
@@ -56,8 +56,8 @@ class VideoPostForm extends React.Component {
         this.setState({title: e.currentTarget.value})
     }
 
-    handleBody(e){
-        this.setState({ body: e.target.value })
+    handleDescription(e){
+        this.setState({ description: e.target.value })
     }
 
     handleSubmit(e){
@@ -65,7 +65,7 @@ class VideoPostForm extends React.Component {
         const formData = new FormData();
         formData.append("video[user_id]", this.state.id)
         formData.append("video[title]", this.state.title);
-        formData.append("video[body]", this.state.body);
+        formData.append("video[description]", this.state.description);
         formData.append("video[url]", this.state.url)
 
         // Need to add upload callback
@@ -111,11 +111,11 @@ class VideoPostForm extends React.Component {
                     value={this.state.title}
                     onChange={this.handleInput}
                 />
-                <label htmlFor="video-body">Description of Video</label>
+                <label htmlFor="video-description">Description of Video</label>
                 <input type="text"
-                    id="video-body"
-                    value={this.state.body}
-                    onChange={this.handleBody}
+                    id="video-description"
+                    value={this.state.description}
+                    onChange={this.handleDescription}
                 />
                 <input type="file"
                     onChange={this.handleFile}

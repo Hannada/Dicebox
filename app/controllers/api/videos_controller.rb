@@ -13,8 +13,8 @@ class Api::VideosController < ApplicationController
         
         return false unless logged_in? 
         @video = Video.new(video_params)
-        @user = @current_user # Still unsure if current_user by itself is enough
-        @video.user_id = @current_user.id 
+        @user = current_user # Still unsure if current_user by itself is enough
+        @video.user_id = current_user.id 
 
         if @video.save
             render :show 

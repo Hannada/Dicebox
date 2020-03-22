@@ -7,7 +7,7 @@ class VideoPostForm extends React.Component {
             id: this.props.currentUser.id, 
             title: "",
             description: "",
-            url: null,
+            vid: null, //This used to be url. Was altered to match model
             videoId: null,
             videoFile: null  
         }
@@ -20,7 +20,7 @@ class VideoPostForm extends React.Component {
     }
 
     // handleFile(e){
-    //     this.setState({url: e.currentTarget.files[0]})
+    //     this.setState({vid: e.currentTarget.files[0]})
     // }
 
     handleFile(e) {
@@ -28,15 +28,15 @@ class VideoPostForm extends React.Component {
 
         const fileReader = new FileReader();
 
-        this.setState({ url: e.currentTarget.files[0] })
+        this.setState({ vid: e.currentTarget.files[0] })
 
         fileReader.onloadend = () => 
-            this.setState({url: fileReader.result, videoFile: file});
+            this.setState({vid: fileReader.result, videoFile: file});
 
         if (file) {
             fileReader.readAsDataURL(file)
         } else {
-            this.setState({url: null, videoFile: null})
+            this.setState({vid: null, videoFile: null})
         }
     }
 
@@ -66,7 +66,7 @@ class VideoPostForm extends React.Component {
         formData.append("video[user_id]", this.state.id)
         formData.append("video[title]", this.state.title);
         formData.append("video[description]", this.state.description);
-        formData.append("video[url]", this.state.url)
+        formData.append("video[vid]", this.state.vid)
 
         // Need to add upload callback
 

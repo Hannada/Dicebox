@@ -75,7 +75,7 @@ class VideoPostForm extends React.Component {
         //         if (this.props.formType === "")
         //     })
         this.props.createVideo(formData)
-            .then( (response) => console.log("looks good"))
+            .then(this.props.history.push("/"))
         
 
     }

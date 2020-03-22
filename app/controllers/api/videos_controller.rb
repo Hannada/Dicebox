@@ -43,11 +43,11 @@ class Api::VideosController < ApplicationController
     private 
 
     def video_params
-        params.require(:video).permit(:id, :title, :description, :vid, :user_id)
+        params.require(:video).permit(:id, :title, :description, :url, :user_id)
     end
 
     # def video_params
-    #     params.permit(:title, :description, :url, :user_id)
+    #     params.permit(:title, :description, :vid, :user_id) Currently trying to add the video ruins the whole db
     # end
     
 end

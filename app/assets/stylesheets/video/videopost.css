@@ -5,4 +5,7 @@
     justify-content: center;
     min-height: 370px;
     padding: 16px 24px 0 24px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    border-radius: 5px;
 }

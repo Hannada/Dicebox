@@ -8,7 +8,7 @@ class VideoPostForm extends React.Component {
             title: "",
             description: "",
             vid: null, //This used to be url. Was altered to match model
-            videoId: null,
+            // videoId: null,
             videoFile: null  
         }
         // this.props.currentUser = this.props.currentUser.bind(this);
@@ -25,7 +25,6 @@ class VideoPostForm extends React.Component {
 
     handleFile(e) {
         const file = e.currentTarget.files[0];
-
         const fileReader = new FileReader();
 
         this.setState({ vid: e.currentTarget.files[0] })
@@ -103,6 +102,7 @@ class VideoPostForm extends React.Component {
 
 
     render() {
+        console.log(this.state);
         return(
             <form className="video-submit" onSubmit={this.handleSubmit}>
                 <label className="video-post-title" htmlFor="video-title">Title of Video</label>

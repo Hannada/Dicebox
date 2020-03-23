@@ -111,7 +111,7 @@ class VideoPostForm extends React.Component {
                     value={this.state.title}
                     onChange={this.handleInput}
                 />
-                <label htmlFor="video-description">Description of Video</label>
+                <label className="video-description-title" htmlFor="video-description">Description of Video</label>
                 <input type="text"
                     id="video-description"
                     value={this.state.description}

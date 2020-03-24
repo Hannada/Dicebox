@@ -7,4 +7,27 @@ import { Link } from 'react-router-dom';
 //     )
 // };
 
+class CommentIndexItem extends React.Component {
+    constructor(props){
+        super(props)
+
+        this.state = {
+            body: this.props.comment.body
+        }
+    }
+
+    componentDidMount(){
+
+    }
+
+    // handleComment(e){
+
+    // }
+
+    update(){
+        return e => this.setState({body: e.target.value})
+    }
+
+}
+
 export default CommentIndexItem;

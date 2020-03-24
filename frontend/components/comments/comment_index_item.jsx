@@ -28,6 +28,12 @@ class CommentIndexItem extends React.Component {
         return e => this.setState({body: e.target.value})
     }
 
+    render(){
+        return(
+            <div></div>
+        )
+    }
+
 }
 
 export default CommentIndexItem;

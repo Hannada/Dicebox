@@ -4,7 +4,8 @@ Rails.application.routes.draw do
     resources :users, only: [:create, :show]
     resource :session, only: [:create, :destroy, :show]
     resources :videos, only: [:index, :show, :create, :destroy] do 
-      resources :comments, only: [:index, :create, :update, :destroy]
+      resources :comments, only: [:index, :create, :update, :destroy] do 
+      end
       collection do 
         get "/search" => "videos#search"
       end

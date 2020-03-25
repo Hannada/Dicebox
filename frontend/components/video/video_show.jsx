@@ -97,6 +97,15 @@ class VideoShow extends React.Component {
         //         />
         //     );
         // });
+        //     const commentIndex = this.props.videos.map(comment => {
+        //     return (
+        //         <CommentIndexItemContainer
+        //             comment={comment}
+        //             key={comment.id}
+        //             commentUser={this.props.users[comment.user_id]}
+        //         />
+        //     );
+        // });
 
         // Might need to add some padding to fix home button css
         return(
@@ -115,6 +124,9 @@ class VideoShow extends React.Component {
                         <div>
                             <CommentFormContainer/>
                         </div>
+                        {/* <div>
+                            {commentIndex}
+                        </div> */}
                     </div>
 
                     <div className="sidebar-index">

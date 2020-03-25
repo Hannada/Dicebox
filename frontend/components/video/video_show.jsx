@@ -86,17 +86,17 @@ class VideoShow extends React.Component {
                 );
             }
         });
-
-        // const commentIndex = this.props.comments.map( (comment, i) => {
-        //     return (
-        //         <CommentIndexItemContainer
-        //             comment={comment}
-        //             key={i}
-        //             commentUser={this.props.users[comment.user_id]}
-        //             video={video}
-        //         />
-        //     );
-        // });
+        debugger
+        const commentIndex = comments.map( (comment, i) => {
+            return (
+                <CommentIndexItemContainer
+                    comment={comment}
+                    key={i}
+                    commentUser={this.props.users[comment.user_id]}
+                    video={vid}
+                />
+            );
+        });
 
         // Might need to add some padding to fix home button css
         return(

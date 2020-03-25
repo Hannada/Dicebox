@@ -66,7 +66,7 @@ class VideoShow extends React.Component {
     
 
     render(){
-        const { video, videos } = this.props;
+        const { video, videos, comments } = this.props;
         if (!video) {
             return null 
         }

@@ -38,7 +38,7 @@ class CommentIndexItem extends React.Component {
         const {currentUser, comment, video, } = this.props 
         return(
             <div>
-                {this.props.comment.body}
+                {comment.body}
             </div>
         )
     }

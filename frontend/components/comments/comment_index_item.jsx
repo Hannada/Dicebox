@@ -16,21 +16,30 @@ class CommentIndexItem extends React.Component {
         }
     }
 
-    componentDidMount(){
+    // componentDidMount(){
 
-    }
+    // }
 
     // handleComment(e){
 
     // }
+
+    // editCommentForm(){
+
+    // }
+
+
 
     update(){
         return e => this.setState({body: e.target.value})
     }
 
     render(){
+        const {currentUser, comment, video, } = this.props 
         return(
-            <div></div>
+            <div>
+                {this.props.comment.body}
+            </div>
         )
     }
 

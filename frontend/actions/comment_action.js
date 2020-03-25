@@ -1,5 +1,5 @@
 import * as CommentUtil from "../util/comment_util";
-import { RECEIVE_ALL_VIDEOS } from "./video_action";
+// import { RECEIVE_ALL_VIDEOS } from "./video_action";
 
 export const RECEIVE_COMMENT = "RECEIVE_COMMENT"; 
 export const RECEIVE_ALL_COMMENTS = "RECEIVE_ALL_COMMENTS";
@@ -11,7 +11,7 @@ export const receiveComment = comment => ({
 })
 
 export const receiveAllComments = comments => ({
-    type: RECEIVE_ALL_VIDEOS,
+    type: RECEIVE_ALL_COMMENTS,
     comments 
 })
 
@@ -28,6 +28,7 @@ export const fetchComments = videoId => dispatch => (
     CommentUtil.fetchComments(videoId)
         .then(comments => dispatch(receiveAllComments(comments)))
 )
+
 
 // export const postComment = (comment, videoId) => dispatch => (
 //     CommentUtil.postComment(comment, videoId)

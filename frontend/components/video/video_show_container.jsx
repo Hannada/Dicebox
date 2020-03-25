@@ -12,7 +12,7 @@ const msp = (state, ownProps) => {
         videos: Object.keys(state.entities.videos).map(id => state.entities.videos[id]),
         // user: state.entities.users[video.user_id],
         users: state.entities.users,
-        comments: state.entities.comments,
+        comments: Object.values(state.entities.comments),
         currentUser: state.session.currentUser
     })
 }

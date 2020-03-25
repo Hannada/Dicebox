@@ -24,7 +24,7 @@ class VideoShow extends React.Component {
 
     componentDidMount(){
         this.props.fetchVideos();   
-        // this.props.fetchComments(this.props.match.params.videoId);             
+        // this.props.fetchComments(this.props.match.params.videoId); 
         this.props.fetchVideo(this.props.match.params.videoId);
     }
 
@@ -87,16 +87,16 @@ class VideoShow extends React.Component {
                 );
             }
         });
-        // const commentIndex = comments.map( (comment, i) => {
-        //     return (
-        //         <CommentIndexItemContainer
-        //             comment={comment}
-        //             key={i}
-        //             commentUser={this.props.users[comment.user_id]}
-        //             video={vid}
-        //         />
-        //     );
-        // });
+        const commentIndex = comments.map( (comment, i) => {
+            return (
+                <CommentIndexItemContainer
+                    comment={comment}
+                    key={i}
+                    commentUser={this.props.users[comment.user_id]}
+                    video={video}
+                />
+            );
+        });
         //     const commentIndex = this.props.videos.map(comment => {
         //     return (
         //         <CommentIndexItemContainer
@@ -124,9 +124,9 @@ class VideoShow extends React.Component {
                         <div>
                             <CommentFormContainer/>
                         </div>
-                        {/* <div>
+                        <div>
                             {commentIndex}
-                        </div> */}
+                        </div>
                     </div>
 
                     <div className="sidebar-index">

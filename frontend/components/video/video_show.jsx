@@ -23,7 +23,8 @@ class VideoShow extends React.Component {
     }
 
     componentDidMount(){
-        this.props.fetchVideos();                
+        this.props.fetchVideos();   
+        // this.props.fetchComments(this.props.match.params.videoId);             
         this.props.fetchVideo(this.props.match.params.videoId);
     }
 
@@ -86,17 +87,16 @@ class VideoShow extends React.Component {
                 );
             }
         });
-        debugger
-        const commentIndex = comments.map( (comment, i) => {
-            return (
-                <CommentIndexItemContainer
-                    comment={comment}
-                    key={i}
-                    commentUser={this.props.users[comment.user_id]}
-                    video={vid}
-                />
-            );
-        });
+        // const commentIndex = comments.map( (comment, i) => {
+        //     return (
+        //         <CommentIndexItemContainer
+        //             comment={comment}
+        //             key={i}
+        //             commentUser={this.props.users[comment.user_id]}
+        //             video={vid}
+        //         />
+        //     );
+        // });
 
         // Might need to add some padding to fix home button css
         return(

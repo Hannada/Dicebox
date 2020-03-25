@@ -24,7 +24,6 @@ export const removeComment = commentId => ({
 //     CommentUtil.receiveComment(videoId, commentId)
 //     .then(comment => dispatch(receiveComment(comment)))
 // )
-
 export const fetchComments = videoId => dispatch => (
     CommentUtil.fetchComments(videoId)
         .then(comments => dispatch(receiveAllComments(comments)))

@@ -87,25 +87,26 @@ class VideoShow extends React.Component {
                 );
             }
         });
-        const commentIndex = comments.map( (comment, i) => {
-            return (
-                <CommentIndexItemContainer
-                    comment={comment}
-                    key={i}
-                    commentUser={this.props.users[comment.user_id]}
-                    video={video}
-                />
-            );
-        });
-        //     const commentIndex = this.props.videos.map(comment => {
+        // const commentIndex = comments.map( (comment, i) => {
+        //     debugger 
         //     return (
         //         <CommentIndexItemContainer
         //             comment={comment}
-        //             key={comment.id}
+        //             key={i}
         //             commentUser={this.props.users[comment.user_id]}
+        //             video={video}
         //         />
         //     );
         // });
+            const commentIndex = this.props.comments.map(comment => {
+            return (
+                <CommentIndexItemContainer
+                    comment={comment}
+                    key={comment.id}
+                    commentUser={this.props.users[comment.user_id]}
+                />
+            );
+        });
 
         // Might need to add some padding to fix home button css
         return(
@@ -124,9 +125,7 @@ class VideoShow extends React.Component {
                         <div>
                             <CommentFormContainer/>
                         </div>
-                        <div>
                             {commentIndex}
-                        </div>
                     </div>
 
                     <div className="sidebar-index">

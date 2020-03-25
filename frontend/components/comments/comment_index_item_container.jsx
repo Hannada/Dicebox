@@ -1,3 +1,4 @@
+import React from "react";
 import {connect} from "react-redux";
 import CommentIndexItem from "./comment_index_item";
 
@@ -13,4 +14,4 @@ const mdp = dispatch => {
     })
 }
 
-export default connect(msp)(mdp)(CommentIndexItem);
+export default connect(msp, mdp)(CommentIndexItem);

@@ -8,7 +8,7 @@ import VideoRecs from "../video/video_recs";
 import Navbar from "../navbar/navbar_container";
 import Sidebar from "../sidebar/sidebar_container";
 import CommentFormContainer from "../comments/comment_container";
-// import CommentIndexItemContainer from "../comments/comment_index_item_container";
+import CommentIndexItemContainer from "../comments/comment_index_item_container";
 
 
 class VideoShow extends React.Component {

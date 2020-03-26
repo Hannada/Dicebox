@@ -8,7 +8,8 @@ import VideoRecs from "../video/video_recs";
 import Navbar from "../navbar/navbar_container";
 import Sidebar from "../sidebar/sidebar_container";
 import CommentFormContainer from "../comments/comment_container";
-import CommentIndexItemContainer from "../comments/comment_index_item_container";
+// import CommentIndexItemContainer from "../comments/comment_index_item_container";
+import CommentIndexItem from "../comments/comment_index_item";
 
 
 class VideoShow extends React.Component {
@@ -98,15 +99,25 @@ class VideoShow extends React.Component {
         //         />
         //     );
         // });
-            const commentIndex = this.props.comments.map(comment => {
+        //     const commentIndex = this.props.comments.map(comment => {
+        //     return (
+        //         <CommentIndexItemContainer
+        //             comment={comment}
+        //             key={comment.id}
+        //             commentUser={this.props.users[comment.user_id]}
+        //         />
+        //     );
+        // });
+        const commentIndex = this.props.comments.map(comment => {
             return (
-                <CommentIndexItemContainer
+                <CommentIndexItem
                     comment={comment}
                     key={comment.id}
                     commentUser={this.props.users[comment.user_id]}
                 />
             );
         });
+        //currently using index im familiar with
 
         // Might need to add some padding to fix home button css
         return(

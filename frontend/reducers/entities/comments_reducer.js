@@ -9,12 +9,12 @@ const commentsReducer = (state = {}, action) => {
         case RECEIVE_ALL_COMMENTS:
             // return Object.assign({}, state, action.comments)
             // return action.comments
-            let newState = {};
+            let nextState = {};
             let commentIndex = Object.values(action.comments)
             commentIndex.forEach(comment => {
-                newState[comment.extract.id] = comment.extract
+                nextState[comment.extract.id] = comment.extract
             })
-            return merge({}, state, newState)
+            return merge({}, state, nextState)
         case RECEIVE_COMMENT:
             return Object.assign({}, state, action.comment)
         case REMOVE_COMMENT:

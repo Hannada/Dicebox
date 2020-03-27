@@ -99,9 +99,8 @@ class VideoShow extends React.Component {
         //         />
         //     );
         // });
-        debugger 
             const commentIndex = this.props.comments.map(comment => {
-                // debugger 
+                debugger 
             return (
                 <CommentIndexItemContainer
                     comment={comment}

@@ -7,13 +7,14 @@ import { fetchComments } from "../../actions/comment_action";
 // import {fetchUser} from "../../actions/session_actions";
 
 const msp = (state, ownProps) => {
-    // debugger 
+    debugger 
     return({
         video: state.entities.videos[ownProps.match.params.videoId],
         videos: Object.keys(state.entities.videos).map(id => state.entities.videos[id]),
         // user: state.entities.users[video.user_id],
         users: state.entities.users,
         comments: Object.values(state.entities.comments),
+        // comments: state.entities.comments[ownProps.match.params.videoId],
         currentUser: state.session.currentUser
     })
 }

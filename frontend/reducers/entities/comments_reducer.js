@@ -8,15 +8,22 @@ const commentsReducer = (state = {}, action) => {
     switch (action.type) {
         case RECEIVE_ALL_COMMENTS:
             // return Object.assign({}, state, action.comments)
-            return action.comments
+            // return action.comments
+            let newState = {};
+            let commentIndex = Object.values(action.comments)
+            commentIndex.forEach(comment => {
+                newState[comment.extract.id] = comment.extract
+            })
+            return merge({}, state, newState)
         case RECEIVE_COMMENT:
             return Object.assign({}, state, action.comment)
         case REMOVE_COMMENT:
             let newState = Object.assign({}, state);
             delete newState[action.commentId];
             return newState;
-        case RECEIVE_CURRENT_VIDEO:
-            return merge({}, state, { [action.video.id]: action.video });
+        // case RECEIVE_CURRENT_VIDEO:
+            // return merge({}, state, { [action.video.id]: action.video });
+
         default:
             return state;
     }

@@ -107,16 +107,16 @@ class VideoShow extends React.Component {
             //         commentUser={this.props.users[comment.user_id]}
             //     />
             // );
-        });
-        // const commentIndex = this.props.comments.map(comment => {
-        //     return (
-        //         <CommentIndexItem
-        //             comment={comment}
-        //             key={comment.id}
-        //             commentUser={this.props.users[comment.user_id]}
-        //         />
-        //     );
         // });
+        const commentIndex = this.props.comments.map(comment => {
+            return (
+                <CommentIndexItem
+                    comment={comment}
+                    key={comment.id}
+                    commentUser={this.props.users[comment.user_id]}
+                />
+            );
+        });
         //currently using index im familiar with
 
         // Might need to add some padding to fix home button css

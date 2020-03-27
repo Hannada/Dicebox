@@ -99,15 +99,14 @@ class VideoShow extends React.Component {
         //         />
         //     );
         // });
-            const commentIndex = this.props.comments.map(comment => {
-                debugger 
-            return (
-                <CommentIndexItemContainer
-                    comment={comment}
-                    key={comment.id}
-                    commentUser={this.props.users[comment.user_id]}
-                />
-            );
+            // const commentIndex = this.props.comments.map(comment => {
+            // return (
+            //     <CommentIndexItemContainer
+            //         comment={comment}
+            //         key={comment.id}
+            //         commentUser={this.props.users[comment.user_id]}
+            //     />
+            // );
         });
         // const commentIndex = this.props.comments.map(comment => {
         //     return (

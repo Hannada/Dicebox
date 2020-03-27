@@ -17,9 +17,7 @@ class VideoShow extends React.Component {
         super(props); 
         this.state  = {
             currentVideo: this.props.video, 
-            videoComments:  comments[0]
         } 
-        debugger
         // this.handleChange = this.handleChange.bind(this); // attempting handlechange 
         // this.updateCurrentVideo = this.updateCurrentVideo.bind(this); 
 
@@ -101,9 +99,9 @@ class VideoShow extends React.Component {
         //         />
         //     );
         // });
-        // debugger 
+        debugger 
             const commentIndex = this.props.comments.map(comment => {
-                debugger 
+                // debugger 
             return (
                 <CommentIndexItemContainer
                     comment={comment}

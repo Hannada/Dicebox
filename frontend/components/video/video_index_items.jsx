@@ -16,7 +16,9 @@ const VideoIndexItem = ({ video }) => {
                     <p className="index-user"><img src={window.diceLoginUrl} width="20" height="20" />{video.user_name}</p>
                 </div>
             </Link>
-        </div>);
+            <div className="index-space"></div>
+        </div>
+    );
 };
 
 // const VideoIndexItem = ()=> {

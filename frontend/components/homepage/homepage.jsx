@@ -18,6 +18,9 @@ const Homepage = () => (
                 <SidebarContainer/>
             </div>
             <div>
+                <div className="rec-word">
+                    Reccomended 
+                </div>
                 <div className="dupe-vids">
                     <VideoIndexContainer/>
                 </div>

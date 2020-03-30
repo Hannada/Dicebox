@@ -39,11 +39,11 @@ class Api::VideosController < ApplicationController
         end
     end
 
-    def search
-        @videos = Videos.all 
+    # def search
+      #  @videos = Videos.all 
 
         #  Maybe maooing through the videos in some way
-    end
+    # end
 
 
     private 

@@ -9,6 +9,7 @@ const commentsReducer = (state = {}, action) => {
         case RECEIVE_ALL_COMMENTS:
             // return Object.assign({}, state, action.comments)
             // return action.comments
+            // issue might have to do with the nesting of comments in vids
             let nextState = {};
             let commentIndex = Object.values(action.comments)
             commentIndex.forEach(comment => {

@@ -1,10 +1,11 @@
 .sidebar {
-    display: flex;
-      flex-direction: column; 
+  display: flex;
+  flex-direction: column; 
   background-color: rgba(28, 28, 28, 0.8); 
   color: white;
-
-  width: 56px;
+  text-align: center;
+   overflow-wrap: break-word;
+  width: 84px;
   height: 800px;
   box-sizing: border-box;
   justify-content: space-evenly;

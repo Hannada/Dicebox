@@ -19,7 +19,9 @@
   flex-direction: column; 
   background-color: rgba(28, 28, 28, 0.8);  
   color: white;
-  width: 156px;
+  text-align: center;
+
+  width: 160px;
   height: 800px;
   box-sizing: border-box;
   justify-content: space-evenly;

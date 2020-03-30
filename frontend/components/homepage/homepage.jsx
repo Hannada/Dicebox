@@ -17,6 +17,7 @@ const Homepage = () => (
             <div className="sidebar-home">
                 <SidebarContainer/>
             </div>
+            {/* <div>using this to make some space</div>  */}
             <div>
                 <div className="rec-word">
                     Reccomended 

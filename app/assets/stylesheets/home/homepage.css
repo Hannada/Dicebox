@@ -1,7 +1,10 @@
-
-
-
-
+.rec-word {
+  display: flex;
+  color: white;
+  flex-direction: row;
+  height: 24px;
+  width: auto;
+}
 
 
 .rec-items {

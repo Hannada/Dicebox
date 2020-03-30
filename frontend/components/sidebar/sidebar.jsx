@@ -27,7 +27,7 @@ class Sidebar extends React.Component {
            
                 <div>
                     <a href="https://www.linkedin.com/in/dave-hanna/"> <img src={window.linkedUrl} width="40" height="30"></img></a>
-                    {/* <p>Linked In</p> */}
+                    <p className="Sidebar-text">Linked In</p>
                 </div>
 
                 <div>

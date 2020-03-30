@@ -4,6 +4,17 @@
   flex-direction: row;
   height: 24px;
   width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sidebar-main-break {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+  padding-left: 10px;
+  height: auto;
+  width: 15px;
 }
 
 

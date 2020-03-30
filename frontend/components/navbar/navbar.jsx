@@ -57,10 +57,14 @@ class Navbar extends React.Component {
                     type="text" 
                     placeholder="Search..." 
                     // {/* value=
-                    // onChange */}
+                    // onSubmit */}
+
+                    // I need to potentially convert this into an onsubmit that will use props.history.push to the search page? 
                     />
+                    
                
             </div>
+            
             <div className="login-upload">
                 <Link to="/upload"><img src={window.uploadLogoUrl} width="20" height="20"/></Link>
                 <button className="header-button" onClick={this.props.logout}><img src={window.diceLoginUrl} width="20" height="20" />{this.props.currentUser.username}</button>

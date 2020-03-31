@@ -45,7 +45,15 @@ class Api::VideosController < ApplicationController
         #  Maybe maooing through the videos in some way
     # end
 
-
+    #     def index
+    #    if params[:search]
+    #        @projects = Project.search(params[:search])
+    #        render :index
+    #    else
+    #        @projects = Project.all
+    #        render :index
+    #    end
+    # end
     private 
 
     def video_params

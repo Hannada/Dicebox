@@ -31,8 +31,8 @@ const Homepage = () => (
             </div>
 
         </div>
-      
     </div>
+    // Refactoring to accomdate for shared search in the state  or alter the search component to work with router
 )
 
 export default Homepage;

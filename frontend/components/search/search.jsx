@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import  SearchIndexItem from "./search_index_items";
+import Navbar from "../navbar/navbar_container";
+import Sidebar from "../sidebar/sidebar_container";
 
 
 class Search extends React.Component {
@@ -50,7 +52,14 @@ class Search extends React.Component {
 
             // </div>
             // This is currently being handled in navbar. Looking to push the props from navbar?
-            <div></div>
+            // Might need to handle search in both so user can search on search page
+            <div className="video-show-main">
+                <Navbar/>
+                <div className="show">
+                    <Sidebar/>
+                </div>
+
+            </div>
         )
     }
 }

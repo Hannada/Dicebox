@@ -17,7 +17,6 @@ class Navbar extends React.Component {
     }
 
     userStatus() {
-
         if (this.props.currentUser) {
             return this.logoutOption()
         } else {
@@ -55,11 +54,16 @@ class Navbar extends React.Component {
 
             </div>
             <div >
+                <form onSubmit={this.handleSearch}>
                     <input className="searchbar" 
                     type="text" 
                     placeholder="Search..." 
+                    value={this.state.search}
+                    onChange={this.update("search")}
 
                     />
+                
+                </form>
 
                     {/* <Searchbar/> */}
                     

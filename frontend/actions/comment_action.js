@@ -10,10 +10,14 @@ export const receiveComment = comment => ({
     comment 
 })
 
-export const receiveAllComments = comments => ({
-    type: RECEIVE_ALL_COMMENTS,
-    comments 
-})
+export const receiveAllComments = comments => {
+    debugger
+    return(
+        {type: RECEIVE_ALL_COMMENTS,
+        comments
+        }
+    )
+}
 
 export const removeComment = commentId => ({
     type: REMOVE_COMMENT,
@@ -24,10 +28,12 @@ export const removeComment = commentId => ({
 //     CommentUtil.receiveComment(videoId, commentId)
 //     .then(comment => dispatch(receiveComment(comment)))
 // )
-export const fetchComments = videoId => dispatch => (
-    CommentUtil.fetchComments(videoId)
-        .then(comments => dispatch(receiveAllComments(comments)))
-)
+export const fetchComments = videoId => dispatch => {
+    return (
+        CommentUtil.fetchComments(videoId)
+            .then(comments => dispatch(receiveAllComments(comments)))
+    )
+}
 
 
 // export const postComment = (comment, videoId) => dispatch => (

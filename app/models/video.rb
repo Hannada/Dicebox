@@ -18,6 +18,10 @@ class Video < ApplicationRecord
         end
     end
 
+    def video_comments
+        comments.all
+    end
+
     # define comments.all
 
     def self.search(params)

@@ -1,11 +1,13 @@
 class Api::CommentsController < ApplicationController
     
     def show
+        debugger 
         @comment = Comment.find(params[:id])
         render :show 
     end
 
     def index
+        debugger 
         video = Video.find(params[:video_id])
         @comments = video.comments 
         render :index 

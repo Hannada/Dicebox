@@ -7,23 +7,25 @@ export const postComment = (comment, videoId) => (
 )
 
 export const fetchComments = (videoId) => {
-    $.ajax({
-        method: "GET",
-        url: `api/videos/${videoId}/comments`
-    })
+    return (
+        $.ajax({
+            method: "GET",
+            url: `api/videos/${videoId}/comments`
+        })
+    )
 }
 
-export const deleteComment = (videoId, commentId) => {
+export const deleteComment = (videoId, commentId) => (
     $.ajax({
         method: "DELETE",
         url: `api/videos/${videoId}/comments/${commentId}`
     })
-}
+)
 
-export const editComment = (comment, videoId) => {
+export const editComment = (comment, videoId) => (
     $.ajax({
         method: "PATCH",
         url: `api/videos/${videoId}/comments/${comment.id}`,
         data: {comment}
     })
-}
+)

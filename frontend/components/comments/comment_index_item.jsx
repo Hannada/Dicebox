@@ -1,52 +1,52 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const CommentIndexItem = ({comment}) => {
-    return (
-        <div>
-            <p>{comment.body}</p>
-        </div>
-    )
-};
+// const CommentIndexItem = ({comment}) => {
+//     return (
+//         <div>
+//             <p>{comment.body}</p>
+//         </div>
+//     )
+// };
 
-// class CommentIndexItem extends React.Component {
-//     constructor(props){
-//         super(props)
+class CommentIndexItem extends React.Component {
+    constructor(props){
+        super(props)
 
-//         this.state = {
-//             body: this.props.comment.body
-//         }
-//     }
+        this.state = {
+            body: this.props.comment.body
+        }
+    }
 
-//     componentDidMount(){
+    componentDidMount(){
 
-//     }
+    }
 
-//     handleComment(e){
+    handleComment(e){
 
-//     }
+    }
 
-//     editCommentForm(){
+    editCommentForm(){
 
-//     }
+    }
 
 
 
-//     update(){
-//         return e => this.setState({body: e.target.value})
-//     }
+    update(){
+        return e => this.setState({body: e.target.value})
+    }
 
-//     render(){
-//         const {currentUser, comment, video, } = this.props 
-//         debugger
-//         return(
+    render(){
+        const {currentUser, comment, video, } = this.props 
+        debugger
+        return(
             
-//             <div>
-//                 {comment.body}
-//             </div>
-//         )
-//     }
+            <div>
+                {comment.body}
+            </div>
+        )
+    }
 
-// }
+}
 
 export default CommentIndexItem;

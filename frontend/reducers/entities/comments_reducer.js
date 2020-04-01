@@ -7,15 +7,15 @@ const commentsReducer = (state = {}, action) => {
     Object.freeze(state);
     switch (action.type) {
         case RECEIVE_ALL_COMMENTS:
-            // return Object.assign({}, state, action.comments)
+            return Object.assign({}, state, action.comments)
             // return action.comments
             // issue might have to do with the nesting of comments in vids
-            let nextState = {};
-            let commentIndex = Object.values(action.comments)
-            commentIndex.forEach(comment => {
-                nextState[comment.extract.id] = comment.extract
-            })
-            return merge({}, state, nextState)
+            // let nextState = {};
+            // let commentIndex = Object.values(action.comments)
+            // commentIndex.forEach(comment => {
+            //     nextState[comment.extract.id] = comment.extract
+            // })
+            // return merge({}, state, nextState)
         case RECEIVE_COMMENT:
             return Object.assign({}, state, action.comment)
         case REMOVE_COMMENT:

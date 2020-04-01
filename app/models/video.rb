@@ -18,6 +18,8 @@ class Video < ApplicationRecord
         end
     end
 
+    # define comments.all
+
     def self.search(params)
         str = "%#{params}"
         @videos = Video 

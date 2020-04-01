@@ -5,12 +5,16 @@ class Api::VideosController < ApplicationController
     end
 
     def index
-        @videos = Video.all 
-        render :index 
+        if params[:search]
+            @videos = Videos.search(params[:search])
+            render :index
+        else
+            @videos = Video.all 
+            render :index 
+        end
     end
 
     def create
-        debugger 
         return false unless logged_in? 
         @video = Video.new(video_params)
         @user = current_user 
@@ -20,7 +24,6 @@ class Api::VideosController < ApplicationController
         else
             render json: @video.errors.full_messages, status: 422 
         end
-
 
     end
 
@@ -39,11 +42,6 @@ class Api::VideosController < ApplicationController
         end
     end
 
-    # def search
-      #  @videos = Videos.all 
-
-        #  Maybe maooing through the videos in some way
-    # end
 
     #     def index
     #    if params[:search]

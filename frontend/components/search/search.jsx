@@ -26,42 +26,36 @@ class Search extends React.Component {
     // }
 
     render(){
-        const searchedVideos = this.props.videos.map(video => {
-            return (
-                <SearchIndexItem
-                    key={video.id}
-                    video={video}
-                />
-            )
-        })
+        // const searchedVideos = this.props.videos.map(video => {
+        //     return (
+        //         <SearchIndexItem
+        //             key={video.id}
+        //             video={video}
+        //         />
+        //     )
+        // })
 
-        let filteredSearch = searchedVideos.filter(
-            (video) => {
-                return video.title.indexOf(this.state.currentSearch !== -1)
-            }
-        )
+        // let filteredSearch = searchedVideos.filter(
+        //     (video) => {
+        //         return video.title.indexOf(this.state.currentSearch !== -1)
+        //     }
+        // )
 
 
         return (
-            // <div>
-            //     <input className="searchbar" 
-            //     type="text" 
-            //     className="input" 
-            //     placeholder="Search..." 
-            //     />
+            <input className="searchbar"
+                type="text"
+                placeholder="Search..."
+            // {/* value=
+            // onSubmit */}
 
-            // </div>
+            // I need to potentially convert this into an onsubmit that will use props.history.push to the search page? 
+            />
 
             // This is currently being handled in navbar. Looking to push the props from navbar?
             // Might need to handle search in both so user can search on search page
-            
-            <div className="video-show-main">
-                <Navbar/>
-                <div className="show">
-                    <Sidebar/>
-                </div>
 
-            </div>
+      
         )
     }
 }

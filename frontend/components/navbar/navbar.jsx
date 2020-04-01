@@ -1,6 +1,7 @@
 import React from "react"; 
 import { Link } from "react-router-dom";
 import SidebarContainer from "../sidebar/sidebar_container"
+import Searchbar from "../search/search";
 
 
 class Navbar extends React.Component {
@@ -52,14 +53,11 @@ class Navbar extends React.Component {
 
             </div>
             <div >
-                    <input className="searchbar" 
+                    {/* <input className="searchbar" 
                     type="text" 
                     placeholder="Search..." 
-                    // {/* value=
-                    // onSubmit */}
-
-                    // I need to potentially convert this into an onsubmit that will use props.history.push to the search page? 
-                    />
+                    /> */}
+                    <Searchbar/>
                     
                
             </div>

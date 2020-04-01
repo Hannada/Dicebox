@@ -22,6 +22,13 @@ class SearchIndex extends React.Component{
             )
         })
         return (
+            <div className="video-show-main">
+                <Navbar />
+                <div className="show">
+                    <Sidebar />
+                </div>
+
+            </div>
             <div>
                 {searchedVideos}
             </div>

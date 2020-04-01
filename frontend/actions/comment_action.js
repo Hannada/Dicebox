@@ -11,7 +11,6 @@ export const receiveComment = comment => ({
 })
 
 export const receiveAllComments = comments => {
-    debugger
     return(
         {type: RECEIVE_ALL_COMMENTS,
         comments

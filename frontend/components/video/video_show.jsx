@@ -9,7 +9,7 @@ import Navbar from "../navbar/navbar_container";
 import Sidebar from "../sidebar/sidebar_container";
 import CommentFormContainer from "../comments/comment_container";
 import CommentIndexItemContainer from "../comments/comment_index_item_container";
-import CommentIndexItem from "../comments/comment_index_item";
+// import CommentIndexItem from "../comments/comment_index_item";
 
 
 class VideoShow extends React.Component {
@@ -25,7 +25,7 @@ class VideoShow extends React.Component {
 
     componentDidMount(){
         this.props.fetchVideos();   
-        this.props.fetchComments(this.props.match.params.videoId); 
+        // this.props.fetchComments(this.props.match.params.videoId); 
         this.props.fetchVideo(this.props.match.params.videoId);
     }
 
@@ -73,7 +73,6 @@ class VideoShow extends React.Component {
             return null 
         }
 
-        // debugger
 
         // Having the same video on the page might be confusing it.
 
@@ -90,30 +89,11 @@ class VideoShow extends React.Component {
                 );
             }
         });
-        // const commentIndex = comments.map( (comment, i) => {
-        //     debugger 
-        //     return (
-        //         <CommentIndexItemContainer
-        //             comment={comment}
-        //             key={i}
-        //             commentUser={this.props.users[comment.user_id]}
-        //             video={video}
-        //         />
-        //     );
-        // });
-            // const commentIndex = this.props.comments.map(comment => {
-            // return (
-            //     <CommentIndexItemContainer
-            //         comment={comment}
-            //         key={comment.id}
-            //         commentUser={this.props.users[comment.user_id]}
-            //     />
-            // );
-        // });
+
         const commentIndex = video.video_comments ? video.video_comments.map(comment => {
             // debugger
             return (
-                <CommentIndexItem
+                <CommentIndexItemContainer
                     comment={comment}
                     key={comment.id}
                     commentUser={this.props.users[comment.user_id]}
@@ -123,10 +103,18 @@ class VideoShow extends React.Component {
         })
         :
         null;
+        // debugger
+        // const commentIndex = video.video_comments ? video.video_comments.map(comment => {
+        //     return (<div key={comment.id}>
+        //         {comment.body}
+        //         </div>
+        //     );
 
-        //currently using index im familiar with
+        // })
+        //     :
+        //     null;
 
-        // Might need to add some padding to fix home button css
+
         return(
             <div className="video-show-main">
                 {/* <WelcomeContainer/> */}
@@ -143,7 +131,9 @@ class VideoShow extends React.Component {
                         <div>
                             <CommentFormContainer/>
                         </div>
+                        <div>
                             {commentIndex}
+                        </div>
                     </div>
 
                     <div className="sidebar-index">

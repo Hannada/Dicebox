@@ -38,7 +38,6 @@ const CommentIndexItem = ({comment}) => {
 
 //     render(){
 //         const {currentUser, comment, video, } = this.props 
-//         debugger
 //         return(
             
 //             <div>

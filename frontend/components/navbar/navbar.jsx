@@ -1,17 +1,19 @@
 import React from "react"; 
 import { Link } from "react-router-dom";
 import SidebarContainer from "../sidebar/sidebar_container"
-import Searchbar from "../search/search";
+// import Searchbar from "../search/search";
 
 
 class Navbar extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            filteredSearch: []
+            filteredSearch: [],
+            search: ""
         }; 
 
         this.sidebarSwap = this.sidebarSwap.bind(this);
+        this.handleSearch = this.handleSearch.bind(this);
     }
 
     userStatus() {
@@ -53,11 +55,13 @@ class Navbar extends React.Component {
 
             </div>
             <div >
-                    {/* <input className="searchbar" 
+                    <input className="searchbar" 
                     type="text" 
                     placeholder="Search..." 
-                    /> */}
-                    <Searchbar/>
+
+                    />
+
+                    {/* <Searchbar/> */}
                     
                
             </div>

@@ -1,20 +1,17 @@
 class Api::CommentsController < ApplicationController
     
     def show
-        debugger 
         @comment = Comment.find(params[:id])
         render :show 
     end
 
     def index
-        debugger 
         video = Video.find(params[:video_id])
         @comments = video.comments 
         render :index 
     end
 
     def create
-        debugger
         @comment = Comment.new(comment_params)
         @comment.user_id = current_user.id #unsure if this is gonna register properly
         @comment.video_id = params[:video_id]

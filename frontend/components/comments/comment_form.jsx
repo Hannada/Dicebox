@@ -15,7 +15,7 @@ class CommentForm extends React.Component{
         e.preventDefault();
         if (this.props.currentUser) {
             this.setState({body: ""})
-            this.props.postComment(this.state.body, this.state.vidId)
+            this.props.postComment({body: this.state.body, video_id: this.state.vidId})
         }else {
             this.props.history.push("/")
         }

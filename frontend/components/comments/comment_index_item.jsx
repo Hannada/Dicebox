@@ -38,7 +38,6 @@ class CommentIndexItem extends React.Component {
 
     render(){
         const {currentUser, comment, video, } = this.props 
-        debugger
         return(
             
             <div>

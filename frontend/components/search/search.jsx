@@ -50,6 +50,7 @@ class Search extends React.Component {
             // onSubmit */}
 
             // I need to potentially convert this into an onsubmit that will use props.history.push to the search page? 
+            
             />
 
             // This is currently being handled in navbar. Looking to push the props from navbar?

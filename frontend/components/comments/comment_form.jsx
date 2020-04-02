@@ -32,7 +32,8 @@ class CommentForm extends React.Component{
             <div>
                 <form onSubmit={this.handleComment}>
                     <input className="comment-form" type="text" 
-                            fillintext="Add a public comment"
+                            // fillintext="Add a public comment"
+                            placeholder="Add a public comment..."
                             onChange={this.update("body")}
                             value={this.state.body}
                     />

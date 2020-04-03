@@ -6,6 +6,7 @@ class CommentForm extends React.Component{
         this.state = {
             body: "",
             vidId: this.props.match.params.videoId,
+            // showModal: false  going to be for the modal for now
 
         }
         this.handleComment = this.handleComment.bind(this); 

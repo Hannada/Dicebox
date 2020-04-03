@@ -37,11 +37,12 @@ class CommentIndexItem extends React.Component {
     }
 
     render(){
-        const {currentUser, comment, video, } = this.props 
+        const {currentUser, comment, video, commentAuthor } = this.props 
+        // debugger 
         return(
             
             <div className="comment-block">
-                {currentUser.username}
+                {comment.authoe}
                 {comment.body}
             </div>
         )

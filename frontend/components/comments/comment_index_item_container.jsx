@@ -3,9 +3,9 @@ import {connect} from "react-redux";
 import CommentIndexItem from "./comment_index_item";
 
 const msp = state => {
-    // debugger
     return ({
-        currentUser: state.entities.users[state.session.id]
+        currentUser: state.entities.users[state.session.id],
+        // commentAuthor: state.entities.users[comment.user_id]
     })
 }
 

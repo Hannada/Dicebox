@@ -5,4 +5,10 @@
 
 .comment-form {
   background-color:  rgba(40, 40, 40, .8);
+  border: none;
+  font-size: 15px;
+  border-bottom: 1px solid grey;
+  width: 300px;
+  height: auto;
+
 }

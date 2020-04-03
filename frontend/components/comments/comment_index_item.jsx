@@ -19,7 +19,7 @@ class CommentIndexItem extends React.Component {
     }
 
     componentDidMount(){
-
+        this.props.getUsers();
     }
 
     handleComment(e){
@@ -37,12 +37,14 @@ class CommentIndexItem extends React.Component {
     }
 
     render(){
-        const {currentUser, comment, video, commentAuthor } = this.props 
-        // debugger 
+        const {currentUser, comment, video, commentAuthor, users } = this.props 
+        // debugger
+
+        // maybe fetch one user instead
         return(
             
             <div className="comment-block">
-                {comment.authoe}
+                {/* {comment.author} */}
                 {comment.body}
             </div>
         )

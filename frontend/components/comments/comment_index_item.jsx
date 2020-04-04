@@ -19,7 +19,8 @@ class CommentIndexItem extends React.Component {
     }
 
     componentDidMount(){
-        this.props.getUsers();
+        // this.props.getUsers();
+        // this.props.getUser(this.props.match.params.commentId); 
     }
 
     handleComment(e){
@@ -39,6 +40,7 @@ class CommentIndexItem extends React.Component {
     render(){
         const {currentUser, comment, video, commentAuthor, users } = this.props 
         // debugger
+        // const commentAuthor =  this.props.getUser(id)
 
         // maybe fetch one user instead
         return(

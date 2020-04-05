@@ -45,8 +45,13 @@ class CommentIndexItem extends React.Component {
         return(
             
             <div className="comment-block">
-                {/* {comment.author} */}
-                {comment.body}
+                <div>
+                    <img src={window.diceLoginUrl} width="20" height="20" />
+                </div>
+                <div>
+                    {comment.user_id}
+                    {comment.body}
+                </div>
             </div>
         )
     }

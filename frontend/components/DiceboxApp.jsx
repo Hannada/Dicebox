@@ -11,6 +11,7 @@ import Navbar from "./navbar/navbar_container";
 import Sidebar from "./sidebar/sidebar_container";
 import VideoPostContainer from "./video/video_post_form_container";
 import SearchContainer from "./search/search_container";
+// import SearchIndexContainer from "./search/search_index_container";
 // import SidebarContainer from "./sidebar/sidebar_container";
 // import AuthRoute from "../util/route_util";
 
@@ -29,7 +30,9 @@ const DiceboxApp = () => (
              <Route path="/signup" component={SignupFormContainer} />
              <Route path="/videos/:videoId" component={VideoShowContainer} />
              <Route path="/upload" component={VideoPostContainer} />
-             <Route path="/videos/search/:searchResults"  component={SearchContainer}/>
+             <Route path="/search/:searchResults"  component={SearchContainer}/>
+            {/* <Route path="/videos/search/:searchResults" component={SearchIndexContainer} /> */}
+
              <Route path="/" component={Homepage}/>
         </Switch>
         {/* <Route exact path="/" component={VideoIndexContainer} /> */}

@@ -12,7 +12,7 @@ class Search extends React.Component {
             currentSearch: ""
         }
     }
-
+    
     componentDidMount() {
         this.props.fetchVideos();
     }
@@ -54,10 +54,8 @@ class Search extends React.Component {
 
         // This is currently being handled in navbar. Looking to push the props from navbar?
         // Might need to handle search in both so user can search on search page
-       
         return (
             <div>
-
                 <div className="video-show-main">
                     <Navbar />
                     <div className="show">

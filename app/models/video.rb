@@ -32,6 +32,7 @@ class Video < ApplicationRecord
                 "UPPER(videos.title) LIKE UPPER(:query) OR
                 UPPER(videos.description) LIKE UPPER(:query) OR
                 UPPER(users.username) LIKE UPPER(:query)", query: str)
+        
     end
     
     #     def self.search(params)

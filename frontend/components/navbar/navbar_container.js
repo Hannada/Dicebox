@@ -30,7 +30,7 @@ const mdp = dispatch => {
         logout: () => dispatch(logout()),
         revert: () => dispatch(revertSidebar()),
         expand: () => dispatch(expandSidebar()),
-        searchFilter: searchResults => dispatch(search(searchResults))
+        searchFilter: searchResults => dispatch(searchVids(searchResults))
         // fetchVideos: () => dispatch(fetchVideos()),
     })
 }

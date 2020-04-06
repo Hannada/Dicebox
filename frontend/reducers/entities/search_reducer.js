@@ -7,6 +7,7 @@ const searchReducer = (state = [], action) => {
     switch (action.type) {
         case SEARCH_VIDS:
             return action.searchVideos;
+            // Returning nil
         case CLEAR_SEARCH:
             return []
         default:

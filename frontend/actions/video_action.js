@@ -34,7 +34,7 @@ export const clearVideoErrors = () => ({
     type: CLEAR_VIDEO_ERRORS
 })
 
-export const search =  searchResults => ({
+export const searchVids =  searchResults => ({
     type: SEARCH_VIDS,
     searchResults
 })
@@ -54,6 +54,8 @@ export const uploadVideo = video => dispatch => (
     VideoUtil.postVideo(video).then(video => dispatch(receiveCurrentVideo(video)))
 )
 
-export const searchVids = searchResults => dispatch => (
-    VideoUtil.searchVids(searchResults).then(searchResults => dispatch(search(searchResults)))
-)
+export const searchAllVids = searchResults => dispatch => {
+    return VideoUtil.searchVids(searchResults)
+        .then(searchResults => dispatch(searchVids(searchResults)))
+    
+}

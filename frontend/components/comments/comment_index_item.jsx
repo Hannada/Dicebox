@@ -42,7 +42,7 @@ class CommentIndexItem extends React.Component {
         // const commentAuthor =  this.props.getUser(id)
 
         // maybe fetch one user instead
-        debugger
+        // debugger
         return(
             
             <div className="comment-block">

@@ -40,22 +40,22 @@ class Search extends React.Component {
         //         return video.title.indexOf(this.state.currentSearch !== -1)
         //     }
         // )
+        
+        
+        // <input className="searchbar"
+        //     type="text"
+        //     placeholder="Search..."
+        // // {/* value=
+        // // onSubmit */}
 
+        // // I need to potentially convert this into an onsubmit that will use props.history.push to the search page? 
+        
+        // />
 
+        // This is currently being handled in navbar. Looking to push the props from navbar?
+        // Might need to handle search in both so user can search on search page
+       
         return (
-            // <input className="searchbar"
-            //     type="text"
-            //     placeholder="Search..."
-            // // {/* value=
-            // // onSubmit */}
-
-            // // I need to potentially convert this into an onsubmit that will use props.history.push to the search page? 
-            
-            // />
-
-            // This is currently being handled in navbar. Looking to push the props from navbar?
-            // Might need to handle search in both so user can search on search page
-           
             <div>
 
                 <div className="video-show-main">
@@ -69,8 +69,6 @@ class Search extends React.Component {
                     {searchedVideos}
                 </div>
             </div>
-        
-    
         )
     }
 }

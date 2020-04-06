@@ -43,15 +43,15 @@ class Search extends React.Component {
 
 
         return (
-            <input className="searchbar"
-                type="text"
-                placeholder="Search..."
-            // {/* value=
-            // onSubmit */}
+            // <input className="searchbar"
+            //     type="text"
+            //     placeholder="Search..."
+            // // {/* value=
+            // // onSubmit */}
 
-            // I need to potentially convert this into an onsubmit that will use props.history.push to the search page? 
+            // // I need to potentially convert this into an onsubmit that will use props.history.push to the search page? 
             
-            />
+            // />
 
             // This is currently being handled in navbar. Looking to push the props from navbar?
             // Might need to handle search in both so user can search on search page

@@ -7,7 +7,7 @@ const searchReducer = (state = [], action) => {
     // debugger 
     switch (action.type) {
         case SEARCH_VIDS:
-            return action.searchVideos;
+            return action.searchVids;
             // Returning nil
         case CLEAR_SEARCH:
             return []

@@ -1,5 +1,5 @@
 import { CLEAR_SEARCH, SEARCH_VIDS } from "../../actions/video_action";
-// import merge from "lodash/merge";
+import merge from "lodash/merge";
 
 
 const searchReducer = (state = [], action) => {
@@ -7,7 +7,7 @@ const searchReducer = (state = [], action) => {
     // debugger 
     switch (action.type) {
         case SEARCH_VIDS:
-            return action.searchVids;
+            return merge({}, action.videos)
             // Returning nil
         case CLEAR_SEARCH:
             return []

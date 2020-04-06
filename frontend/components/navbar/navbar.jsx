@@ -1,5 +1,5 @@
 import React from "react"; 
-import { Link } from "react-router-dom";
+import { withRouter, Route, Link } from "react-router-dom";
 import SidebarContainer from "../sidebar/sidebar_container"
 // import Searchbar from "../search/search";
 
@@ -38,10 +38,10 @@ class Navbar extends React.Component {
 
     handleSearch(e) {
         e.preventDefault();
-
+        debugger
         if (this.state.search) {
             this.props.searchFilter(this.state.search)
-            this.props.history.push(`videos/searrch/${this.state.search}`)
+            this.props.history.push(`videos/search/${this.state.search}`)
             this.setState({ search: "" })
         }
     }

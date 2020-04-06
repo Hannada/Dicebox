@@ -4,6 +4,7 @@ import { CLEAR_SEARCH, SEARCH_VIDS } from "../../actions/video_action";
 
 const searchReducer = (state = [], action) => {
     Object.freeze(state);
+    // debugger 
     switch (action.type) {
         case SEARCH_VIDS:
             return action.searchVideos;

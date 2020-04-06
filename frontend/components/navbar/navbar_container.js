@@ -31,6 +31,7 @@ const mdp = dispatch => {
         revert: () => dispatch(revertSidebar()),
         expand: () => dispatch(expandSidebar()),
         searchFilter: searchResults => dispatch(searchVids(searchResults))
+        // Current problem in th searchfilter function
         // fetchVideos: () => dispatch(fetchVideos()),
     })
 }

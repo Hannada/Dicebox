@@ -38,7 +38,7 @@ class Navbar extends React.Component {
 
     handleSearch(e) {
         e.preventDefault();
-        debugger
+        // debugger
         if (this.state.search) {
             this.props.searchFilter(this.state.search)
             this.props.history.push(`videos/search/${this.state.search}`)
@@ -124,4 +124,4 @@ class Navbar extends React.Component {
 
 }
 
-export default Navbar; 
+export default withRouter(Navbar); 

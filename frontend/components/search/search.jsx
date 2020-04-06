@@ -14,7 +14,7 @@ class Search extends React.Component {
     }
 
     componentDidMount() {
-
+        this.props.fetchVideos();
     }
 
     // componentDidUpdate(prevProps){
@@ -26,14 +26,14 @@ class Search extends React.Component {
     // }
 
     render(){
-        // const searchedVideos = this.props.videos.map(video => {
-        //     return (
-        //         <SearchIndexItem
-        //             key={video.id}
-        //             video={video}
-        //         />
-        //     )
-        // })
+        const searchedVideos = this.props.videos.map(video => {
+            return (
+                <SearchIndexItem
+                    key={video.id}
+                    video={video}
+                />
+            )
+        })
 
         // let filteredSearch = searchedVideos.filter(
         //     (video) => {
@@ -55,8 +55,22 @@ class Search extends React.Component {
 
             // This is currently being handled in navbar. Looking to push the props from navbar?
             // Might need to handle search in both so user can search on search page
-            <div></div>
-      
+           
+            <div>
+
+                <div className="video-show-main">
+                    <Navbar />
+                    <div className="show">
+                        <Sidebar />
+                    </div>
+
+                </div>
+                <div>
+                    {searchedVideos}
+                </div>
+            </div>
+        
+    
         )
     }
 }

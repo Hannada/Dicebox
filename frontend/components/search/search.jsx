@@ -14,10 +14,13 @@ class Search extends React.Component {
     }
     
     componentDidMount() {
-        debugger 
+        // debugger 
         const that = this;  
         this.props.fetchVideos()
-            .then(() => that.props.searchedVideos(this.props.match.params.searchResults));
+            .then(() => that.props.searchVideos(this.props.match.params.searchResults));
+        // this.props.fetchVideos()
+        // this.props.searchVideos(this.props.match.params.searchResults);
+
     }
 
     // componentDidUpdate(prevProps){

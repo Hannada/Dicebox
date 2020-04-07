@@ -41,6 +41,16 @@ class Search extends React.Component {
             )
         })
 
+        // const searchedVideos = this.props.videos.filter(video => {
+    
+        //     return (
+        //         <SearchIndexItem
+        //             key={video.id}
+        //             video={video}
+        //         />
+        //     )
+        // })
+
         // let filteredSearch = searchedVideos.filter(
         //     (video) => {
         //         return video.title.indexOf(this.state.currentSearch !== -1)

@@ -93,14 +93,22 @@ class Navbar extends React.Component {
                 </div>
                 <Link to="/"> <p className="home"><img src={window.d20Url} width="30" height="30" />Dicebox</p></Link>
             </div>
-            <div>
-                <input className="searchbar"
-                    type="text"
-                    placeholder="Search..." />
-                {/* value=
-                onChange */}
+                <div >
+                    <form onSubmit={this.handleSearch}>
+                        <input className="searchbar"
+                            type="text"
+                            placeholder="Search..."
+                            value={this.state.search}
+                            onChange={this.update("search")}
 
-            </div>
+                        />
+
+                    </form>
+
+                    {/* <Searchbar/> */}
+
+
+                </div>
             <div className="login-upload">
                 <Link to="/login" className="login-button"><img src={window.diceLoginUrl} width="20" height="20" />Login</Link>
             </div>

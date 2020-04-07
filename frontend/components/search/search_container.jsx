@@ -9,6 +9,7 @@ const msp = (state, ownProps) => {
     return({
         videos: Object.keys(state.entities.videos).map(id => state.entities.videos[id]),
         // searching: Object.keys(state.entities.searchs),
+        // searchList: searchList
 
 
     })

@@ -9,12 +9,15 @@ class Search extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            currentSearch: ""
+            // currentSearch: ""
         }
     }
     
     componentDidMount() {
-        this.props.fetchVideos();
+        debugger 
+        const that = this;  
+        this.props.fetchVideos()
+            .then(() => that.props.searchedVideos(this.props.match.params.searchResults));
     }
 
     // componentDidUpdate(prevProps){

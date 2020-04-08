@@ -14,7 +14,6 @@ class Search extends React.Component {
     }
     
     componentDidMount() {
-        // debugger 
         const that = this;  
         this.props.fetchVideos()
             .then(() => that.props.searchVideos(this.props.match.params.searchResults));

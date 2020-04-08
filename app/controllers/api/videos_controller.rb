@@ -16,6 +16,7 @@ class Api::VideosController < ApplicationController
 
     def create
         return false unless logged_in? 
+        debugger 
         @video = Video.new(video_params)
         @user = current_user 
         @video.user_id = current_user.id 
@@ -55,7 +56,8 @@ class Api::VideosController < ApplicationController
     private 
 
     def video_params
-        params.require(:video).permit(:id, :title, :description, :vid, :user_id, :searchResults)
+        debugger 
+        params.require(:video).permit(:id, :title, :description, :videoFile, :user_id, :searchResults)
     end
 
     # def video_params

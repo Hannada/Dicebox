@@ -7,7 +7,7 @@ class VideoPostForm extends React.Component {
             id: this.props.currentUser.id, 
             title: "",
             description: "",
-            vid: null, //This used to be url. Was altered to match model
+            vidUrl: null, //This used to be url. Was altered to match model
             // videoId: null,
             videoFile: null  
         }
@@ -24,18 +24,22 @@ class VideoPostForm extends React.Component {
     // }
 
     handleFile(e) {
-        const file = e.currentTarget.files[0];
         const fileReader = new FileReader();
+        const file = e.currentTarget.files[0];
 
-        this.setState({ vid: e.currentTarget.files[0] })
+        // this.setState({ vid: e.currentTarget.files[0] })
 
-        fileReader.onloadend = () => 
-            this.setState({vid: fileReader.result, videoFile: file});
+        debugger
 
+        fileReader.onloadend = () =>{
+            // debugger 
+            return (
+            this.setState({vidUrl: fileReader.result, videoFile: file})
+            )}
         if (file) {
             fileReader.readAsDataURL(file)
         } else {
-            this.setState({vid: null, videoFile: null})
+            this.setState({vidUrl: null, videoFile: null})
         }
     }
 
@@ -62,10 +66,11 @@ class VideoPostForm extends React.Component {
     handleSubmit(e){
         e.preventDefault();
         const formData = new FormData();
-        formData.append("video[user_id]", this.state.id)
+        formData.append("video[user_id]", this.state.id);
         formData.append("video[title]", this.state.title);
         formData.append("video[description]", this.state.description);
-        formData.append("video[vid]", this.state.vid)
+        formData.append("video[videoFile]", this.state.videoFile);
+        // formData.append("video[vidUrl]", this.state.vidUrl)
 
         // Need to add upload callback
 
@@ -73,6 +78,7 @@ class VideoPostForm extends React.Component {
         //     .then ( (action) => {
         //         if (this.props.formType === "")
         //     })
+        debugger
         this.props.createVideo(formData)
             .then(this.props.history.push("/"))
         

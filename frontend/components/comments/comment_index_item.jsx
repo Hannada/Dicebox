@@ -24,7 +24,7 @@ class CommentIndexItem extends React.Component {
     }
 
     handleComment(e){
-
+        // Looking to add delete function here possibly?
     }
 
     editCommentForm(){

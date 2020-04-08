@@ -75,11 +75,11 @@ class Search extends React.Component {
                     <Navbar />
                     <div className="show">
                         <Sidebar />
+                        <div className="searched-vids">
+                            {searchedVideos}
+                        </div>
                     </div>
 
-                </div>
-                <div className="searched-vids">
-                    {searchedVideos}
                 </div>
             </div>
         )

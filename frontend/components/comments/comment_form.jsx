@@ -18,7 +18,7 @@ class CommentForm extends React.Component{
             this.setState({body: ""})
             this.props.postComment({body: this.state.body, video_id: this.state.vidId})
         }else {
-            this.props.history.push("/")
+            this.props.history.push("/login")
         }
         // Potentially only passing the string to the backend?
     }

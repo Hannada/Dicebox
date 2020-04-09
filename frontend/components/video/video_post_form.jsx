@@ -29,7 +29,7 @@ class VideoPostForm extends React.Component {
 
         // this.setState({ vid: e.currentTarget.files[0] })
 
-        debugger
+        // debugger
 
         fileReader.onloadend = () =>{
             // debugger 

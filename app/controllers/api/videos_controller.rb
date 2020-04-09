@@ -16,8 +16,8 @@ class Api::VideosController < ApplicationController
 
     def create
         return false unless logged_in? 
-        debugger 
         @video = Video.new(video_params)
+        debugger 
         @user = current_user 
         @video.user_id = current_user.id 
         if @video.save

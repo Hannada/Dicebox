@@ -56,7 +56,6 @@ class Api::VideosController < ApplicationController
     private 
 
     def video_params
-        debugger 
         params.require(:video).permit(:id, :title, :description, :videoFile, :user_id, :searchResults)
     end
 

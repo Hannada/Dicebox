@@ -9,7 +9,7 @@ class VideoPostForm extends React.Component {
             description: "",
             vidUrl: null, //This used to be url. Was altered to match model
             // videoId: null,
-            videoFile: null  
+            vid: null  
         }
         // this.props.currentUser = this.props.currentUser.bind(this);
         // const currentId = this.props.currentUser.id 
@@ -34,12 +34,12 @@ class VideoPostForm extends React.Component {
         fileReader.onloadend = () =>{
             // debugger 
             return (
-            this.setState({vidUrl: fileReader.result, videoFile: file})
+            this.setState({vidUrl: fileReader.result, vid: file})
             )}
         if (file) {
             fileReader.readAsDataURL(file)
         } else {
-            this.setState({vidUrl: null, videoFile: null})
+            this.setState({vidUrl: null, vid: null})
         }
     }
 
@@ -69,7 +69,7 @@ class VideoPostForm extends React.Component {
         formData.append("video[user_id]", this.state.id);
         formData.append("video[title]", this.state.title);
         formData.append("video[description]", this.state.description);
-        formData.append("video[videoFile]", this.state.videoFile);
+        formData.append("video[vid]", this.state.vid);
         // formData.append("video[vidUrl]", this.state.vidUrl)
 
         // Need to add upload callback

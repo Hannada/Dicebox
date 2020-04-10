@@ -78,9 +78,11 @@ class VideoPostForm extends React.Component {
         //     .then ( (action) => {
         //         if (this.props.formType === "")
         //     })
-        debugger
         this.props.createVideo(formData)
-            .then(this.props.history.push("/"))
+            // .then(this.props.history.push("/"))
+        // debugger
+
+        // changing videoFile to match url allow it to process into a 422 error.
         
 
     }

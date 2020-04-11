@@ -55,7 +55,6 @@ export const uploadVideo = video => dispatch => (
 )
 
 export const searchAllVids = searchResults => dispatch => {
-    debugger 
     return VideoUtil.searchVids(searchResults)
         .then(searchResults => dispatch(searchVids(searchResults)))
     

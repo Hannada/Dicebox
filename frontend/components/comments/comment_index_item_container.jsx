@@ -4,7 +4,6 @@ import CommentIndexItem from "./comment_index_item";
 import { fetchUsers, fetchUser } from "../../actions/session_actions";
 
 const msp = state => {
-    // debugger
     return ({
         currentUser: state.entities.users[state.session.id],
         // commentAuthor: state.entities.users[comment.user_id]

@@ -29,10 +29,8 @@ class VideoPostForm extends React.Component {
 
         // this.setState({ vid: e.currentTarget.files[0] })
 
-        // debugger
 
         fileReader.onloadend = () =>{
-            // debugger 
             return (
             this.setState({vidUrl: fileReader.result, vid: file})
             )}
@@ -80,7 +78,6 @@ class VideoPostForm extends React.Component {
         //     })
         this.props.createVideo(formData)
             // .then(this.props.history.push("/"))
-        // debugger
 
         // changing videoFile to match url allow it to process into a 422 error.
         

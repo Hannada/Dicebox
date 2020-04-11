@@ -41,7 +41,7 @@ class Sidebar extends React.Component {
                 </div>
 
                 <div>   
-                    <a href="https://hannada.github.io/"> <img src={window.personalLogoUrl} width="40" height="30"></img></a>
+                    {/* <a href="https://hannada.github.io/"> <img src={window.personalLogoUrl} width="40" height="30"></img></a> */}
                     <p>Personal Site</p>
                 </div>
 

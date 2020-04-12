@@ -110,21 +110,28 @@ class VideoPostForm extends React.Component {
         return(
             <form className="video-submit" onSubmit={this.handleSubmit}>
                 <label className="video-post-title" htmlFor="video-title">Title of Video</label>
-                <input type="text"
+                <input 
+                    className="video-post-title-submit"
+                    type="text"
                     id="video-title"
                     value={this.state.title}
                     onChange={this.handleInput}
                 />
                 <label className="video-description-title" htmlFor="video-description">Description of Video</label>
-                <input type="text"
+                <input 
+                    className="video-post-title-submit"
+                    type="text"
                     id="video-description"
                     value={this.state.description}
                     onChange={this.handleDescription}
                 />
-                <input type="file"
+                <input
+                    className="video-post-title-submit"
+                    type="file"
                     onChange={this.handleFile}
                 />
-                <button>Upload a new video</button>
+                    
+                <button className="video-post-title-submit">Upload a new video</button>
             </form>
         )
     }

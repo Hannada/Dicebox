@@ -1,7 +1,7 @@
 class Video < ApplicationRecord
     validates :title, :description, presence: true 
 
-    validate :ensure_vid
+    # validate :ensure_vid
     
     belongs_to :user 
     has_many :comments 

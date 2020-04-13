@@ -34,3 +34,10 @@ file = open('https://dicebox-seeds.s3.us-east-2.amazonaws.com/CritRole.mp4')
 
 ford1vid.vid.attach(io: file, filename: 'CritRole.mp4')
 
+caleb1 = User.create!(username: "caleb1", email: "caleb1@gmail.com", password: "123456")
+caleb1vid = Video.create!(title: "Thaumaturgy", description: "Brief clip", user_id: caleb1.id)
+
+file = open('https://dicebox-seeds.s3.us-east-2.amazonaws.com/thaumaturgy.mp4')
+
+caleb1vid.vid.attach(io: file, filename: 'thaumaturgy.mp4')
+

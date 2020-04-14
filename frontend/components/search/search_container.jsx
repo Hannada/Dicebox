@@ -5,8 +5,10 @@ import Search from "./search";
 import { fetchVideo, fetchVideos, clearSearch, searchVids } from "../../actions/video_action";
 
 const msp = (state, ownProps) => {
+    const searchVids = Object.values(state.entities.searches)
     return({
         videos: Object.keys(state.entities.videos).map(id => state.entities.videos[id]),
+        searchVids
         // searching: Object.keys(state.entities.searchs),
         // searchList: searchList
 

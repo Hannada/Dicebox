@@ -86,5 +86,5 @@ export const searchVids = searchResults => {
     )
 }
 
-//Might not need this? trying out something else first
+// Need this to query backend 
 

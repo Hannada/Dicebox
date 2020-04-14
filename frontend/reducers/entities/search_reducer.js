@@ -4,10 +4,12 @@ import merge from "lodash/merge";
 
 const searchReducer = (state = [], action) => {
     Object.freeze(state);
+    // debugger
     switch (action.type) {
         case SEARCH_VIDS:
-            return merge({}, action.videos)
+            return merge({}, action.searches)
             // Returning nil
+            //altering to searchVids
         case CLEAR_SEARCH:
             return []
         default:

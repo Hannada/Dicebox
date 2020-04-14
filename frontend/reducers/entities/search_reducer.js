@@ -9,7 +9,7 @@ const searchReducer = (state = [], action) => {
         case SEARCH_VIDS:
             return merge({}, action.searches)
             // Returning nil
-            //altering to searchVids
+            //altering to searches to match name in entities 
         case CLEAR_SEARCH:
             return []
         default:

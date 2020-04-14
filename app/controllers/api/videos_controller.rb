@@ -5,6 +5,7 @@ class Api::VideosController < ApplicationController
     end
 
     def index
+        # debugger 
         if params[:searchResults]
             @videos = Videos.search(params[:searchResults])
             render :index
@@ -40,6 +41,11 @@ class Api::VideosController < ApplicationController
         else
             render json: ["You cannot delete videos you haven't posted"], status: 422
         end
+    end
+
+    def search 
+        @videos = Videos.search(params[:searchResults])
+        render :search 
     end
 
 

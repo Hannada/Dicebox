@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     /* align-content: center; */
-    position: relative;
+    position: absolute;
     min-height: 370px;
     padding: 16px 24px 0 24px;
     box-sizing: border-box;

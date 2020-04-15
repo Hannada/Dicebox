@@ -42,6 +42,10 @@ export const clearSearch = () => ({
     type: CLEAR_SEARCH,
 })
 
+// export const fetchVideos = () => dispatch => (
+//     VideoUtil.fetchVideos().then(videos => dispatch(receiveAllVideos(videos)))
+// )
+
 export const fetchVideos = () => dispatch => (
     VideoUtil.fetchVideos().then(videos => dispatch(receiveAllVideos(videos)))
 )

@@ -1,4 +1,4 @@
-import { RECEIVE_ALL_VIDEOS, RECEIVE_CURRENT_VIDEO, REMOVE_CURRENT_VIDEO} from "../../actions/video_action";
+import { RECEIVE_ALL_VIDEOS, RECEIVE_CURRENT_VIDEO, REMOVE_CURRENT_VIDEO, SEARCH_VIDS} from "../../actions/video_action";
 import merge from "lodash/merge";
 
 
@@ -13,6 +13,8 @@ const videosReducer = (state = {}, action) => {
             let newState = Object.assign({}, state);
             delete newState[action.videoId];
             return newState;
+        case SEARCH_VIDS:
+            return merge({}, action.videos);
         default:
             return state;
     }

@@ -45,7 +45,7 @@ class Api::VideosController < ApplicationController
         end
     end
 
-    def search 
+    def search_vids(params) 
         @videos = Videos.search(params[:searchResults])
         render :search 
     end

@@ -5,11 +5,11 @@ class Api::VideosController < ApplicationController
     end
 
     def index
-            debugger 
+            # debugger 
 
         if params[:searchResults]
             @videos = Video.search(params[:searchResults])
-            debugger 
+            # debugger 
             render :index
         else
             @videos = Video.all 

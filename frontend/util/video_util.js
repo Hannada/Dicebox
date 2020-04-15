@@ -1,9 +1,26 @@
-export const fetchVideos = () => (
+// export const fetchVideos = () => (
+//     $.ajax({
+//         method: "GET",
+//         url: "api/videos"    
+//     })
+// )
+
+export const fetchVideos = search => {
+
+    const data = {}
+
+    if(search !== '') {
+        Object.assign(data, search);
+    }
+
+    return (
     $.ajax({
         method: "GET",
-        url: "api/videos"    
+        url: "api/videos",
+        data
     })
-)
+    )
+}
 
 export const fetchVideo = id => (
     $.ajax({

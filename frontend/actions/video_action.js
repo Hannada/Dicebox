@@ -1,6 +1,7 @@
 import * as VideoUtil from "../util/video_util";
 
 export const RECEIVE_ALL_VIDEOS = "RECEIVE_ALL_VIDEOS";
+export const RECEIVE_SEARCH_VIDEOS = "RECEIVE_SEARCH_VIDEOS";
 export const RECEIVE_CURRENT_VIDEO = "RECEIVE_CURRENT_VIDEO";
 export const REMOVE_CURRENT_VIDEO = "REMOVE_CURRENT_VIDEO";
 export const SEARCH_VIDS = "SEARCH_VIDS";
@@ -10,12 +11,12 @@ export const RECEIVE_VIDEO_ERRORS = "RECEIVE_VIDEO_ERRORS";
 export const CLEAR_VIDEO_ERRORS = "CLEAR_ERRORS"; //Trying something else out
 
 
-export const receiveAllVideos = videos => ({
-    type: SEARCH_VIDS,
+export const receiveSearchVideos = videos => ({
+    type: RECEIVE_SEARCH_VIDEOS,
     videos
 })
 
-export const receiveSearchVideos = videos => ({
+export const receiveAllVideos = videos => ({
     type: RECEIVE_ALL_VIDEOS,
     videos
 })
@@ -41,10 +42,10 @@ export const clearVideoErrors = () => ({
     type: CLEAR_VIDEO_ERRORS
 })
 
-// export const searchVids =  searchResults => ({
-//     type: SEARCH_VIDS,
-//     searchResults
-// })
+export const searchVids =  searchResults => ({
+    type: SEARCH_VIDS,
+    searchResults
+})
 
 export const clearSearch = () => ({
     type: CLEAR_SEARCH,
@@ -65,6 +66,13 @@ export const fetchVideos = search => dispatch => {
 }
 
 // The above ismeant to check for some kind of search params. Current working regardless.
+export const searchAllVids = searchResults => dispatch => {
+    return VideoUtil.searchVids(searchResults)
+        .then(searchResults => dispatch(searchVids(searchResults)))
+    
+}
+
+// The above should be passing the search params to be used asa search on  the search page?
 
 export const fetchVideo = id => dispatch => (
     VideoUtil.fetchVideo(id).then(video => dispatch(receiveCurrentVideo(video)))
@@ -74,8 +82,3 @@ export const uploadVideo = video => dispatch => (
     VideoUtil.postVideo(video).then(video => dispatch(receiveCurrentVideo(video)))
 )
 
-export const searchAllVids = searchResults => dispatch => {
-    return VideoUtil.searchVids(searchResults)
-        .then(searchResults => dispatch(searchVids(searchResults)))
-    
-}

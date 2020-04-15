@@ -18,4 +18,20 @@ const videosReducer = (state = {}, action) => {
     }
 };
 
+// const videosReducer = (state = {}, action) => {
+//     Object.freeze(state);
+//     switch (action.type) {
+//         case RECEIVE_CURRENT_VIDEO:
+//             return merge({}, state, { [action.video.id]: action.video });
+//         case RECEIVE_ALL_VIDEOS:
+//             return merge({}, action.videos);
+//         case REMOVE_CURRENT_VIDEO:
+//             let newState = Object.assign({}, state);
+//             delete newState[action.videoId];
+//             return newState;
+//         default:
+//             return state;
+//     }
+// };
+
 export default videosReducer;

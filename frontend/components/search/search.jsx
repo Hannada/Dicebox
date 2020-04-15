@@ -14,10 +14,11 @@ class Search extends React.Component {
     }
     
     componentDidMount() {
-        // const that = this;  
-        // this.props.fetchVideos()
-        //     .then(() => that.props.searchVideos(this.props.match.params.searchResults));
-        this.props.fetchVideos({ search: this.props.match.params.searchResults })
+        const that = this;  
+        this.props.fetchVideos()
+            .then(() => that.props.searchVideos(this.props.match.params.searchResults));
+       
+        // this.props.fetchVideos({ search: this.props.match.params.searchResults })
         
         // Tried altering to match different index?
     }
@@ -31,7 +32,8 @@ class Search extends React.Component {
     // }
 
     render(){
-        const searchedVideos = this.props.videos.map(video => {
+        const searchedVideos = this.props.searchVids.map(video => {
+            debugger
             return (
                 <SearchIndexItem
                     key={video.id}

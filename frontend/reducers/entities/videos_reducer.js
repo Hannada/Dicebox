@@ -13,8 +13,8 @@ const videosReducer = (state = {}, action) => {
             let newState = Object.assign({}, state);
             delete newState[action.videoId];
             return newState;
-        case SEARCH_VIDS:
-            return merge({}, action.videos);
+        // case SEARCH_VIDS:
+        //     return merge({}, action.videos);
         default:
             return state;
     }

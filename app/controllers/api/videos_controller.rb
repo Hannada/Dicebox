@@ -5,11 +5,11 @@ class Api::VideosController < ApplicationController
     end
 
     def index
-            # debugger 
-
+        # debugger
+        #Currently params does not have searchresults. Issue might be in routes. 
         if params[:searchResults]
             @videos = Video.search(params[:searchResults])
-            # debugger 
+            debugger 
             render :index
         else
             @videos = Video.all 
@@ -45,10 +45,10 @@ class Api::VideosController < ApplicationController
         end
     end
 
-    def search_vids(params) 
-        @videos = Videos.search(params[:searchResults])
-        render :search 
-    end
+    # def search_vids(params) 
+    #     @videos = Videos.search(params[:searchResults])
+    #     render :search 
+    # end
 
 
     #     def index
@@ -63,7 +63,7 @@ class Api::VideosController < ApplicationController
     private 
 
     def video_params
-        params.require(:video).permit(:id, :title, :description, :vid, :user_id, :searchResults)
+        params.require(:video).permit(:id, :title, :description, :vid, :user_id)
     end
 
     # def video_params

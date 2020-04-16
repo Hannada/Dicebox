@@ -51,25 +51,31 @@ export const clearSearch = () => ({
     type: CLEAR_SEARCH,
 })
 
-// export const fetchVideos = () => dispatch => (
-//     VideoUtil.fetchVideos().then(videos => dispatch(receiveAllVideos(videos)))
-// )
+export const fetchVideos = () => dispatch => (
+    VideoUtil.fetchVideos().then(videos => dispatch(receiveAllVideos(videos)))
+)
 
-export const fetchVideos = search => dispatch => {
-    if (search) {
-        return VideoUtil.fetchVideos(search)
-            .then(videos => dispatch(receiveSearchVideos(videos)))
-    }else {
-        return VideoUtil.fetchVideos(search)
-            .then(videos => dispatch(receiveAllVideos(videos)))
-    }
-}
+// export const fetchVideos = search => dispatch => {
+//     if (search) {
+//         return VideoUtil.fetchVideos(search)
+//             .then(videos => dispatch(receiveSearchVideos(videos)))
+//     }else {
+//         return VideoUtil.fetchVideos(search)
+//             .then(videos => dispatch(receiveAllVideos(videos)))
+//     }
+// }
 
-// The above ismeant to check for some kind of search params. Current working regardless.
+// The above is meant to check for some kind of search params. Current working regardless.
+// export const searchAllVids = searchResults => dispatch => {
+//     return VideoUtil.searchVids(searchResults)
+//         .then(searchResults => dispatch(searchVids(searchResults)))
+    
+// }
+
 export const searchAllVids = searchResults => dispatch => {
     return VideoUtil.searchVids(searchResults)
-        .then(searchResults => dispatch(searchVids(searchResults)))
-    
+        .then(videos => dispatch(receiveSearchVideos(videos)))
+
 }
 
 // The above should be passing the search params to be used asa search on  the search page?

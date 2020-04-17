@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import React from "react";
 import { Link } from "react-router-dom";
 import Search from "./search";
-import { fetchVideo, fetchVideos, clearSearch, searchVids } from "../../actions/video_action";
+import { fetchVideo, fetchVideos, clearSearch, searchAllVids } from "../../actions/video_action";
 
 const msp = (state, ownProps) => {
     const searchVids = Object.values(state.entities.searches)
@@ -19,7 +19,7 @@ const msp = (state, ownProps) => {
 const mdp = dispatch => {
     return({
         fetchVideos: () => dispatch(fetchVideos()),
-        searchVideos: searchResults => dispatch(searchVids(searchResults)),
+        searchVideos: searchResults => dispatch(searchAllVids(searchResults)),
         clearSearch: () => dispatch(clearSearch())
     })
 }

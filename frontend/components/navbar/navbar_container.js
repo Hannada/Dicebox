@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import { logout } from "../../actions/session_actions";
 import {revertSidebar, expandSidebar} from "../../actions/navbar_sidebar_action";
-import { searchVids } from "../../actions/video_action";
+import { searchAllVids } from "../../actions/video_action";
 import Navbar from "./navbar"
 
 // const msp = ({ session, entities: { users } }) => {
@@ -30,7 +30,7 @@ const mdp = dispatch => {
         logout: () => dispatch(logout()),
         revert: () => dispatch(revertSidebar()),
         expand: () => dispatch(expandSidebar()),
-        searchFilter: searchResults => dispatch(searchVids(searchResults))
+        searchFilter: searchResults => dispatch(searchAllVids(searchResults))
         // Current problem in th searchfilter function
         // fetchVideos: () => dispatch(fetchVideos()),
     })

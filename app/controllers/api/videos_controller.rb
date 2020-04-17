@@ -7,8 +7,8 @@ class Api::VideosController < ApplicationController
     def index
         # debugger
         #Currently params does not have searchresults. Issue might be in routes. 
-        if params[:search]
-            @videos = Video.search(params[:search])
+        if params[:searchresults]
+            @videos = Video.search(params[:searchresults])
             # debugger 
             render :index
         else

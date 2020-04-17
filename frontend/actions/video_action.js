@@ -4,7 +4,7 @@ export const RECEIVE_ALL_VIDEOS = "RECEIVE_ALL_VIDEOS";
 export const RECEIVE_SEARCH_VIDEOS = "RECEIVE_SEARCH_VIDEOS";
 export const RECEIVE_CURRENT_VIDEO = "RECEIVE_CURRENT_VIDEO";
 export const REMOVE_CURRENT_VIDEO = "REMOVE_CURRENT_VIDEO";
-export const SEARCH_VIDS = "SEARCH_VIDS";
+export const SEARCH_VIDEOS = "SEARCH_VIDEOS";
 export const CLEAR_SEARCH = "CLEAR_SEARCH";
 // export const POST_VIDEO = "POST_VIDEO";
 export const RECEIVE_VIDEO_ERRORS = "RECEIVE_VIDEO_ERRORS";
@@ -42,8 +42,8 @@ export const clearVideoErrors = () => ({
     type: CLEAR_VIDEO_ERRORS
 })
 
-export const searchVids =  searchResults => ({
-    type: SEARCH_VIDS,
+export const searchVideos =  searchResults => ({
+    type: SEARCH_VIDEOS,
     searchResults
 })
 

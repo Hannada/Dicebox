@@ -22,6 +22,7 @@ class Search extends React.Component {
         
         // Tried altering to match different index?
         // debugger 
+
         this.props.searchVideos(this.props.match.params.searchResults)
            
     }

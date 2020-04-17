@@ -94,7 +94,7 @@ export const deleteVideo = videoId => (
 )
 
 export const searchVids = searchResults => {
-    debugger 
+    // debugger 
     return (
         $.ajax({
             method: "GET",

@@ -6,9 +6,9 @@ Rails.application.routes.draw do
     resources :videos, only: [:index, :show, :create, :destroy] do 
       resources :comments, only: [:index, :create, :update, :destroy] do 
       end
-      collection do 
-        get "/search" => "videos#search"
-      end
+      # collection do 
+      #   get "/search" => "videos#search"
+      # end
     end
     get 'email_check', to: "sessions#email_check", defaults:  {format: :json}
   end 

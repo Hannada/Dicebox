@@ -46,9 +46,9 @@ class Api::VideosController < ApplicationController
     end
 
     def search
-        debugger
-        @videos = Videos.search(params[:search])
-        render :index  
+        # debugger
+        @videos = Videos.search(params[:searchResults])
+        render :index
     end
 
 
@@ -64,7 +64,7 @@ class Api::VideosController < ApplicationController
     private 
 
     def video_params
-        params.require(:video).permit(:id, :title, :description, :vid, :user_id, :search)
+        params.require(:video).permit(:id, :title, :description, :vid, :user_id, :searchResults)
     end
 
     # def video_params

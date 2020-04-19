@@ -45,11 +45,10 @@ class Api::VideosController < ApplicationController
         end
     end
 
-    def search
-        # debugger
-        @videos = Videos.search(params[:searchResults])
-        render :index
-    end
+    # def search
+    #     @videos = Videos.search(params[:searchResults])
+    #     render :index
+    # end
 
 
     #     def index

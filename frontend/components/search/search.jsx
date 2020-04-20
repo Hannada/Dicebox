@@ -21,7 +21,6 @@ class Search extends React.Component {
         // this.props.fetchVideos({ search: this.props.match.params.searchResults })
         
         // Tried altering to match different index?
-        // debugger 
 
         this.props.searchVideos(this.props.match.params.searchResults)
            
@@ -39,7 +38,6 @@ class Search extends React.Component {
         const {videos} = this.props  
 
         const searchedVideos = this.props.videos.map(video => {
-            // debugger
             return (
                 <SearchIndexItem
                     key={video.id}

@@ -26,7 +26,6 @@ class Video < ApplicationRecord
 
     def self.search(params)
         str = "%#{params}"
-        # debugger 
         @videos = Video 
             .joins("LEFT OUTER JOIN users on videos.user_id = users.id")
             .where(

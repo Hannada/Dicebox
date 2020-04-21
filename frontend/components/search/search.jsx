@@ -22,7 +22,7 @@ class Search extends React.Component {
         
         // Tried altering to match different index?
 
-        this.props.searchVideos(this.props.match.params.searchResults)
+        // this.props.searchVideos(this.props.match.params.searchResults)
            
     }
 
@@ -61,6 +61,8 @@ class Search extends React.Component {
         //         return video.title.indexOf(this.state.currentSearch !== -1)
         //     }
         // )
+
+        // Unsure what this could test
         
         
         // <input className="searchbar"

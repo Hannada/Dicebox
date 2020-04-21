@@ -46,7 +46,7 @@ class Search extends React.Component {
             )
         })
 
-        // Problem might be here. Backend is filtering.
+        // Search currently working but it needs to be a bit smarter?
 
         // const searchedVideos = this.props.videos.filter(video => {
     

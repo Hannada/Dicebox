@@ -97,7 +97,8 @@ export const searchVids = searchResults => {
     return (
         $.ajax({
             method: "GET",
-            url: `api/videos/search/${searchResults}`,
+            // url: `api/videos/search/${searchResults}`,
+            url: "api/videos",
             data: {searchResults}
         })
     )

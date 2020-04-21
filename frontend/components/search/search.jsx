@@ -22,7 +22,7 @@ class Search extends React.Component {
         
         // Tried altering to match different index?
 
-        // this.props.searchVideos(this.props.match.params.searchResults)
+        this.props.searchVideos(this.props.match.params.searchResults)
            
     }
 
@@ -45,6 +45,8 @@ class Search extends React.Component {
                 />
             )
         })
+
+        // Problem might be here. Backend is filtering.
 
         // const searchedVideos = this.props.videos.filter(video => {
     

@@ -15,6 +15,7 @@ import SearchContainer from "./search/search_container";
 // import SidebarContainer from "./sidebar/sidebar_container";
 // import AuthRoute from "../util/route_util";
 
+// Protected 
 
 const DiceboxApp = () => (
     <div>

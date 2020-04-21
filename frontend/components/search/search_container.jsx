@@ -18,7 +18,7 @@ const msp = (state, ownProps) => {
 
 const mdp = dispatch => {
     return({
-        fetchVideos: () => dispatch(fetchVideos()),
+        // fetchVideos: () => dispatch(fetchVideos()),
         searchVideos: searchResults => dispatch(searchAllVids(searchResults)),
         clearSearch: () => dispatch(clearSearch())
     })

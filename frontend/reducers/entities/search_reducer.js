@@ -6,7 +6,7 @@ const searchReducer = (state = [], action) => {
     Object.freeze(state);
     switch (action.type) {
         case SEARCH_VIDEOS:
-            return merge({}, action.searches)
+            return merge({}, action.videos)
             // return merge({}, action.videos)
             // Returning nil
             //altering to searches to match name in entities 

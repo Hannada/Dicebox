@@ -23,8 +23,9 @@ class Video < ApplicationRecord
     end
 
     def comment_author
+        # author =  User.find_by(id: comment.user_id)
     end
-    
+
 
     def self.search(params)
         str = "%#{params}"

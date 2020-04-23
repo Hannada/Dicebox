@@ -22,7 +22,9 @@ class Video < ApplicationRecord
         comments.all
     end
 
-    # define comments.all
+    def comment_author
+    end
+    
 
     def self.search(params)
         str = "%#{params}"

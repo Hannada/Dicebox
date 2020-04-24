@@ -96,6 +96,7 @@ class VideoShow extends React.Component {
                     comment={comment}
                     key={comment.id}
                     commentUser={this.props.users[comment.user_id]}
+                    // commentAuthor={this.video.comment_author(commend.id)}
                 />
             );
            

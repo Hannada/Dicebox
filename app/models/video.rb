@@ -22,8 +22,10 @@ class Video < ApplicationRecord
         comments.all
     end
 
-    def comment_author
-        # author =  User.find_by(id: comment.user_id)
+    def comment_author(id)
+        curent_comment = Comment.find_by(id: id)
+        author =  User.find_by(id: current_comment.user_id)
+        return author.username
     end
 
 

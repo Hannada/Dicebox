@@ -22,11 +22,15 @@ class Video < ApplicationRecord
         comments.all
     end
 
-    def comment_author(id)
-        curent_comment = Comment.find_by(id: id)
-        author =  User.find_by(id: current_comment.user_id)
-        return author.username
-    end
+    # def comment_author(id)
+    #     curent_comment = Comment.find_by(id: id)
+    #     author =  User.find_by(id: current_comment.user_id)
+    #     return author.username
+    # end
+
+    # def comment_author
+    #     comments.author
+    # end
 
 
     def self.search(params)

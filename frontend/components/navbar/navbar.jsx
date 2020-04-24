@@ -58,7 +58,7 @@ class Navbar extends React.Component {
                 {/* <Link to="/" className="home"><img src={window.d20Url} width="40" height="30" /></Link> */}
 
             </div>
-            <div >
+            <div className="search-bar">
                 <form onSubmit={this.handleSearch}>
                     <input className="searchbar" 
                     type="text" 

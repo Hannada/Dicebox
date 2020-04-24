@@ -69,7 +69,9 @@ class Navbar extends React.Component {
                     />
                     {/* <button><img src={window.searchLogoUrl}/></button> */}
                 </form>
-                    {/* <p><img src={window.searchLogooUrl} width="20" height="20" onClick={this.handleSearch} /></p> */}
+                <div>
+                    <p><img src={window.searchLogoUrl} width="20" height="20" onClick={this.handleSearch} /></p>
+                </div>
 
                     {/* <Searchbar/> */}
                     

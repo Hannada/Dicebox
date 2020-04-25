@@ -73,7 +73,6 @@ class Navbar extends React.Component {
                     <p><img src={window.searchLogoUrl} width="20" height="20" onClick={this.handleSearch} /></p>
                 </div>
 
-                    {/* <Searchbar/> */}
                     
                
             </div>

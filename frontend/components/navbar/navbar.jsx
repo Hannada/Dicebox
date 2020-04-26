@@ -67,7 +67,7 @@ class Navbar extends React.Component {
                     onChange={this.update("search")}
 
                     />
-                        <button><img src={window.searchLogoUrl} width="20" height="20" /></button>
+                        {/* <button><img src={window.searchLogoUrl} width="20" height="20" /></button> */}
                 </form>
                 {/* <div>
                     <p><img src={window.searchLogoUrl} width="20" height="20" onClick={this.handleSearch} /></p>

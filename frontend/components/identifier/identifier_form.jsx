@@ -23,7 +23,9 @@ class IdentifierForm extends React.Component {
         // Likely refactoring this to send the user to the password entry form
     }
 
- 
+    // demoLogin(){
+    //     return this.props.login
+    // }
 
     verifyEmail(e) {
         e.preventDefault(); 

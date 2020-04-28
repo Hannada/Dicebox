@@ -24,7 +24,7 @@ class IdentifierForm extends React.Component {
     }
 
     // demoLogin(){
-    //     return this.props.login
+    //     return this.props.directLog()    // same as regform
     // }
 
     verifyEmail(e) {

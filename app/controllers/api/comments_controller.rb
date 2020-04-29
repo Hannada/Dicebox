@@ -15,8 +15,9 @@ class Api::CommentsController < ApplicationController
         @comment = Comment.new(comment_params)
         @comment.user_id = current_user.id #unsure if this is gonna register properly
         @comment.video_id = comment_params["video_id"]
-        # @comment.author = current_user.username
-
+        # authorname = current_user.username
+        # @comment.author = authorname
+        # debugger
         if @comment.save
             @video = Video.find(@comment.video_id)
             # render :show 
@@ -51,8 +52,9 @@ class Api::CommentsController < ApplicationController
     private 
 
     def comment_params
-        # params.require(:comment).permit(:id, :body, :user_id, :video_id)
         params.require(:comment).permit(:id, :body, :user_id, :video_id, :author)
+        # params.permit(:id, :body, :user_id, :video_id, :author)
+
     end 
     # Issue seems to be in the params. Claiming either permit is undefined? 
 end

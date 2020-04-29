@@ -52,7 +52,8 @@ class Api::CommentsController < ApplicationController
     private 
 
     def comment_params
-        params.require(:comment).permit(:id, :body, :user_id, :video_id, :author)
+        params.require(:comment).permit(:id, :body, :user_id, :video_id)
+        # author in the params isnt working
         # params.permit(:id, :body, :user_id, :video_id, :author)
 
     end 

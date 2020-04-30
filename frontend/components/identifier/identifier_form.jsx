@@ -91,7 +91,9 @@ class IdentifierForm extends React.Component {
 
 
 
-    renderErrors() { //Might need some work
+    renderErrors() { //  Currently working on this
+        const logErrors = this.props.errors
+        debugger 
         return (
             <ul>
                 {this.props.errors.map(error => {

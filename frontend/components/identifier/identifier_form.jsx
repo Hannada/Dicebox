@@ -95,7 +95,7 @@ class IdentifierForm extends React.Component {
         const logErrors = this.props.errors
         debugger 
         return (
-            <ul>
+            <ul className="login-errors">
                 {this.props.errors.map(error => {
                     return <li>
                         {error}

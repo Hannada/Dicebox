@@ -93,7 +93,7 @@ class IdentifierForm extends React.Component {
 
     renderErrors() { //  Currently working on this
         const logErrors = this.props.errors
-        debugger 
+        // debugger 
         return (
             <ul className="login-errors">
                 {this.props.errors.map(error => {
@@ -112,7 +112,7 @@ class IdentifierForm extends React.Component {
             <div className="email-main">
                 {/* <div className="login-logo"></div> */}
                 <form onSubmit={this.handleSubmit} className="email-form">
-                    Please enter an email
+                    <div className="form-text"> Please enter an email</div> 
                     <br />
                     <label>
                         <input type="text"

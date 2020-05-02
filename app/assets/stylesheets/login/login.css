@@ -19,6 +19,7 @@
   flex-direction: column;
   align-content: center; 
   background-color: rgba(28, 28, 28, 0.8);
+  color: #1a73e8;
   width: 450px;
   height: 500px;
   box-sizing: border-box;

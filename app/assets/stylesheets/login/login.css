@@ -1,18 +1,4 @@
-/* .login-parent {
-   display: flex;  
-  flex-direction: row;
-  align-content: center; 
-  background-color:white;  
-  width: 450px;
-  height: 500px;
-  box-sizing: border-box;
-  border-radius: 5px;  
-  padding: 10px;
-  text-align: center;
-  margin: 0 auto;
-    position: relative;
-  
-} */
+
 
 .login-form {
   display: flex;  

@@ -19,10 +19,11 @@
   
 }
 
-/* .password-box {
+.password-box {
   display: flex;
-  bottom: 100px;
-} */
+  flex-direction: column;
+  bottom: -100px;
+}
 
 .login-input {
   display: flex; 

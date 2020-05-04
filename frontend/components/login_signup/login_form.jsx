@@ -101,7 +101,7 @@ class LoginForm extends React.Component {
                     {/* <br />
                     {this.renderErrors()}
                     <br /> */}
-                    <label>Password:
+                    <label className="password-box">Password:
                         <input type={this.state.hidden ? "password" : "text"}
                             // type="text"
                             value={this.state.password}

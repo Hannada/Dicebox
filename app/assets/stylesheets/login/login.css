@@ -22,7 +22,7 @@
 .password-box {
   display: flex;
   flex-direction: column;
-  bottom: -150px;
+  bottom: -200px;
   position: relative;
 }
 
@@ -63,5 +63,5 @@
   margin: 0 auto;
   position: relative;
   left: 140px;
-  bottom: -200px;
+  bottom: -250px;
 }

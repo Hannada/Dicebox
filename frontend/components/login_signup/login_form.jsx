@@ -110,7 +110,7 @@ class LoginForm extends React.Component {
                             className="login-input"
                         />
                     </label>
-                    <h2>{this.renderErrors()}</h2>
+                    {/* <h2>{this.renderErrors()}</h2> */}
                     <br />
                     {/* <label className="signup-return">{this.props.navLink}</label> */}
                     <input className="login-submit" onClick={this.toggleShow} type="submit" value={this.props.formType} />

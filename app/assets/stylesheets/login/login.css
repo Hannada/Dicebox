@@ -29,7 +29,7 @@
 .login-input {
   display: flex; 
   flex-direction: column; 
-  background-color:white;  
+  background-color:grey;  
   width: 380px;
   height: 50px;
   box-sizing: border-box;

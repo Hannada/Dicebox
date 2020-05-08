@@ -28,9 +28,10 @@
 
 .password-container {
   display: flex;
-  /* position: relative; */
+  position: relative;
   justify-content: center;
-  top: 100px; 
+  top: -20px;
+   
 }
 
 .login-input {

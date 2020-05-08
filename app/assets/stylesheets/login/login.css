@@ -26,6 +26,13 @@
   position: relative;
 }
 
+.password-container {
+  display: flex;
+  /* position: relative; */
+  justify-content: center;
+  top: 100px; 
+}
+
 .login-input {
   display: flex; 
   flex-direction: column; 

@@ -1,7 +1,9 @@
 .index-title {
   font-family: 'Open Sans', sans-serif;
-  font-size: 40px;
+  font-size: 25px;
   text-decoration: none;
+  margin: 0 0 0 0; 
+  color: white;
 }
 
 .index-item {
@@ -48,13 +50,14 @@
   /* align-content: flex-start; */
 }
 
-.index-title {
+/* .index-title {
   margin: 0 0 0 0; 
   color: white;
-}
+} */
+
 
 .index-user {
   margin: 0 0 0 0; 
-  color: #a3a3a3
+  color: #a3a3a3;
+  font-size: 16px;
 }
-

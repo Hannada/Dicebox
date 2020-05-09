@@ -11,19 +11,15 @@ span, article, footer, time, small {
 .signup-form {
    display: flex; 
   flex-direction: column; 
-  /* position: absolute; */
-  /* font-size: 20px; */
-  background-color:white;  
+  background-color: rgba(28, 28, 28, 0.8);  
   width: auto;
   height: 50px;
-  box-sizing: border-box;
-  /* border: 1px solid grey; */
-  border-radius: 5px;
+  /* box-sizing: border-box; */
+  /* border-radius: 5px; */
   justify-content: space-between;
-  padding: 10px;
+  /* padding: 10px; */
   margin: 0 auto;
    position: relative;
-  /* left: 70px; */
   bottom: -50px;
 }
 
@@ -68,6 +64,7 @@ span, article, footer, time, small {
 .signup-parent {
   display: flex;  
   flex-direction: row;
+  color: #1a73e8;
   align-content: center; 
   background-color: rgba(28, 28, 28, 0.8);  
   width: 450px;

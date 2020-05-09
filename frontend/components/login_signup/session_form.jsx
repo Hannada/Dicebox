@@ -46,9 +46,9 @@ class SessionForm extends React.Component {
         return (
             <div className="signup-parent">
                 <form onSubmit={this.handleSubmit} className="signup-form">
-                    <br/>
+                    {/* <br/>
                     {this.renderErrors()}
-                    <br />
+                    <br /> */}
                     <label>Username:
                         <input type="text"
                             value={this.state.username}

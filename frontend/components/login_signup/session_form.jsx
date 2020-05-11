@@ -50,30 +50,36 @@ class SessionForm extends React.Component {
                     {this.renderErrors()}
                     <br /> */}
                     <label>
-                        <div>Username:</div>
-                        <input type="text"
-                            value={this.state.username}
-                            onChange={this.update("username")}
-                            className="signup-input"
+                        <div>
+                            <div>Username:</div>
+                            <input type="text"
+                                value={this.state.username}
+                                onChange={this.update("username")}
+                                className="signup-input"
                             />
+                        </div>
                     </label>
                     <br/>
                     <label>
-                        <div>Email:</div>
-                        <input type="text"
-                            value={this.state.email} 
-                            onChange={this.update("email")} 
-                            className="signup-input"
+                        <div>
+                            <div>Email:</div>
+                            <input type="text"
+                                value={this.state.email} 
+                                onChange={this.update("email")} 
+                                className="signup-input"
                             />
+                        </div>
                     </label>
                     <br/>
                     <label>
-                        <div>Password:</div>
-                        <input type="text"
-                            value={this.state.password}
-                            onChange={this.update("password")}
-                            className="signup-input"
+                        <div>
+                            <div>Password:</div>
+                            <input type="text"
+                                value={this.state.password}
+                                onChange={this.update("password")}
+                                className="signup-input"
                             />
+                        </div>
                     </label>
                     <br/>
                     <label className="login-return">{this.props.navLink}</label>

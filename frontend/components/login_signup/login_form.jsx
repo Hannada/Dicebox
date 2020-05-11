@@ -82,8 +82,9 @@ class LoginForm extends React.Component {
 
 
     renderErrors() { //Might need some work, has the same name as the dispatched action right now
+        debugger
         return (
-            <ul>
+            <ul className="errors">
                 {this.props.errors.map(error => {
                     return <li>
                         {error}
@@ -95,6 +96,9 @@ class LoginForm extends React.Component {
 
 
     render() {
+        // const errorCaught
+
+        // Going to create a condition for errror that replaces the classname for css
         return (
             <div className="login-parent">
                 <form onSubmit={this.handleSubmit} className="login-form">

@@ -16,10 +16,11 @@ span, article, footer, time, small {
   height: 50px;
   /* box-sizing: border-box; */
   /* border-radius: 5px; */
-  justify-content: space-between;
+  align-content: space-around;
+  /* justify-content: space-between; */
   /* padding: 10px; */
   margin: 0 auto;
-   position: relative;
+  position: relative;
   bottom: -50px;
 }
 
@@ -28,7 +29,7 @@ span, article, footer, time, small {
       display: flex; 
   flex-direction: column; 
   /* position: absolute; */
-  background-color:white;  
+  background-color:grey;  
   width: auto;
   height: 50px;
   box-sizing: border-box;

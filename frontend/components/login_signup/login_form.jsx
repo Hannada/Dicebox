@@ -96,7 +96,7 @@ class LoginForm extends React.Component {
 
 
     render() {
-        // const errorCaught
+        const errorCaught = this.renderErrors() ? "errors" : "login-input";
 
         // Going to create a condition for errror that replaces the classname for css
         return (

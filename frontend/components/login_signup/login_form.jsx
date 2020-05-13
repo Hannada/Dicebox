@@ -82,6 +82,7 @@ class LoginForm extends React.Component {
 
 
     renderErrors() { //Might need some work, has the same name as the dispatched action right now
+        const errors = this.props.errors 
         return (
             <ul className="errors">
                 {this.props.errors.map(error => {
@@ -95,7 +96,7 @@ class LoginForm extends React.Component {
 
 
     render() {
-        const errorCaught = this.renderErrors() ? "errors" : "login-input";
+        const errorCaught = this.props.errors.length > 1 ? "errors" : "login-input";
 
         // Going to create a condition for errror that replaces the classname for css
         return (

@@ -82,7 +82,6 @@ class LoginForm extends React.Component {
 
 
     renderErrors() { //Might need some work, has the same name as the dispatched action right now
-        debugger
         return (
             <ul className="errors">
                 {this.props.errors.map(error => {
@@ -111,7 +110,8 @@ class LoginForm extends React.Component {
                             // type="text"
                             value={this.state.password}
                             onChange={this.update("password")}
-                            className="login-input"
+                            // className="login-input"
+                            className= {errorCaught}
                         />
                     </label>
                     {/* <h2>{this.renderErrors()}</h2> */}

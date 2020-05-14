@@ -44,7 +44,7 @@ class SessionForm extends React.Component {
 
     render() {
 
-        // const errorCaught = this.props.errors.length > 1 ? "errors" : "login-input";
+        const errorCaught = this.props.errors.length > 1 ? "errors" : "login-input";
 
         return (
             <div className="signup-parent">
@@ -58,7 +58,8 @@ class SessionForm extends React.Component {
                             <input type="text"
                                 value={this.state.username}
                                 onChange={this.update("username")}
-                                className="signup-input"
+                                // className="signup-input"
+                                className={errorCaught}
                             />
                         </div>
                     </label>

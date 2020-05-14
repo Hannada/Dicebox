@@ -84,6 +84,7 @@ class LoginForm extends React.Component {
     renderErrors() { //Might need some work, has the same name as the dispatched action right now
         // const errors = this.props.errors 
         // console.log(errors)
+
         return (
             <ul className="errors">
                 {this.props.errors.map(error => {

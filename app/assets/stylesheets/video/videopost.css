@@ -15,7 +15,9 @@
     width: 380px;
     height: 50px;
     margin: 0 auto;
-    bottom: -150px 
+    bottom: -150px;
+  /* border-radius: 5px;   */
+
 
 }
 

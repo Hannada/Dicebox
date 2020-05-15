@@ -119,7 +119,7 @@ class VideoPostForm extends React.Component {
                 />
                 <label className="video-description-title" htmlFor="video-description">Description of Video</label>
                 <input 
-                    className="video-post-title-submit"
+                    className="video-post-des-submit"
                     type="text"
                     id="video-description"
                     value={this.state.description}

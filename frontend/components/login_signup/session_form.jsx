@@ -29,7 +29,7 @@ class SessionForm extends React.Component {
         }
     }
 
-    renderErrors(){ //Might need some work
+    renderErrors(){
         return(
             <ul>
                 {this.props.errors.map(error => {
@@ -49,9 +49,7 @@ class SessionForm extends React.Component {
         return (
             <div className="signup-parent">
                 <form onSubmit={this.handleSubmit} className="signup-form">
-                    {/* <br/>
-                    {this.renderErrors()}
-                    <br /> */}
+                  
                     <label>
                         <div>
                             <div>Username:</div>

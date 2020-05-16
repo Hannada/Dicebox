@@ -126,7 +126,7 @@ class VideoShow extends React.Component {
                         <div className="vid-title"><img src={window.diceLoginUrl} width="20" height="20" />{video.title}</div>
                         <div className="linebreak"></div>
                         <div> {video.user_name}</div>
-                        {/* <div> Like Placeholder </div> */}
+                        <div><img src={window.thumbsUpUrl} width="20" height="20" /></div>
                         <div className="vid-description">{video.description}</div>  
                         <div className="linebreak"></div>
                         <div>

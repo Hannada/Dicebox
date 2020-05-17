@@ -23,6 +23,10 @@
   align-content: space-around;
 }
 
+.vid-author {
+  font-size: 20px;
+}
+
 .vid-info {
   display: flex;
   flex-direction: column;

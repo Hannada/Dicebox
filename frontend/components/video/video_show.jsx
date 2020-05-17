@@ -128,7 +128,7 @@ class VideoShow extends React.Component {
                        
                         {/* <i className={`fas fa-thumbs-up ${liked}`}></i> */}
                         <div className="linebreak"></div>
-                        <div> {video.user_name}</div>
+                        <div className="vid-author"> {video.user_name}</div>
                         <div className="vid-description">{video.description}</div>  
                         <div className="linebreak"></div>
                         <div>

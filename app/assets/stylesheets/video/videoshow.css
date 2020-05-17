@@ -28,6 +28,11 @@
   font-weight: bold;
 }
 
+.vid-description{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+
 .vid-info {
   display: flex;
   flex-direction: column;

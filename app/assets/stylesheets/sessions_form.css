@@ -28,6 +28,7 @@ span, article, footer, time, small {
 .signup-input {
       display: flex; 
   flex-direction: column; 
+  color: black;
   /* position: absolute; */
   background-color:grey;  
   width: auto;

@@ -44,7 +44,7 @@ class SessionForm extends React.Component {
 
     render() {
 
-        const errorCaught = this.props.errors.length > 1 ? "errors" : "login-input";
+        const errorCaught = this.props.errors.length > 1 ? "errors" : "signup-input";
 
         return (
             <div className="signup-parent">

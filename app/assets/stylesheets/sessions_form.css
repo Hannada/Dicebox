@@ -17,7 +17,7 @@ span, article, footer, time, small {
   /* box-sizing: border-box; */
   /* border-radius: 5px; */
   align-content: space-around;
-  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
   /* padding: 10px; */
   margin: 0 auto;
   position: relative;
@@ -26,10 +26,9 @@ span, article, footer, time, small {
 
 
 .signup-input {
-      display: flex; 
+  display: flex; 
   flex-direction: column; 
   color: black;
-  /* position: absolute; */
   background-color:grey;  
   width: auto;
   height: 50px;
@@ -40,6 +39,12 @@ span, article, footer, time, small {
   padding: 10px;
   /* margin: 0 auto; */
   left: -200;
+}
+
+.all-signup-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .session-submit {
@@ -67,6 +72,7 @@ span, article, footer, time, small {
 .signup-parent {
   display: flex;  
   flex-direction: row;
+  /* justify-content: space-evenly; */
   color: #1a73e8;
   align-content: center; 
   background-color: rgba(28, 28, 28, 0.8);  

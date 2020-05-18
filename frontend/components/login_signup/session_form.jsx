@@ -49,40 +49,41 @@ class SessionForm extends React.Component {
         return (
             <div className="signup-parent">
                 <form onSubmit={this.handleSubmit} className="signup-form">
-                  
-                    <label>
-                        <div>
-                            <div>Username:</div>
-                            <input type="text"
-                                value={this.state.username}
-                                onChange={this.update("username")}
-                                className="signup-input"
-                                // className={errorCaught}
-                            />
-                        </div>
-                    </label>
-                    <br/>
-                    <label>
-                        <div>
-                            <div>Email:</div>
-                            <input type="text"
-                                value={this.state.email} 
-                                onChange={this.update("email")} 
-                                className="signup-input"
-                            />
-                        </div>
-                    </label>
-                    <br/>
-                    <label>
-                        <div>
-                            <div>Password:</div>
-                            <input type="text"
-                                value={this.state.password}
-                                onChange={this.update("password")}
-                                className="signup-input"
-                            />
-                        </div>
-                    </label>
+                    <div className="all-signup-inputs">
+                        <label>
+                            <div>
+                                <div>Username:</div>
+                                <input type="text"
+                                    value={this.state.username}
+                                    onChange={this.update("username")}
+                                    className="signup-input"
+                                    // className={errorCaught}
+                                />
+                            </div>
+                        </label>
+                        <br/>
+                        <label>
+                            <div>
+                                <div>Email:</div>
+                                <input type="text"
+                                    value={this.state.email} 
+                                    onChange={this.update("email")} 
+                                    className="signup-input"
+                                />
+                            </div>
+                        </label>
+                        <br/>
+                        <label>
+                            <div>
+                                <div>Password:</div>
+                                <input type="text"
+                                    value={this.state.password}
+                                    onChange={this.update("password")}
+                                    className="signup-input"
+                                />
+                            </div>
+                        </label>
+                    </div>
                     <br/>
                     <label className="login-return">{this.props.navLink}</label>
                     <input className="session-submit" type="submit" value={this.props.formType}/>

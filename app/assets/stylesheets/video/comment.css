@@ -1,6 +1,14 @@
 .comment-submit {
     background-color: grey;
     color: rgb(3, 3, 3);
+    font-size: 12px;
+
+
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-radius: 5px;  
+  padding: 10px;
+  text-align: center;
 }
 
 .comment-form {

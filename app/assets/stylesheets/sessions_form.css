@@ -17,8 +17,6 @@ span, article, footer, time, small {
   /* box-sizing: border-box; */
   /* border-radius: 5px; */
   align-content: space-around;
-  /* justify-content: space-evenly; */
-  /* padding: 10px; */
   margin: 0 auto;
   position: relative;
   bottom: -50px;

@@ -47,7 +47,6 @@ span, article, footer, time, small {
 .session-submit {
     display: flex; 
   flex-direction: column; 
-  /* position: absolute; */
   background-color:rgb(68, 103, 219);  
   border: 1px solid grey;
   font-family: 'Open Sans', sans-serif;

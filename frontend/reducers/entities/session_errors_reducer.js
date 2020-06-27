@@ -2,6 +2,8 @@ import { RECEIVE_SESSION_ERRORS, RECEIVE_CURRENT_USER, CLEAR_ERRORS } from "../.
 
 export default (state = [], action) => {
     Object.freeze(state);
+
+    // Checking what is loaded in thew actual error objects? Shouldnt affect style.
     switch(action.type) {
         case RECEIVE_SESSION_ERRORS:
             return action.errors 

@@ -31,6 +31,7 @@ class SessionForm extends React.Component {
 
     renderErrors(){
         return(
+            // What is error reading in the reducer?
             <ul>
                 {this.props.errors.map(error => {
                     return <li>
